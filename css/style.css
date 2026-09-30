@@ -78,3 +78,33 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+#cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #222;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    z-index: 1000;
+}
+
+#cookie-banner p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+#cookie-banner a {
+    color: #fff;
+}
+
+#acceptCookies {
+    padding: 10px 18px;
+    border: 0;
+    cursor: pointer;
+}
