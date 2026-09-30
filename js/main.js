@@ -6,10 +6,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
         banner.innerHTML = `
             <p>
-                Utilizamos cookies para melhorar sua experiência no site.
+                Utilizamos cookies necessários para o funcionamento do site
+                e, futuramente, cookies de publicidade.
                 <a href="/portal-significados/cookies/">Saiba mais</a>
             </p>
-            <button id="acceptCookies">Aceitar</button>
+
+            <div>
+                <button id="acceptCookies">Aceitar</button>
+                <button id="rejectCookies">Recusar</button>
+            </div>
         `;
 
         banner.id = "cookie-banner";
@@ -20,6 +25,13 @@ document.addEventListener("DOMContentLoaded", function () {
             .getElementById("acceptCookies")
             .addEventListener("click", function () {
                 localStorage.setItem("cookieConsent", "accepted");
+                banner.remove();
+            });
+
+        document
+            .getElementById("rejectCookies")
+            .addEventListener("click", function () {
+                localStorage.setItem("cookieConsent", "rejected");
                 banner.remove();
             });
     }
