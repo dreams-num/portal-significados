@@ -1,43 +1,19 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guia de Horas Iguais | Portal Significados</title>
-    <meta name="description" content="Consulte o significado espiritual, amoroso e os anjos da guarda de todas as horas iguais.">
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
- <header class="header">
-    <div class="container header-container">
-        <a href="/" class="logo">Portal<span>Significados</span></a>
-        <button class="nav-toggle" aria-label="Abrir menu de navegação" id="navToggle">
-            <span></span><span></span><span></span>
-        </button>
-        <nav class="nav-menu" id="navMenu">
-            <a href="/">Início</a>
-            <a href="/horas-iguais/">Horas Iguais</a>
-            <a href="/numeros/">Números</a>
-            <a href="/sonhos/">Sonhos</a>
-            <a href="/calculadoras/">Calculadoras</a>
-        </nav>
+---
+layout: default
+title: "Guia de Horas Iguais | Portal Significados"
+description: "Consulte o significado espiritual, amoroso e os anjos da guarda de todas as horas iguais."
+---
+
+<main class="main-content container">
+    <div class="breadcrumbs">
+        <a href="/">Início</a> &gt; <span>Horas Iguais</span>
     </div>
-</header>
 
-    <main class="main-content container">
-        <div class="breadcrumbs">
-            <a href="../index.html">Início</a> &gt; <span>Horas Iguais</span>
-        </div>
+    <h1>Guia de Horas Iguais</h1>
+    <p>Selecione um horário para ler a interpretação espiritual e a mensagem dos anjos:</p>
 
-        <h1>Guia de Horas Iguais</h1>
-        <p>Selecione um horário para ler a interpretação espiritual e a mensagem dos anjos:</p>
-
-        <!-- Grade de Cards das Horas -->
-       <div class="hours-grid">
-        <!-- Ativo (Já tem posts/00-00.md) -->
-        <!-- <a href="../post.html?artigo=00-00" class="hour-card active-hour">00:00 <span class="badge-active">Disponível</span></a> -->
-    
+    <!-- Grade de Cards das Horas -->
+    <div class="hours-grid">
         <!-- Inativos (Ainda sem arquivo .md) -->
         <div class="hour-card inactive-hour">01:01 <span class="badge-inactive">Em breve</span></div>
         <div class="hour-card inactive-hour">02:02 <span class="badge-inactive">Em breve</span></div>
@@ -50,8 +26,8 @@
         <div class="hour-card inactive-hour">09:09 <span class="badge-inactive">Em breve</span></div>
         <div class="hour-card inactive-hour">10:10 <span class="badge-inactive">Em breve</span></div>
     
-        <!-- Ativo (11:11) -->
-        <a href="../post.html?artigo=11-11" class="hour-card active-hour">11:11 <span class="badge-active">Disponível</span></a>
+        <!-- Ativo (11:11) com URL limpa do Jekyll -->
+        <a href="/horas-iguais/11-11/" class="hour-card active-hour">11:11 <span class="badge-active">Disponível</span></a>
     
         <div class="hour-card inactive-hour">12:12 <span class="badge-inactive">Em breve</span></div>
         <div class="hour-card inactive-hour">13:13 <span class="badge-inactive">Em breve</span></div>
@@ -66,21 +42,4 @@
         <div class="hour-card inactive-hour">22:22 <span class="badge-inactive">Em breve</span></div>
         <div class="hour-card inactive-hour">23:23 <span class="badge-inactive">Em breve</span></div>
     </div>
-    </main>
-
-    <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-info">
-                <p>&copy; 2026 Portal de Significados. Todos os direitos reservados.</p>
-            </div>
-            <div class="footer-links">
-                <a href="../termos/">Termos de Uso</a>
-                <a href="../privacidade/">Política de Privacidade</a>
-                <a href="../cookies/">Política de Cookies</a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="../js/main.js"></script>
-</body>
-</html>
+</main>
