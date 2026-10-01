@@ -10,7 +10,7 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-    <!-- CSS -->
+    <!-- CSS Global -->
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Biblioteca Leitora de Markdown (marked.js) -->
@@ -31,7 +31,6 @@
                 <a href="horas-iguais/">Horas Iguais</a>
                 <a href="index.html#numeros">Números</a>
                 <a href="index.html#sonhos">Sonhos</a>
-                <a href="index.html#calculadoras">Calculadoras</a>
             </nav>
         </div>
     </header>
@@ -39,11 +38,11 @@
     <!-- Conteúdo do Post -->
     <main class="main-content container">
         <div class="breadcrumbs">
-            <a href="index.html">Início</a> &gt; <span id="postCategory">Artigo</span>
+            <a href="index.html">Início</a> &gt; <a href="horas-iguais/">Horas Iguais</a> &gt; <span id="postBreadcrumbTitle">Artigo</span>
         </div>
 
         <article class="article" id="markdownContent">
-            <p style="text-align: center; padding: 40px; color: var(--text-muted);">Carregando conteúdo do artigo...</p>
+            <p style="text-align: center; padding: 40px; color: var(--text-muted, #aaa);">Carregando conteúdo do artigo...</p>
         </article>
     </main>
 
@@ -72,21 +71,19 @@
         </div>
     </div>
 
-    <!-- Script de Carregamento de Markdown -->
+    <!-- Script de Carregamento e Tratamento de Markdown -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            // Pegar o nome do arquivo da URL (ex: post.html?artigo=exemplo)
             const urlParams = new URLSearchParams(window.location.search);
             const artigo = urlParams.get('artigo');
-
             const contentDiv = document.getElementById('markdownContent');
+            const breadcrumbTitle = document.getElementById('postBreadcrumbTitle');
 
             if (!artigo) {
                 contentDiv.innerHTML = '<h1>Artigo não especificado</h1><p>Nenhum post foi selecionado para leitura.</p><a href="index.html" class="btn-card" style="display:inline-block; margin-top:15px;">Voltar ao início</a>';
                 return;
             }
 
-            // Buscar o arquivo .md na pasta posts/
             fetch(`posts/${artigo}.md`)
                 .then(response => {
                     if (!response.ok) {
@@ -95,13 +92,27 @@
                     return response.text();
                 })
                 .then(markdownText => {
-                    // Converter o Markdown para HTML usando a biblioteca marked
-                    contentDiv.innerHTML = marked.parse(markdownText);
-                    
-                    // Ajustar o título da página no navegador com o primeiro H1 do texto
+                    let cleanText = markdownText;
+
+                    // Remove bloco Front Matter (cabeçalho --- ... ---) se existir
+                    if (markdownText.startsWith('---')) {
+                        const parts = markdownText.split('---');
+                        if (parts.length >= 3) {
+                            cleanText = parts.slice(2).join('---').trim();
+                        }
+                    }
+
+                    // Renderiza o Markdown em HTML
+                    contentDiv.innerHTML = marked.parse(cleanText);
+
+                    // Ajusta o título do navegador e do breadcrumb pelo primeiro H1
                     const firstHeading = contentDiv.querySelector('h1');
                     if (firstHeading) {
-                        document.title = `${firstHeading.innerText} | Portal de Significados`;
+                        const titleText = firstHeading.innerText;
+                        document.title = `${titleText} | Portal de Significados`;
+                        if (breadcrumbTitle) {
+                            breadcrumbTitle.innerText = titleText;
+                        }
                     }
                 })
                 .catch(error => {
