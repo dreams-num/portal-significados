@@ -630,3 +630,79 @@ a:hover {
 .category-card:hover .btn-category {
     background-color: #e5be48;
 }
+/* --- Quadrados Perfeitos e Profissionais --- */
+.square-categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.square-card {
+    background: linear-gradient(145deg, #161321, #0d0b14);
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    border-radius: 16px;
+    padding: 20px 16px;
+    aspect-ratio: 1 / 1; /* Força o formato perfeitamente quadrado */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Empurra o título para cima e o botão para baixo */
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Efeito Hover (passar o mouse) */
+.square-card:hover {
+    transform: translateY(-6px);
+    border-color: #d4af37;
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.25);
+    background: linear-gradient(145deg, #1c182b, #110e1a);
+}
+
+/* Cabeçalho do Card (Ícone + Título) */
+.card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.card-icon {
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.square-card h3 {
+    color: #f3e5ab;
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 0;
+}
+
+/* Botão Flutuante Inferior Uniforme */
+.btn-square {
+    background-color: #d4af37;
+    color: #0d0b14;
+    font-weight: 700;
+    font-size: 0.78rem;
+    letter-spacing: 0.3px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.square-card:hover .btn-square {
+    background-color: #e5be48;
+    transform: scale(1.03);
+}
