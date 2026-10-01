@@ -201,7 +201,112 @@ body {
 }
 
 /* ==========================================================================
-   5. RODAPÉ (FOOTER)
+   5. GRADE DE HORAS, NÚMEROS E CARDS DAS SUBPÁGINAS
+   ========================================================================== */
+.hours-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.hour-card {
+    background-color: #12101a;
+    border: 1px solid var(--border-gold);
+    border-radius: 10px;
+    padding: 15px 10px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 90px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.hour-card.active-hour {
+    cursor: pointer;
+}
+
+.hour-card.active-hour:hover {
+    transform: translateY(-3px);
+    border-color: var(--gold-main);
+    box-shadow: 0 4px 12px rgba(212, 175, 55, 0.2);
+}
+
+.hour-card.inactive-hour {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.badge-active {
+    background-color: var(--gold-main);
+    color: #0d0b14;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 12px;
+    margin-top: 8px;
+}
+
+.badge-inactive {
+    background-color: #333;
+    color: #888;
+    font-size: 0.7rem;
+    padding: 3px 8px;
+    border-radius: 12px;
+    margin-top: 8px;
+}
+
+/* ==========================================================================
+   6. PÁGINA DE ARTIGOS E POSTS (MD/ARTIGO)
+   ========================================================================== */
+.post-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.post-content h1 {
+    color: var(--gold-light);
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.post-content h2 {
+    color: var(--gold-main);
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid var(--border-gold);
+    padding-bottom: 5px;
+}
+
+.post-content p {
+    margin-bottom: 16px;
+    color: #e0e0e0;
+    font-size: 1.05rem;
+}
+
+.post-content ul, .post-content ol {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    color: #e0e0e0;
+}
+
+.post-content li {
+    margin-bottom: 8px;
+}
+
+.post-content a {
+    color: var(--gold-light);
+    text-decoration: underline;
+}
+
+/* ==========================================================================
+   7. RODAPÉ (FOOTER)
    ========================================================================== */
 .footer {
     background-color: #08060e;
@@ -236,7 +341,7 @@ body {
 }
 
 /* ==========================================================================
-   6. RESPONSIVIDADE (MOBILE)
+   8. RESPONSIVIDADE (MOBILE)
    ========================================================================== */
 @media (max-width: 768px) {
     .nav-toggle {
@@ -261,6 +366,10 @@ body {
 
     .square-categories-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hours-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     }
 
     .footer-container {
