@@ -452,3 +452,91 @@ a:hover {
 .btn-accept:hover, .btn-reject:hover {
     opacity: 0.85;
 }
+
+/* ===================================================
+   PADRÃO VISUAL DAS POSTAGENS (MARKDOWN)
+   =================================================== */
+
+/* Container principal do artigo */
+.article {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: var(--text-color, #e0e0e0);
+}
+
+/* Títulos do Post */
+.article h1 {
+    font-family: 'Cinzel', 'Georgia', serif; /* Fonte elegante para o título principal */
+    font-size: 2.2rem;
+    color: var(--accent-color, #d4af37); /* Cor de destaque (ex: Dourado) */
+    margin-bottom: 20px;
+}
+
+.article h2 {
+    font-family: 'Cinzel', 'Georgia', serif;
+    font-size: 1.6rem;
+    color: var(--accent-color, #d4af37);
+    margin-top: 35px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2); /* Linha sutil sob sub-títulos */
+    padding-bottom: 8px;
+}
+
+.article h3 {
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+/* Parágrafos e Texto Geral */
+.article p {
+    font-family: 'Inter', sans-serif; /* Fonte limpa e legível para leitura longa */
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Listas (Marcadores e Números) */
+.article ul, 
+.article ol {
+    margin-bottom: 20px;
+    padding-left: 25px;
+}
+
+.article li {
+    margin-bottom: 8px;
+}
+
+.article strong {
+    color: #ffffff; /* Destaque de negrito em branco */
+}
+
+/* Bloco de Citação (Blockquote) */
+.article blockquote {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-left: 4px solid var(--accent-color, #d4af37);
+    margin: 25px 0;
+    padding: 15px 20px;
+    font-style: italic;
+    border-radius: 0 8px 8px 0;
+}
+
+/* Imagens dentro das postagens */
+.article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 25px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Links dentro do texto */
+.article a {
+    color: var(--accent-color, #d4af37);
+    text-decoration: underline;
+}
+
+.article a:hover {
+    color: #ffffff;
+}
