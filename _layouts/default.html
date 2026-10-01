@@ -3,31 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title | default: "Portal Significados" }}</title>
-    <link rel="stylesheet" href="/css/style.css">
-    {% include head.html %}
+    <title>{{ page.title | default: site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
 
-    <!-- Seu menu/header global aqui -->
-
-    <main>
-        {{ content }}
-    </main>
-
-    <!-- Seu rodapé/footer global aqui -->
-
-    <!-- Banner de Cookies LGPD Global -->
-    <div id="cookieConsentBanner" class="cookie-banner" style="display: none;">
-        <div class="container cookie-container">
-            <p>Utilizamos cookies para melhorar sua experiência em nosso portal. Ao continuar navegando, você concorda com a nossa <a href="/privacidade/">Política de Privacidade</a>.</p>
-            <div class="cookie-buttons">
-                <button id="acceptCookies" class="btn-accept">Aceitar</button>
-                <button id="rejectCookies" class="btn-reject">Recusar</button>
-            </div>
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="{{ '/' | relative_url }}" class="logo">Portal Significados</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="{{ '/' | relative_url }}">Início</a></li>
+                    <li><a href="{{ '/horas-iguais/' | relative_url }}">Horas Iguais</a></li>
+                    <li><a href="{{ '/numeros/' | relative_url }}">Números</a></li>
+                    <li><a href="{{ '/sonhos/' | relative_url }}">Sonhos</a></li>
+                    <li><a href="{{ '/calculadoras/' | relative_url }}">Calculadoras</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </header>
 
-    <script src="/js/main.js"></script>
+    {{ content }}
+
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <p>&copy; {{ 'now' | date: "%Y" }} Portal Significados. Todos os direitos reservados.</p>
+            <nav class="footer-nav">
+                <a href="{{ '/termos/' | relative_url }}">Termos de Uso</a> | 
+                <a href="{{ '/privacidade/' | relative_url }}">Política de Privacidade</a> | 
+                <a href="{{ '/cookies/' | relative_url }}">Política de Cookies</a>
+            </nav>
+        </div>
+    </footer>
+
 </body>
 </html>
