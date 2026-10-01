@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carregando artigo... | Portal de Significados</title>
+    <meta name="description" content="Portal de Significados - Consulta de Horas Iguais, Números, Sonhos e Numerologia.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Biblioteca Leitora de Markdown (marked.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">Portal<span>Significados</span></a>
+            <button class="nav-toggle" aria-label="Abrir menu de navegação" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html">Início</a>
+                <a href="horas-iguais/">Horas Iguais</a>
+                <a href="index.html#numeros">Números</a>
+                <a href="index.html#sonhos">Sonhos</a>
+                <a href="index.html#calculadoras">Calculadoras</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo do Post -->
+    <main class="main-content container">
+        <div class="breadcrumbs">
+            <a href="index.html">Início</a> &gt; <span id="postCategory">Artigo</span>
+        </div>
+
+        <article class="article" id="markdownContent">
+            <p style="text-align: center; padding: 40px; color: var(--text-muted);">Carregando conteúdo do artigo...</p>
+        </article>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <p>&copy; 2026 Portal de Significados. Todos os direitos reservados.</p>
+            </div>
+            <div class="footer-links">
+                <a href="termos/">Termos de Uso</a>
+                <a href="privacidade/">Política de Privacidade</a>
+                <a href="cookies/">Política de Cookies</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Banner de Cookies -->
+    <div id="cookieConsentBanner" class="cookie-banner" style="display: none;">
+        <div class="container cookie-container">
+            <p>Utilizamos cookies para melhorar sua experiência em nosso portal. Ao continuar navegando, você concorda com a nossa <a href="privacidade/">Política de Privacidade</a>.</p>
+            <div class="cookie-buttons">
+                <button id="acceptCookies" class="btn-accept">Aceitar</button>
+                <button id="rejectCookies" class="btn-reject">Recusar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script de Carregamento de Markdown -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Pegar o nome do arquivo da URL (ex: post.html?artigo=exemplo)
+            const urlParams = new URLSearchParams(window.location.search);
+            const artigo = urlParams.get('artigo');
+
+            const contentDiv = document.getElementById('markdownContent');
+
+            if (!artigo) {
+                contentDiv.innerHTML = '<h1>Artigo não especificado</h1><p>Nenhum post foi selecionado para leitura.</p><a href="index.html" class="btn-card" style="display:inline-block; margin-top:15px;">Voltar ao início</a>';
+                return;
+            }
+
+            // Buscar o arquivo .md na pasta posts/
+            fetch(`posts/${artigo}.md`)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Artigo não encontrado');
+                    }
+                    return response.text();
+                })
+                .then(markdownText => {
+                    // Converter o Markdown para HTML usando a biblioteca marked
+                    contentDiv.innerHTML = marked.parse(markdownText);
+                    
+                    // Ajustar o título da página no navegador com o primeiro H1 do texto
+                    const firstHeading = contentDiv.querySelector('h1');
+                    if (firstHeading) {
+                        document.title = `${firstHeading.innerText} | Portal de Significados`;
+                    }
+                })
+                .catch(error => {
+                    contentDiv.innerHTML = '<h1>Artigo não encontrado</h1><p>O conteúdo solicitado não existe ou foi removido.</p><a href="index.html" class="btn-card" style="display:inline-block; margin-top:15px;">Voltar para o início</a>';
+                });
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>
