@@ -1,17 +1,6 @@
 /* ==========================================================================
    1. RESET & VARIÁVEIS GLOBAIS
    ========================================================================== */
-:root {
-    --bg-dark: #0d0b14;
-    --card-bg: linear-gradient(145deg, #161321, #0d0b14);
-    --gold-main: #d4af37;
-    --gold-light: #f3e5ab;
-    --gold-hover: #e5be48;
-    --text-light: #ffffff;
-    --text-muted: #c0c0c0;
-    --border-gold: rgba(212, 175, 55, 0.35);
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -19,8 +8,8 @@
 }
 
 body {
-    background-color: var(--bg-dark);
-    color: var(--text-light);
+    background-color: #0d0b14;
+    color: #ffffff;
     font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
     line-height: 1.6;
 }
@@ -36,7 +25,7 @@ body {
    ========================================================================== */
 .header {
     background-color: #12101a;
-    border-bottom: 1px solid var(--border-gold);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.35);
     padding: 15px 0;
     position: sticky;
     top: 0;
@@ -50,14 +39,14 @@ body {
 }
 
 .logo {
-    color: var(--text-light);
+    color: #ffffff;
     font-size: 1.5rem;
     font-weight: 700;
     text-decoration: none;
 }
 
 .logo span {
-    color: var(--gold-main);
+    color: #d4af37;
 }
 
 .nav-menu {
@@ -66,7 +55,7 @@ body {
 }
 
 .nav-menu a {
-    color: var(--text-muted);
+    color: #c0c0c0;
     text-decoration: none;
     font-size: 0.95rem;
     transition: color 0.2s ease;
@@ -74,7 +63,7 @@ body {
 
 .nav-menu a:hover,
 .nav-menu a.active {
-    color: var(--gold-main);
+    color: #d4af37;
 }
 
 .nav-toggle {
@@ -89,7 +78,7 @@ body {
 .nav-toggle span {
     width: 25px;
     height: 3px;
-    background-color: var(--gold-main);
+    background-color: #d4af37;
     border-radius: 2px;
 }
 
@@ -102,128 +91,54 @@ body {
 }
 
 .hero h1 {
-    color: var(--gold-light);
+    color: #f3e5ab;
     font-size: 2rem;
     margin-bottom: 15px;
     line-height: 1.3;
 }
 
 .hero p {
-    color: var(--text-muted);
+    color: #c0c0c0;
     font-size: 1.05rem;
     max-width: 700px;
     margin: 0 auto;
 }
 
 /* ==========================================================================
-   4. GRID DE CATEGORIAS (QUADRADOS DA HOME)
+   4. GRADE DE HORAS, CATEGORIAS E NÚMEROS (SEU ESTILO ORIGINAL)
    ========================================================================== */
 .categories-grid {
     padding: 30px 0 50px;
 }
 
 .categories-grid h2 {
-    color: var(--text-light);
+    color: #ffffff;
     font-size: 1.5rem;
     margin-bottom: 20px;
 }
 
-.square-categories-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 20px;
-}
-
-.square-card {
-    background: var(--card-bg);
-    border: 1px solid var(--border-gold);
-    border-radius: 16px;
-    padding: 20px 16px;
-    aspect-ratio: 1 / 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-}
-
-.square-card:hover {
-    transform: translateY(-6px);
-    border-color: var(--gold-main);
-    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.25);
-    background: linear-gradient(145deg, #1c182b, #110e1a);
-}
-
-.card-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    width: 100%;
-}
-
-.card-icon {
-    font-size: 1.8rem;
-    line-height: 1;
-}
-
-.square-card h3 {
-    color: var(--gold-light);
-    font-size: 1.05rem;
-    font-weight: 600;
-    line-height: 1.3;
-    margin: 0;
-}
-
-.btn-square {
-    background-color: var(--gold-main);
-    color: #0d0b14;
-    font-weight: 700;
-    font-size: 0.78rem;
-    letter-spacing: 0.3px;
-    padding: 8px 12px;
-    border-radius: 20px;
-    width: 100%;
-    max-width: 150px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.2s ease, transform 0.2s ease;
-}
-
-.square-card:hover .btn-square {
-    background-color: var(--gold-hover);
-    transform: scale(1.03);
-}
-
-/* ==========================================================================
-   5. GRADE DE HORAS, NÚMEROS E CARDS DAS SUBPÁGINAS
-   ========================================================================== */
 .hours-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     gap: 15px;
     margin-top: 20px;
 }
 
+/* Card Clássico */
 .hour-card {
     background-color: #12101a;
-    border: 1px solid var(--border-gold);
+    border: 1px solid rgba(212, 175, 55, 0.35);
     border-radius: 10px;
-    padding: 15px 10px;
+    padding: 20px 12px;
     text-align: center;
     text-decoration: none;
-    color: var(--text-light);
+    color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    min-height: 90px;
-    transition: transform 0.2s ease, border-color 0.2s ease;
+    justify-content: space-between; /* Garante que o texto fique em cima e o botão em baixo */
+    min-height: 150px; /* Padroniza a altura de todos os blocos */
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .hour-card.active-hour {
@@ -232,7 +147,7 @@ body {
 
 .hour-card.active-hour:hover {
     transform: translateY(-3px);
-    border-color: var(--gold-main);
+    border-color: #d4af37;
     box-shadow: 0 4px 12px rgba(212, 175, 55, 0.2);
 }
 
@@ -241,27 +156,42 @@ body {
     cursor: not-allowed;
 }
 
+.card-title {
+    color: #f3e5ab;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; /* Centraliza o texto verticalmente no espaço disponível */
+}
+
+/* Botão Amarelo/Dourado Uniforme */
 .badge-active {
-    background-color: var(--gold-main);
+    background-color: #d4af37;
     color: #0d0b14;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     font-weight: bold;
-    padding: 3px 8px;
+    padding: 8px 14px;
     border-radius: 12px;
-    margin-top: 8px;
+    width: 100%;
+    max-width: 140px;
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
 }
 
 .badge-inactive {
-    background-color: #333;
-    color: #888;
-    font-size: 0.7rem;
-    padding: 3px 8px;
+    background-color: #333333;
+    color: #888888;
+    font-size: 0.75rem;
+    padding: 6px 12px;
     border-radius: 12px;
-    margin-top: 8px;
 }
 
 /* ==========================================================================
-   6. PÁGINA DE ARTIGOS E POSTS (MD/ARTIGO)
+   5. PÁGINA DE ARTIGOS / POSTS
    ========================================================================== */
 .post-container {
     max-width: 800px;
@@ -270,17 +200,17 @@ body {
 }
 
 .post-content h1 {
-    color: var(--gold-light);
+    color: #f3e5ab;
     font-size: 2.2rem;
     margin-bottom: 20px;
 }
 
 .post-content h2 {
-    color: var(--gold-main);
+    color: #d4af37;
     font-size: 1.5rem;
     margin-top: 30px;
     margin-bottom: 12px;
-    border-bottom: 1px solid var(--border-gold);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.35);
     padding-bottom: 5px;
 }
 
@@ -301,12 +231,12 @@ body {
 }
 
 .post-content a {
-    color: var(--gold-light);
+    color: #f3e5ab;
     text-decoration: underline;
 }
 
 /* ==========================================================================
-   7. RODAPÉ (FOOTER)
+   6. RODAPÉ (FOOTER)
    ========================================================================== */
 .footer {
     background-color: #08060e;
@@ -314,7 +244,7 @@ body {
     padding: 25px 0;
     margin-top: 40px;
     font-size: 0.85rem;
-    color: var(--text-muted);
+    color: #c0c0c0;
 }
 
 .footer-container {
@@ -331,17 +261,17 @@ body {
 }
 
 .footer-links a {
-    color: var(--text-muted);
+    color: #c0c0c0;
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 .footer-links a:hover {
-    color: var(--gold-main);
+    color: #d4af37;
 }
 
 /* ==========================================================================
-   8. RESPONSIVIDADE (MOBILE)
+   7. RESPONSIVIDADE (MOBILE)
    ========================================================================== */
 @media (max-width: 768px) {
     .nav-toggle {
@@ -364,12 +294,8 @@ body {
         flex-wrap: wrap;
     }
 
-    .square-categories-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .hours-grid {
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .footer-container {
