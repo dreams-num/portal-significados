@@ -3,44 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Significados | Horas Iguais, Sonhos, Números e Numerologia</title>
+    <meta name="description" content="Descubra o significado oculto das horas iguais, interpretação de sonhos, sequências numéricas e calculadoras de numerologia.">
+    
+    <!-- Open Graph / Redes Sociais -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Portal de Significados">
+    <meta property="og:description" content="Descubra o significado oculto das horas iguais, interpretação de sonhos, sequências numéricas e numerologia.">
+    <meta property="og:url" content="https://portal-significados.com/">
+    <meta property="og:locale" content="pt_BR">
 
-    <title>Portal de Significados</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
-    <header>
-        <div>
-            <h1>Portal de Significados</h1>
-
-            <nav>
-                <a href="#">Horas Iguais</a>
-                <a href="#">Números</a>
-                <a href="#">Sonhos</a>
-                <a href="#">Calculadoras</a>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">Portal<span>Significados</span></a>
+            <button class="nav-toggle" aria-label="Abrir menu de navegação" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html" class="active">Início</a>
+                <a href="horas-iguais/">Horas Iguais</a>
+                <a href="#numeros">Números</a>
+                <a href="#sonhos">Sonhos</a>
+                <a href="#calculadoras">Calculadoras</a>
             </nav>
         </div>
     </header>
 
-    <main>
-        <h2>Descubra o significado do que você vê, sonha e encontra no seu dia a dia.</h2>
+    <!-- Conteúdo Principal -->
+    <main class="main-content">
+        <section class="hero">
+            <div class="container">
+                <h1>Desvende os Mistérios dos Signos, Números e Sinais do Universo</h1>
+                <p>Um guia completo e organizado de consulta para compreender mensagens ocultas, sincronicidades e autoconhecimento.</p>
+            </div>
+        </section>
 
-        <p>
-            Explore significados de horas iguais, números, sonhos e ferramentas de numerologia.
-        </p>
+        <section class="categories container">
+            <h2>Explore Nossas Seções</h2>
+            <div class="cards-grid">
+                <!-- Card Horas Iguais -->
+                <div class="card">
+                    <h3>Horas Iguais</h3>
+                    <p>Compreenda o significado espiritual e as mensagens por trás das horas espelhadas e iguais no relógio (ex: 11:11, 22:22).</p>
+                    <a href="horas-iguais/" class="btn-card">Acessar Hub de Horas</a>
+                </div>
+
+                <!-- Card Números -->
+                <div class="card" id="numeros">
+                    <h3>Números e Sequências</h3>
+                    <p>Descubra o poder dos números repetidos (111, 222, 333, 444) e sequências angulares na sua jornada.</p>
+                    <span class="badge-soon">Em breve</span>
+                </div>
+
+                <!-- Card Sonhos -->
+                <div class="card" id="sonhos">
+                    <h3>Significado de Sonhos</h3>
+                    <p>Interprete visões comuns, como sonhar com cobras, dentes caindo, dinheiro e situações do cotidiano.</p>
+                    <span class="badge-soon">Em breve</span>
+                </div>
+
+                <!-- Card Calculadoras -->
+                <div class="card" id="calculadoras">
+                    <h3>Calculadoras Numerológicas</h3>
+                    <p>Calcule seu Caminho de Vida, Número da Alma, Expressão e Destino através da numerologia pitagórica e caldeia.</p>
+                    <span class="badge-soon">Em breve</span>
+                </div>
+            </div>
+        </section>
     </main>
-<footer>
-    <p>&copy; 2026 Portal de Significados</p>
 
-    <nav>
-        <a href="privacidade/index.html">Privacidade</a>
-        <a href="cookies/index.html">Cookies</a>
-        <a href="termos/index.html">Termos de Uso</a>
-    </nav>
-</footer>
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <p>&copy; 2026 Portal de Significados. Todos os direitos reservados.</p>
+            </div>
+            <div class="footer-links">
+                <a href="termos/">Termos de Uso</a>
+                <a href="privacidade/">Política de Privacidade</a>
+                <a href="cookies/">Política de Cookies</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Banner de Cookies LGPD -->
+    <div id="cookieConsentBanner" class="cookie-banner" style="display: none;">
+        <div class="container cookie-container">
+            <p>Utilizamos cookies para melhorar sua experiência em nosso portal. Ao continuar navegando, você concorda com a nossa <a href="privacidade/">Política de Privacidade</a>.</p>
+            <div class="cookie-buttons">
+                <button id="acceptCookies" class="btn-accept">Aceitar</button>
+                <button id="rejectCookies" class="btn-reject">Recusar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
     <script src="js/main.js"></script>
-
 </body>
 </html>
