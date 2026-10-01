@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title | default: "Portal Significados" }}</title>
-  <link rel="stylesheet" href="/css/style.css">
-  {% include head.html %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: "Portal Significados" }}</title>
+    <link rel="stylesheet" href="/css/style.css">
+    {% include head.html %}
 </head>
 <body>
 
-  <!-- Menu / Header aqui -->
+    <!-- Seu menu/header global aqui -->
 
-  <main>
-    {{ content }}
-  </main>
+    <main>
+        {{ content }}
+    </main>
 
-  <!-- Rodapé / Footer aqui -->
+    <!-- Seu rodapé/footer global aqui -->
 
-  <script src="/js/main.js"></script>
+    <!-- Banner de Cookies LGPD Global -->
+    <div id="cookieConsentBanner" class="cookie-banner" style="display: none;">
+        <div class="container cookie-container">
+            <p>Utilizamos cookies para melhorar sua experiência em nosso portal. Ao continuar navegando, você concorda com a nossa <a href="/privacidade/">Política de Privacidade</a>.</p>
+            <div class="cookie-buttons">
+                <button id="acceptCookies" class="btn-accept">Aceitar</button>
+                <button id="rejectCookies" class="btn-reject">Recusar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/main.js"></script>
 </body>
 </html>
