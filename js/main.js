@@ -11,6 +11,31 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    document.addEventListener('DOMContentLoaded', () => {
+    const tocContainer = document.querySelector('#toc ul') || document.querySelector('#toc');
+    const headings = document.querySelectorAll('.post-content h2');
+
+    if (tocContainer && headings.length > 0) {
+        const list = document.createElement('ul');
+        
+        headings.forEach((heading, index) => {
+            if (!heading.id) {
+                heading.id = `secao-${index + 1}`;
+            }
+            
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+            a.href = `#${heading.id}`;
+            a.textContent = heading.textContent;
+            
+            li.appendChild(a);
+            list.appendChild(li);
+        });
+
+        tocContainer.appendChild(list);
+    }
+});
+
     /* ==========================================================================
        2. Sistema de Consentimento de Cookies (LGPD / localStorage)
        ========================================================================== */
