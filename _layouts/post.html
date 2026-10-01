@@ -1,24 +1,29 @@
 ---
 layout: default
 ---
-<article class="container post-container">
-  <div class="breadcrumb">
-    <a href="/">Início</a> <span>&gt;</span> 
-    <a href="/{{ page.category_slug }}/">{{ page.category_name }}</a> <span>&gt;</span> 
-    {{ page.title }}
-  </div>
 
-  <h1>{{ page.title }}</h1>
-  <p class="post-meta">Atualizado para consulta em Portal de Significados</p>
+<main class="main-content container">
+    <div class="breadcrumbs">
+        <a href="/">Início</a>
+        {% if page.category_slug %}
+            &gt; <a href="/{{ page.category_slug }}/">{{ page.category_name }}</a>
+        {% endif %}
+        &gt; <span>{{ page.title }}</span>
+    </div>
 
-  {% if page.toc != false %}
-  <div class="table-of-contents" id="toc">
-    <h3>O que você verá neste artigo:</h3>
-    <!-- O índice é inserido automaticamente via JavaScript ou plugin -->
-  </div>
-  {% endif %}
+    <article class="post-article">
+        <h1>{{ page.title }}</h1>
+        <p class="post-meta">Atualizado para consulta em Portal de Significados</p>
 
-  <div class="post-content">
-    {{ content }}
-  </div>
-</article>
+        {% if page.toc != false %}
+        <div class="table-of-contents" id="toc">
+            <h3>O que você verá neste artigo:</h3>
+            <!-- O índice pode ser preenchido via JS ou plugin -->
+        </div>
+        {% endif %}
+
+        <div class="post-content">
+            {{ content }}
+        </div>
+    </article>
+</main>
