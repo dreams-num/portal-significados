@@ -562,3 +562,71 @@ a:hover {
     text-align: center;
     padding: 40px 20px;
 }
+
+/* --- Redesign dos Cards da Home --- */
+.main-categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.category-card {
+    background-color: #12101a; /* Tom escuro elegante */
+    border: 1px solid #d4af37; /* Borda dourada refinada */
+    border-radius: 12px;
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.25);
+    border-color: #f3e5ab;
+}
+
+/* Ícone */
+.category-icon {
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+}
+
+/* Título do Card */
+.category-card h3 {
+    color: #f3e5ab;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* Descrição curta */
+.category-card p {
+    color: #c0c0c0;
+    font-size: 0.88rem;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    flex-grow: 1; /* Garante que todos os botões fiquem empurrados para a mesma altura no rodapé */
+}
+
+/* Botão uniforme */
+.btn-category {
+    background-color: #d4af37;
+    color: #0d0b14;
+    font-weight: bold;
+    font-size: 0.85rem;
+    padding: 10px 18px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 180px;
+    display: inline-block;
+    transition: background-color 0.2s ease;
+}
+
+.category-card:hover .btn-category {
+    background-color: #e5be48;
+}
