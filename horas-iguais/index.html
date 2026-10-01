@@ -6,7 +6,7 @@ description: "Consulte o significado espiritual, amoroso e os anjos da guarda de
 
 <main class="main-content container">
     <div class="breadcrumbs">
-        <a href="/">Início</a> &gt; <span>Horas Iguais</span>
+        <a href="{{ '/' | relative_url }}">Início</a> &gt; <span>Horas Iguais</span>
     </div>
 
     <h1>Guia de Horas Iguais</h1>
@@ -26,8 +26,8 @@ description: "Consulte o significado espiritual, amoroso e os anjos da guarda de
         <div class="hour-card inactive-hour">09:09 <span class="badge-inactive">Em breve</span></div>
         <div class="hour-card inactive-hour">10:10 <span class="badge-inactive">Em breve</span></div>
     
-        <!-- Ativo (11:11) com URL limpa do Jekyll -->
-        <a href="/horas-iguais/11-11/" class="hour-card active-hour">11:11 <span class="badge-active">Disponível</span></a>
+        <!-- Ativo (11:11) com URL relativa do Liquid -->
+        <a href="{{ '/horas-iguais/11-11/' | relative_url }}" class="hour-card active-hour">11:11 <span class="badge-active">Disponível</span></a>
     
         <div class="hour-card inactive-hour">12:12 <span class="badge-inactive">Em breve</span></div>
         <div class="hour-card inactive-hour">13:13 <span class="badge-inactive">Em breve</span></div>
