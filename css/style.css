@@ -220,6 +220,29 @@ body {
     text-decoration: underline;
 }
 
+/* Estilização do Breadcrumb */
+.breadcrumb {
+    font-size: 0.88rem;
+    color: #c0c0c0;
+    margin-bottom: 20px;
+}
+
+.breadcrumb a {
+    color: #f3e5ab;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.breadcrumb a:hover {
+    color: #d4af37;
+    text-decoration: underline;
+}
+
+.breadcrumb span {
+    color: #888888;
+    margin: 0 6px;
+}
+
 /* ==========================================================================
    6. RODAPÉ (FOOTER)
    ========================================================================== */
@@ -367,3 +390,4 @@ body {
         text-align: center;
     }
 }
+
