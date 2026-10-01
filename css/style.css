@@ -540,3 +540,25 @@ a:hover {
 .article a:hover {
     color: #ffffff;
 }
+
+/* Correção do alinhamento das categorias da página inicial */
+.hours-grid.main-categories .category-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 160px;
+    padding: 20px 15px;
+}
+
+.hours-grid.main-categories .card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Centralização do banner principal */
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+}
