@@ -288,3 +288,82 @@ body {
         text-align: center;
     }
 }
+
+/* ==========================================================================
+   BANNER DE COOKIES (LGPD)
+   ========================================================================== */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #12101a;
+    border-top: 1px solid rgba(212, 175, 55, 0.35);
+    padding: 15px 0;
+    z-index: 1000;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.6);
+}
+
+.cookie-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cookie-banner p {
+    color: #c0c0c0;
+    font-size: 0.88rem;
+    margin: 0;
+    flex: 1;
+}
+
+.cookie-banner a {
+    color: #f3e5ab;
+    text-decoration: underline;
+}
+
+.cookie-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-accept {
+    background-color: #d4af37;
+    color: #0d0b14;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.82rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-accept:hover {
+    background-color: #e5be48;
+}
+
+.btn-reject {
+    background-color: transparent;
+    color: #c0c0c0;
+    border: 1px solid #444;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 0.82rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-reject:hover {
+    border-color: #d4af37;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .cookie-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
