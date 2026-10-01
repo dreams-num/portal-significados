@@ -243,6 +243,19 @@ body {
     margin: 0 6px;
 }
 
+/* Força a cor dourada nos links do breadcrumb e do conteúdo */
+main a, 
+.container a:not(.btn-square):not(.badge-active):not(.logo) {
+    color: #f3e5ab !important;
+    text-decoration: none;
+}
+
+main a:hover, 
+.container a:not(.btn-square):not(.badge-active):not(.logo):hover {
+    color: #d4af37 !important;
+    text-decoration: underline;
+}
+
 /* ==========================================================================
    6. RODAPÉ (FOOTER)
    ========================================================================== */
