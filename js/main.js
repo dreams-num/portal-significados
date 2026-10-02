@@ -72,3 +72,17 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 });
+
+// Lógica da Calculadora de Destino
+var calcBtn = document.getElementById('calcBtn');
+if (calcBtn) {
+    calcBtn.addEventListener('click', function() {
+        var val = document.getElementById('userInput').value;
+        var resultDiv = document.getElementById('result');
+        if (val.trim() === "") {
+            resultDiv.textContent = "Por favor, insira um valor válido.";
+            return;
+        }
+        resultDiv.textContent = "Resultado calculado para: " + val;
+    });
+}
