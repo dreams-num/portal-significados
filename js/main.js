@@ -181,18 +181,31 @@ if(btnCalcularMapa) {
     const meio = document.getElementById('f_meio').value.trim();
     const sobre = document.getElementById('f_sobre').value.trim();
     const social = document.getElementById('f_social').value.trim();
-    const dob = document.getElementById('dob').value;
     const imvInp = (document.getElementById('inp_imovel').value||'').trim();
 
-    if(!primeiro || !sobre || !dob) {
-      alert('Preencha Primeiro Nome, Sobrenome e Data de Nascimento.');
+    // Capturando os campos DD/MM/AAAA separados
+    const dStr = document.getElementById('n_dia').value.trim();
+    const mStr = document.getElementById('n_mes').value.trim();
+    const yStr = document.getElementById('n_ano').value.trim();
+
+    if(!primeiro || !sobre || !dStr || !mStr || !yStr) {
+      alert('Preencha o Primeiro Nome, Sobrenome e a Data de Nascimento completa.');
       return;
     }
 
-    const [y,m,d] = dob.split('-').map(Number);
-    const partes = [primeiro, meio, sobre].filter(Boolean);
-    const nomeCompleto = partes.join(' ');
-    const nomeSocial = social || nomeCompleto;
+    const d = parseInt(dStr, 10);
+    const m = parseInt(mStr, 10);
+    const y = parseInt(yStr, 10);
+
+    // Validação básica de consistência da data
+    if(d < 1 || d > 31 || m < 1 || m > 12 || y < 1900 || y > new Date().getFullYear()) {
+      alert('Por favor, insira uma data de nascimento válida.');
+      return;
+    }
+
+    const dob = `${y}-${String(m).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+
+    // Restante do código de cálculo permanece exatamente igual...
 
     function brutas(n) { return norm(n).split('').reduce((a,c)=>a+lv(c),0); }
     const rPrimeiro = somarNome(primeiro);
