@@ -21,9 +21,10 @@ body {
 }
 
 /* ==========================================================================
-   2. CABEÇALHO E NAVEGAÇÃO
+   2. CABEÇALHO E NAVEGAÇÃO (CORRIGIDO PARA REMOVER BOLINHAS)
    ========================================================================== */
-.header {
+.header,
+.main-header {
     background-color: #12101a;
     border-bottom: 1px solid rgba(212, 175, 55, 0.35);
     padding: 15px 0;
@@ -49,12 +50,30 @@ body {
     color: #d4af37;
 }
 
-.nav-menu {
-    display: flex;
-    gap: 20px;
+/* Reset de listas para o Menu */
+.nav-menu,
+.main-nav,
+.main-nav ul,
+header nav ul {
+    list-style: none !important;
+    list-style-type: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 20px !important;
+    align-items: center;
 }
 
-.nav-menu a {
+.main-nav li,
+header nav li {
+    display: inline-block !important;
+    list-style: none !important;
+}
+
+.nav-menu a,
+.main-nav a,
+header nav a {
     color: #c0c0c0;
     text-decoration: none;
     font-size: 0.95rem;
@@ -62,8 +81,10 @@ body {
 }
 
 .nav-menu a:hover,
-.nav-menu a.active {
-    color: #d4af37;
+.nav-menu a.active,
+.main-nav a:hover,
+header nav a:hover {
+    color: #d4af37 !important;
 }
 
 .nav-toggle {
@@ -136,8 +157,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between; /* Empurra o título para cima e o botão para a base */
-    height: 170px; /* Fixa a altura do bloco quadrado */
+    justify-content: space-between;
+    height: 170px;
     transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -156,7 +177,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%; /* Ocupa o espaço central uniformemente */
+    height: 100%;
 }
 
 /* Botão Amarelo/Dourado 100% Padronizado */
@@ -165,16 +186,17 @@ body {
     color: #0d0b14;
     font-size: 0.75rem;
     font-weight: bold;
-    padding: 8px 0; /* Padding vertical fixo */
+    padding: 8px 0;
     border-radius: 20px;
-    width: 130px; /* Largura idêntica para todos os botões */
-    height: 32px; /* Altura idêntica para todos os botões */
+    width: 130px;
+    height: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
-    white-space: nowrap; /* Impede a quebra de linha do texto */
+    white-space: nowrap;
     box-sizing: border-box;
 }
+
 /* ==========================================================================
    5. PÁGINA DE ARTIGOS / POSTS
    ========================================================================== */
@@ -221,24 +243,24 @@ body {
 }
 
 /* Estilização do Breadcrumb */
-.breadcrumb {
+.breadcrumb, .breadcrumbs {
     font-size: 0.88rem;
     color: #c0c0c0;
     margin-bottom: 20px;
 }
 
-.breadcrumb a {
-    color: #f3e5ab;
+.breadcrumb a, .breadcrumbs a {
+    color: #f3e5ab !important;
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
-.breadcrumb a:hover {
-    color: #d4af37;
+.breadcrumb a:hover, .breadcrumbs a:hover {
+    color: #d4af37 !important;
     text-decoration: underline;
 }
 
-.breadcrumb span {
+.breadcrumb span, .breadcrumbs span {
     color: #888888;
     margin: 0 6px;
 }
@@ -260,7 +282,6 @@ main a:hover,
    ESTILOS DE ARTIGOS / POSTS
    ========================================================================== */
 
-/* Título e Subtítulos */
 article h1 {
     font-size: 2.2rem;
     color: #f3e5ab;
@@ -330,7 +351,7 @@ article p {
 /* ==========================================================================
    6. RODAPÉ (FOOTER)
    ========================================================================== */
-.footer {
+.footer, .main-footer {
     background-color: #08060e;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
     padding: 25px 0;
@@ -347,19 +368,19 @@ article p {
     gap: 15px;
 }
 
-.footer-links {
+.footer-links, .footer-nav {
     display: flex;
     gap: 15px;
 }
 
-.footer-links a {
-    color: #c0c0c0;
+.footer-links a, .footer-nav a {
+    color: #c0c0c0 !important;
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
-.footer-links a:hover {
-    color: #d4af37;
+.footer-links a:hover, .footer-nav a:hover {
+    color: #d4af37 !important;
 }
 
 /* ==========================================================================
@@ -370,16 +391,16 @@ article p {
         display: flex;
     }
 
-    .nav-menu {
-        display: none;
+    .nav-menu, .main-nav ul {
+        display: none !important;
         width: 100%;
-        flex-direction: column;
-        gap: 12px;
-        padding-top: 15px;
+        flex-direction: column !important;
+        gap: 12px !important;
+        padding-top: 15px !important;
     }
 
-    .nav-menu.active {
-        display: flex;
+    .nav-menu.active, .main-nav.active ul {
+        display: flex !important;
     }
 
     .header-container {
@@ -474,4 +495,3 @@ article p {
         text-align: center;
     }
 }
-
