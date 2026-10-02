@@ -36,10 +36,14 @@ description: "Descubra sua Essência, Sincronicidades e Padrões Numéricos de f
                 </div>
             </div>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 20px;">
-                <div style="display: flex; flex-direction: column; gap: 5px;">
-                    <label style="color: #f3e5ab; font-size: 0.85rem; font-weight: bold;">Data de Nascimento</label>
-                    <input type="date" id="dob" style="background: #0d0b14; border: 1px solid #444; color: #fff; padding: 10px; border-radius: 6px;"/>
-                </div>
+                <div style="display: flex; flex-direction: column; gap: 5px; grid-column: span 2;">
+                    <label style="color: #f3e5ab; font-size: 0.85rem; font-weight: bold;">Data de Nascimento (DD / MM / AAAA)</label>
+                    <div style="display: grid; grid-template-columns: 80px 80px 110px; gap: 10px;">
+                        <input type="number" id="n_dia" placeholder="Dia" min="1" max="31" style="background: #0d0b14; border: 1px solid #444; color: #fff; padding: 10px; border-radius: 6px; text-align: center;"/>
+                        <input type="number" id="n_mes" placeholder="Mês" min="1" max="12" style="background: #0d0b14; border: 1px solid #444; color: #fff; padding: 10px; border-radius: 6px; text-align: center;"/>
+                        <input type="number" id="n_ano" placeholder="Ano" min="1900" max="2026" style="background: #0d0b14; border: 1px solid #444; color: #fff; padding: 10px; border-radius: 6px; text-align: center;"/>
+                    </div>
+            </div>
                 <div style="display: flex; flex-direction: column; gap: 5px;">
                     <label style="color: #f3e5ab; font-size: 0.85rem; font-weight: bold;">Gênero</label>
                     <select id="genero" style="background: #0d0b14; border: 1px solid #444; color: #fff; padding: 10px; border-radius: 6px;">
