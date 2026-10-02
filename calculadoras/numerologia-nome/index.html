@@ -1,1 +1,37 @@
-..
+---
+layout: default
+title: "Calculadora de Numerologia | Portal Significados"
+description: "Calcule o seu número de destino de forma rápida e gratuita."
+---
+
+<main class="container post-container">
+    <div class="breadcrumbs">
+        <a href="{{ '/' | relative_url }}">Início</a> &gt; 
+        <a href="{{ '/calculadoras/' | relative_url }}">Calculadoras</a> &gt; 
+        <span>Calculadora de Destino</span>
+    </div>
+
+    <article class="post-content">
+        <h1>Calculadora de Destino</h1>
+        <p>Insira os seus dados abaixo para calcular o significado:</p>
+
+        <!-- Exemplo de formulário interativo -->
+        <div style="background: #12101a; border: 1px solid rgba(212, 175, 55, 0.35); padding: 25px; border-radius: 12px; margin-top: 20px;">
+            <input type="text" id="userInput" placeholder="Digite seu nome completo" style="width: 100%; padding: 12px; background: #0d0b14; border: 1px solid #444; color: #fff; border-radius: 6px; margin-bottom: 15px;">
+            <button onclick="calcular()" class="btn-accept" style="cursor: pointer;">Calcular</button>
+            <div id="result" style="margin-top: 20px; color: #f3e5ab; font-weight: bold;"></div>
+        </div>
+    </article>
+</main>
+
+<script>
+function calcular() {
+    var val = document.getElementById('userInput').value;
+    if(val.trim() === "") {
+        document.getElementById('result').textContent = "Por favor, insira um valor válido.";
+        return;
+    }
+    // Lógica simples de exemplo
+    document.getElementById('result').textContent = "Resultado calculado para: " + val;
+}
+</script>
