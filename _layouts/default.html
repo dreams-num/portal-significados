@@ -12,7 +12,7 @@
     <header class="main-header">
         <div class="container header-container">
             <a href="{{ '/' | relative_url }}" class="logo">Portal Significados</a>
-            <nav class="main-nav">
+            <nav class="main-nav" id="navMenu">
                 <ul>
                     <li><a href="{{ '/' | relative_url }}">Início</a></li>
                     <li><a href="{{ '/horas-iguais/' | relative_url }}">Horas Iguais</a></li>
@@ -21,6 +21,7 @@
                     <li><a href="{{ '/calculadoras/' | relative_url }}">Calculadoras</a></li>
                 </ul>
             </nav>
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir Menu">&#9776;</button>
         </div>
     </header>
 
@@ -37,16 +38,19 @@
         </div>
     </footer>
 
-    <!-- Banner de Cookies -->
-    <div id="cookie-banner" class="cookie-banner" style="display: none;">
+    <!-- Banner de Cookies (LGPD) -->
+    <div id="cookieConsentBanner" class="cookie-banner" style="display: none;">
         <div class="container cookie-container">
             <p>Utilizamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com a nossa <a href="{{ '/cookies/' | relative_url }}">Política de Cookies</a>.</p>
-            <button id="accept-cookies" class="cookie-btn">Aceitar</button>
+            <div class="cookie-buttons">
+                <button id="acceptCookies" class="cookie-btn">Aceitar</button>
+                <button id="rejectCookies" class="cookie-btn cookie-btn-secondary">Recusar</button>
+            </div>
         </div>
     </div>
 
-    <!-- Script de Cookies -->
-    <script src="{{ '/js/cookies.js' | relative_url }}"></script>
+    <!-- Script Principal -->
+    <script src="{{ '/js/main.js' | relative_url }}"></script>
 
 </body>
 </html>
