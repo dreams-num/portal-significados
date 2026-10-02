@@ -44,7 +44,8 @@ description: "Descubra sua Essência, Sincronicidades e Padrões Numéricos de f
                         <input type="number" id="n_ano" placeholder="Ano" min="1900" max="2026" style="background: #0d0b14; border: 1px solid #444; color: #fff; padding: 10px; border-radius: 6px; text-align: center;"/>
                     </div>
             </div>
-               <div style="display: flex; flex-direction: column; gap: 5px; box-sizing: border-box; width: 100%;">
+               <div style="display: grid; grid-template-columns: 1fr; sm-grid-template-columns: repeat(2, 1fr); gap: 15px; margin-bottom: 20px;">
+                <div style="display: flex; flex-direction: column; gap: 5px; box-sizing: border-box; width: 100%;">
                     <label style="color: #f3e5ab; font-size: 0.85rem; font-weight: bold;">Gênero</label>
                     <select id="genero" style="background: #0d0b14; border: 1px solid #444; color: #fff; padding: 10px; border-radius: 6px; width: 100%; box-sizing: border-box;">
                         <option value="F">Feminino</option>
@@ -53,7 +54,7 @@ description: "Descubra sua Essência, Sincronicidades e Padrões Numéricos de f
                     </select>
                 </div>
                 <div style="display: flex; flex-direction: column; gap: 5px; box-sizing: border-box; width: 100%;">
-                    <label style="color: #f3e5ab; font-size: 0.85rem; font-weight: bold;">Número do Imóvel/Casa (Opcional)</label>
+                    <label style="color: #f3e5ab; font-size: 0.85rem; font-weight: bold;">Número do Imóvel / Casa (Opcional)</label>
                     <input type="text" id="inp_imovel" placeholder="Ex: 312" style="background: #0d0b14; border: 1px solid #444; color: #fff; padding: 10px; border-radius: 6px; width: 100%; box-sizing: border-box;"/>
                 </div>
             </div>
