@@ -12,34 +12,13 @@ description: "Consulte o significado espiritual, amoroso e os anjos da guarda de
     <h1>Guia de Horas Iguais</h1>
     <p>Selecione um horário para ler a interpretação espiritual e a mensagem dos anjos:</p>
 
-    <!-- Grade de Cards das Horas -->
+    <!-- Grade de Cards Dinâmica -->
     <div class="hours-grid">
-        <!-- Inativos (Ainda sem arquivo .md) -->
-        <div class="hour-card inactive-hour">01:01 <span class="badge-inactive">Em breve</span></div>
-        <div class="hour-card inactive-hour">02:02 <span class="badge-inactive">Em breve</span></div>
-        <div class="hour-card inactive-hour">03:03 <span class="badge-inactive">Em breve</span></div>
-        <div class="hour-card inactive-hour">04:04 <span class="badge-inactive">Em breve</span></div>
-        <div class="hour-card inactive-hour">05:05 <span class="badge-inactive">Em breve</span></div>
-        <div class="hour-card inactive-hour">06:06 <span class="badge-inactive">Em breve</span></div>
-        <div class="hour-card inactive-hour">07:07 <span class="badge-inactive">Em breve</span></div>
-        <div class="hour-card inactive-hour">08:08 <span class="badge-inactive">Em breve</span></div>
-        <div class="hour-card inactive-hour">09:09 <span class="badge-inactive">Em breve</span></div>
-        <div class="hour-card inactive-hour">10:10 <span class="badge-inactive">Em breve</span></div>
-    
-        <!-- Ativo (11:11) com URL relativa do Liquid -->
-        <a href="{{ '/horas-iguais/11-11/' | relative_url }}" class="hour-card active-hour">11:11 <span class="badge-active">Disponível</span></a>
-    
-        <div class="hour-card inactive-hour">12:12 <span class="badge-inactive">Em breve</span></div>
-        <div class="hour-card inactive-hour">13:13 <span class="badge-inactive">Em breve</span></div>
-        <div class="hour-card inactive-hour">14:14 <span class="badge-inactive">Em breve</span></div>
-        <div class="hour-card inactive-hour">15:15 <span class="badge-inactive">Em breve</span></div>
-        <div class="hour-card inactive-hour">16:16 <span class="badge-inactive">Em breve</span></div>
-        <div class="hour-card inactive-hour">17:17 <span class="badge-inactive">Em breve</span></div>
-        <div class="hour-card inactive-hour">18:18 <span class="badge-inactive">Em breve</span></div>
-        <div class="hour-card inactive-hour">19:19 <span class="badge-inactive">Em breve</span></div>
-        <div class="hour-card inactive-hour">20:20 <span class="badge-inactive">Em breve</span></div>
-        <div class="hour-card inactive-hour">21:21 <span class="badge-inactive">Em breve</span></div>
-        <div class="hour-card inactive-hour">22:22 <span class="badge-inactive">Em breve</span></div>
-        <div class="hour-card inactive-hour">23:23 <span class="badge-inactive">Em breve</span></div>
+        {% for post in site.posts %}
+            <a href="{{ post.url | relative_url }}" class="hour-card active-hour">
+                <span class="card-title">{{ post.title }}</span>
+                <span class="badge-active">Disponível</span>
+            </a>
+        {% endfor %}
     </div>
 </main>
