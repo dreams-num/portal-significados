@@ -1,9 +1,11 @@
 ---
-layout: default
+layout: post
 title: "O Guia Completo das Horas Iguais: O Significado Espiritual de Ver 00:00 a 23:23 no Relógio Digital"
 card_title: "Guia Completo das Horas Iguais"
 description: "Descubra o significado espiritual..."
 category: horas-iguais
+category_slug: horas-iguais
+category_name: "Horas Iguais"
 ---
 
 # O Guia Completo das Horas Iguais: O Significado Espiritual de Ver 00:00 a 23:23 no Relógio Digital
