@@ -306,3 +306,40 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const cookieBanner = document.getElementById("cookieBanner");
+    const acceptBtn = document.getElementById("acceptCookies");
+    const rejectBtn = document.getElementById("rejectCookies");
+
+    // Verifica se o utilizador já escolheu anteriormente
+    if (!localStorage.getItem("cookieConsent")) {
+        if (cookieBanner) {
+            cookieBanner.style.display = "block";
+        }
+    } else {
+        if (cookieBanner) {
+            cookieBanner.style.display = "none";
+        }
+    }
+
+    // Ação ao clicar em Aceitar
+    if (acceptBtn) {
+        acceptBtn.addEventListener("click", function() {
+            localStorage.setItem("cookieConsent", "accepted");
+            if (cookieBanner) {
+                cookieBanner.style.display = "none";
+            }
+        });
+    }
+
+    // Ação ao clicar em Recusar
+    if (rejectBtn) {
+        rejectBtn.addEventListener("click", function() {
+            localStorage.setItem("cookieConsent", "rejected");
+            if (cookieBanner) {
+                cookieBanner.style.display = "none";
+            }
+        });
+    }
+});
