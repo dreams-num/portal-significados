@@ -448,6 +448,7 @@ main a:hover,
     padding: 15px 0;
     z-index: 1000;
     box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.6);
+    display: none; /* Começa oculto até o JS verificar */
 }
 
 .cookie-container {
