@@ -15,10 +15,12 @@ description: "Consulte o significado espiritual, amoroso e os anjos da guarda de
     <!-- Grade de Cards Dinâmica -->
     <div class="hours-grid">
         {% for post in site.posts %}
-            <a href="{{ post.url | relative_url }}" class="hour-card active-hour">
-                <span class="card-title">{{ post.card_title | default: post.title }}</span>
-                <span class="badge-active">Disponível</span>
-            </a>
+            {% if post.category == 'horas-iguais' %}
+                <a href="{{ post.url | relative_url }}" class="hour-card active-hour">
+                    <span class="card-title">{{ post.card_title | default: post.title }}</span>
+                    <span class="badge-active">Disponível</span>
+                </a>
+            {% endif %}
         {% endfor %}
     </div>
 </main>
