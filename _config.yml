@@ -1,7 +1,8 @@
 title: Portal Significados
 description: "Significados dos números, horas iguais, sonhos e numerologia."
 url: "https://dreams-num.github.io"
-baseurl: "/portal-significados"
+baseurl: "" # Deixe vazio se estiver na raiz do domínio, ou "/nome-do-repositorio" se for uma subpasta
+url: "https://dreams-num.github.io" # O endereço principal do seu site
 
 markdown: kramdown
 theme: minima
