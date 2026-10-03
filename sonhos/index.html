@@ -12,10 +12,15 @@ description: "Entenda a interpretação dos seus sonhos e mensagens do subconsci
     <h1>Dicionário de Sonhos</h1>
     <p>Selecione o tema do seu sonho para ler a interpretação:</p>
 
+    <!-- Grade de Cards Dinâmica -->
     <div class="hours-grid">
-        <div class="hour-card inactive-hour">Sonhar com Água <span class="badge-inactive">Em breve</span></div>
-        <div class="hour-card inactive-hour">Sonhar com Dente <span class="badge-inactive">Em breve</span></div>
-        <div class="hour-card inactive-hour">Sonhar com Cobra <span class="badge-inactive">Em breve</span></div>
-        <div class="hour-card inactive-hour">Sonhar com Morte <span class="badge-inactive">Em breve</span></div>
+        {% for post in site.posts %}
+            {% if post.category == 'sonhos' %}
+                <a href="{{ post.url | relative_url }}" class="hour-card active-hour">
+                    <span class="card-title">{{ post.card_title | default: post.title }}</span>
+                    <span class="badge-active">Disponível</span>
+                </a>
+            {% endif %}
+        {% endfor %}
     </div>
 </main>
