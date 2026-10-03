@@ -1,10 +1,7 @@
-title: Portal Significados
+title: "Portal Significados"
 description: "Significados dos números, horas iguais, sonhos e numerologia."
 url: "https://dreams-num.github.io"
-title: "Portal Significados"
-description: "Descubra o significado espiritual..."
-url: "https://dreams-num.github.io" # O seu domínio do GitHub Pages
-baseurl: "/portal-significados"    # Coloque aqui o nome exato da pasta do seu repositório no GitHub (ou deixe "" se o repo for estritamente dreams-num.github.io na raiz)
+baseurl: "/portal-significados"
 
 markdown: kramdown
 theme: minima
