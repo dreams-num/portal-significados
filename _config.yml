@@ -1,7 +1,7 @@
-title: "Portal Significados"
+title: "Universo dos Significados"
 description: "Significados dos números, horas iguais, sonhos e numerologia."
-url: "https://dreams-num.github.io"
-baseurl: "/portal-significados"
+url: "https://universodossignificados.com"
+baseurl: ""
 
 markdown: kramdown
 # theme: minima
