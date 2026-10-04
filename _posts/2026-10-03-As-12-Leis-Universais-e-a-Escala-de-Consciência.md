@@ -10,6 +10,10 @@ category_name: "numeros"
 
 # As 12 Leis Universais e a Escala de Consciência de Hawkins: A Física Vibracional da Numerologia
 
+<figure class="post-featured-image">
+  <img src="{{ '/assets/images/test-image1.jpeg' | relative_url }}" alt="Imagem de teste" class="img-fluid rounded">
+</figure>
+
 A crença de que os números, as sincronicidades e os avisos angélicos influenciam o nosso cotidiano muitas vezes é encarada com ceticismo por quem busca explicações meramente racionais. No entanto, quando examinamos os princípios da física moderna, as descobertas da mecânica quântica e a ciência da consciência, percebemos que o universo invisível e o mundo material compartilham as mesmas regras fundamentais. Como ensinou o célebre físico Albert Einstein através da Lei da Conservação de Energia, a energia não pode ser criada nem destruída; ela apenas se transforma de um estado para outro.
 
 Tudo o que existe no cosmos — desde a menor partícula subatômica até as formações galácticas, passando pelas palavras, sons, pensamentos e algarismos numéricos — é constituído por átomos em constante movimento e vibração. Os números e as letras não são abstrações inertes; eles carregam assinaturas energéticas e frequências vibracionais específicas capazes de interagir com o campo magnético humano.
