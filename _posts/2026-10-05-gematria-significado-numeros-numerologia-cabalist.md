@@ -8,7 +8,7 @@ category_slug: numeros
 category_name: Numeros
 ---
 
-### Gematria: O Significado Oculto dos Números e a Ciência Sagrada da Qabalah
+# Gematria: O Significado Oculto dos Números e a Ciência Sagrada da Qabalah
 
 A busca pelo significado oculto por trás das palavras e dos números é uma das práticas mais antigas da humanidade. Na tradição mística ocidental, a Gematria surge como uma chave mestra para decodificar os mistérios do universo e entender a arquitetura espiritual da realidade. Derivada da tradição esotérica da Qabalah (a Cabala hebraica), a Gematria estabelece uma ponte direta entre a linguagem, a matemática e o simbolismo sagrado.
 
@@ -29,7 +29,7 @@ Os pontos essenciais sobre a Gematria incluem:
 * **Parte da Qabalah Literal:** Integra o tripé da Cabala literal ao lado de *Notaricon* (acronia) e *Temurá* (permutação).
 * **Mapeamento da Árvore da Vida:** Conecta-se diretamente aos dez Sephiroth e aos 22 caminhos da criação.
 
-#### A Tradição Cabalística e as Três Ramificações da Qabalah Literal
+## A Tradição Cabalística e as Três Ramificações da Qabalah Literal
 
 Para compreender a Gematria em sua plenitude, é necessário situá-la dentro do sistema da Qabalah literal. De acordo com os ensinamentos clássicos de textos como o *Liber LVIII* (*Gematria*), a Cabala literal divide-se em três métodos fundamentais de análise e interpretação:
 
@@ -46,7 +46,7 @@ Derivado do termo latino para notário, o Notaricon opera por meio de acrônimos
 ##### 3. Temurá (ThMVRH)
 A Temurá consiste na permutação e substituição sistemática de letras segundo regras precisas de correspondência. Dividindo o alfabeto hebraico e sobrepondo suas metades, criam-se tabelas de combinação denominadas *Tziruph*. Um exemplo notável é o método *AThBSh* (Atbash), que transforma a palavra bíblica *Sheshakh* (ShShK) em *Babel* (BBL).
 
-#### A Qabalah dos Nove Quadros e o Valor do Alfabeto Hebraico
+## A Qabalah dos Nove Quadros e o Valor do Alfabeto Hebraico
 
 Um dos métodos mais importantes dentro da Gematria é a *Qabalah dos Nove Quadros*, conhecida em hebraico como *AIQ BKR* (Aiq Bekar). Essa estrutura organiza as 22 letras do alfabeto hebraico juntamente com as 5 formas finais (*Sofit*) em uma matriz de nove compartimentos.
 
@@ -93,7 +93,7 @@ Representa o intelecto, a razão, a comunicação e as formas estruturadas do pe
 ##### 10. Malkuth (O Reino) — O Número 10
 É o mundo físico e material, a esfera da manifestação concreta e a presença divina na Terra (*Shekinah*). É chamada de Rainha ou Esposa, associando-se ao Nome Divino *Adonai*.
 
-#### Os Três Pilares da Árvore da Vida
+## Os Três Pilares da Árvore da Vida
 
 Os dez Sephiroth organizam-se verticalmente em três pilares fundamentais:
 1. **Pilar da Misericórdia (Direito):** Composto por Chokmah, Chesed e Netzach (potências ativas e expansivas).
@@ -143,7 +143,7 @@ Na Qabalah tradicional, 666 não é um símbolo malévolo, mas o número místic
 ##### 10. O Número 777 — A Vida Suprema
 Representa a escala da Vida Suprema e a purificação dos caminhos espirituais. É a soma das correspondências da Árvore da Vida em seu aspecto divino e equilibrado.
 
-#### Princípios para Aplicar a Gematria no Cotidiano
+## Princípios para Aplicar a Gematria no Cotidiano
 
 Para quem deseja utilizar a Gematria como ferramenta de autoconhecimento e estudo simbólico, vale seguir algumas recomendações metodológicas:
 
@@ -152,7 +152,7 @@ Para quem deseja utilizar a Gematria como ferramenta de autoconhecimento e estud
 3. **Analisar a Redução Teosófica:** Além da soma direta, calcule a redução de um número somando os seus dígitos individuais (exemplo: 358 -> 3+5+8 = 16 -> 1+6 = 7) para encontrar a Sephira regente.
 4. **Combinar com Outros Métodos:** Integre a Gematria ao estudo da astrologia, dos elementos e dos tarôs tradicionais, observando as correspondências dos 22 caminhos da Árvore da Vida.
 
-#### Conclusão Editorial
+## Conclusão Editorial
 
 A Gematria é muito mais do que um mero cálculo matemático: é uma linguagem sagrada que revela a harmonia oculta entre a mente divina, o alfabeto e o universo. Ao estudar os valores numéricos das palavras e a estrutura dos dez Sephiroth, compreendemos que a realidade não é fruto do acaso, mas sim um cosmo ordenado e repleto de significado.
 
