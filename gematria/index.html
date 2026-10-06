@@ -1,0 +1,25 @@
+---
+layout: default
+title: "Título da Categoria | Portal Significados"
+description: "Descrição detalhada da categoria para SEO."
+---
+
+<main class="main-content container">
+    <div class="breadcrumbs">
+        <a href="{{ '/' | relative_url }}">Início</a> &gt; <span>Nome da Categoria</span>
+    </div>
+
+    <h1>Título Principal da Seção</h1>
+    <p>Texto introdutório da categoria...</p>
+
+    <div class="hours-grid">
+        {% for post in site.posts %}
+            {% if post.category == 'gematria' %}
+                <a href="{{ post.url | relative_url }}" class="hour-card active-hour category-card">
+                    <span class="card-title">{{ post.card_title | default: post.title }}</span>
+                    <span class="badge-active">Ver</span>
+                </a>
+            {% endif %}
+        {% endfor %}
+    </div>
+</main>
