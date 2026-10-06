@@ -12,8 +12,7 @@ category_name: "numeros"
 # Numerologia do Amor e Matriz de Compatibilidade de Casais: Chamas Gêmeas, Almas Gêmeas e Conexões de Destino
 
 <figure style="margin: 25px 0; text-align: center;">
-<img src="{{ '/assets/images/casais-compativeis.jpg' | relative_url }}" alt="Numerologia do Amor e Matriz de Compatibilidade de   Casais: Chamas Gêmeas, Almas Gêmeas e Conexões de Destino" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
-<figcaption style="font-size: 0.85rem; color: var(--text-muted); margin-top: 8px;">Legenda opcional ou crédito da imagem</figcaption>
+   <img src="{{ '/assets/images/casais-compativeis.jpg' | relative_url }}" alt="Numerologia do Amor e Matriz de Compatibilidade de   Casais: Chamas Gêmeas, Almas Gêmeas e Conexões de Destino" style="max-width: 100%; border-radius: 16px; border:      1px solid var(--border-color);">
 </figure>
 
 
