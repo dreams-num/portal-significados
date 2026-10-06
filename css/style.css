@@ -522,12 +522,22 @@ main a:hover,
 }
 
 /* ==========================================================================
-   FUNDO DE UNIVERSO PARA A PÁGINA PRINCIPAL (CONTÍNUO E SEM LINHAS)
+   FUNDO DE UNIVERSO (ESTRELAS E NEBULOSAS CONTÍNUAS E ORGÂNICAS)
    ========================================================================== */
 body.home-universe {
     background-color: #100C1F;
     background-image: 
-        /* Nebulosas suaves e profundas */
+        /* Estrelas e pontos de luz dourados e brancos espalhados por percentagem */
+        radial-gradient(1.5px 1.5px at 15% 25%, #ffffff 100%, transparent),
+        radial-gradient(2px 2px at 35% 12%, rgba(240, 194, 101, 0.9) 100%, transparent),
+        radial-gradient(1px 1px at 75% 30%, #ffffff 100%, transparent),
+        radial-gradient(1.5px 1.5px at 85% 75%, rgba(255, 255, 255, 0.8) 100%, transparent),
+        radial-gradient(2px 2px at 20% 80%, rgba(240, 194, 101, 0.7) 100%, transparent),
+        radial-gradient(1px 1px at 55% 60%, #ffffff 100%, transparent),
+        radial-gradient(1.5px 1.5px at 90% 15%, #ffffff 100%, transparent),
+        radial-gradient(1px 1px at 10% 50%, rgba(240, 194, 101, 0.8) 100%, transparent),
+        radial-gradient(1.5px 1.5px at 45% 90%, #ffffff 100%, transparent),
+        /* Nebulosas suaves de fundo */
         radial-gradient(circle at 20% 20%, rgba(65, 42, 112, 0.45) 0%, transparent 45%),
         radial-gradient(circle at 80% 80%, rgba(35, 23, 66, 0.55) 0%, transparent 55%),
         radial-gradient(circle at 50% 50%, rgba(20, 14, 38, 0.8) 0%, #100C1F 100%);
