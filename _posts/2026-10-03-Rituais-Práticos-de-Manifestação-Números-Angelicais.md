@@ -11,17 +11,22 @@ category_name: "numeros"
 
 # Rituais Práticos de Manifestação com Números Angelicais: A Técnica do Copo D'Água, Scripting e Códigos de Atração
 
+<figure style="margin: 25px 0; text-align: center;">
+        <img src="{{ '/assets/images/copo-agua-emoto.jpg' | relative_url }}" alt="Rituais Práticos de Manifestação com Números Angelicais: A Técnica do Copo D'Água" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
+
+    </figure>
+
 A busca pela realização de metas, atração de prosperidade e conquista da paz afetiva é um dos desejos mais profundos da natureza humana. Contudo, no campo da espiritualidade prática e da física vibracional, manifestar uma intenção não consiste em forçar acontecimentos através do desespero ou de rituais vazios de significado. A verdadeira manifestação é a arte de alinhar a energia pessoal do indivíduo com a frequência exata daquilo que se deseja atrair para a realidade física.
 
 Conforme demonstrado nas 12 Leis Universais e no Mapa da Consciência do Dr. David R. Hawkins, o universo responde à vibração emitida pelo ser humano. Como os números angelicais possuem frequências energéticas puras e imutáveis, eles atuam como catalisadores e aceleradores de intenções quando utilizados de forma consciente e disciplinada em rituais diários.
 
-Neste guia prático e aprofundado, você aprenderá três técnicas consolidadas de manifestação — a Técnica do Copo d'Água do Dr. Masaru Emoto, a Técnica do Scripting com Mantras Angelicais e a Técnica do Papel Debaixo do Travesseiro —, além de acessar um catálogo completo com os códigos numéricos mais poderosos para atrair dinheiro, amor, sorte e abertura de caminhos.
+Neste guia prático e aprofundado, você aprenderá três técnicas consolidadas de manifestação, a Técnica do Copo d'Água do Dr. Masaru Emoto, a Técnica do Scripting com Mantras Angelicais e a Técnica do Papel Debaixo do Travesseiro —, além de acessar um catálogo completo com os códigos numéricos mais poderosos para atrair dinheiro, amor, sorte e abertura de caminhos.
 
 ## A Ciência por Trás dos Rituais de Manifestação
 
 Para que um ritual de manifestação produza resultados tangíveis, é indispensável compreender o mecanismo através do qual a energia se transforma em matéria.
 
-Quando você foca a sua mente em um objetivo acompanhado de uma emoção elevada (como a gratidão, o entusiasmo ou o amor), o seu cérebro e o seu coração emitem um campo eletromagnético. Ao associar essa intenção a um código numérico angelical — por exemplo, a frequência 888 para abundância ou 222 para harmonia no amor —, você oferece ao seu inconsciente e aos seus anjos da guarda um ponto focal cristalino.
+Quando você foca a sua mente em um objetivo acompanhado de uma emoção elevada (como a gratidão, o entusiasmo ou o amor), o seu cérebro e o seu coração emitem um campo eletromagnético. Ao associar essa intenção a um código numérico angelical — por exemplo, a frequência 888 para abundância ou 222 para harmonia no amor, você oferece ao seu inconsciente e aos seus anjos da guarda um ponto focal cristalino.
 
 O ritual não serve para "convencer" Deus ou os anjos a lhe concederem algo que eles estariam omitindo, mas sim para elevar o seu estado de espírito acima do limiar crítico de 200 Hz na Escala de Hawkins (saindo do medo e da dúvida para entrar na coragem, na aceitação e na fé), permitindo que você se torne um receptor adequado para as bênçãos que já estão disponíveis no plano espiritual.
 
