@@ -10,9 +10,14 @@ category_name: "Horas Iguais"
 
 # O Guia Completo das Horas Iguais: O Significado Espiritual de Ver 00:00 a 23:23 no Relógio Digital
 
+    <figure style="margin: 25px 0; text-align: center;">
+        <img src="{{ '/assets/images/relogio-digital.jpg' | relative_url }}" alt="Horas Iguais: O Significado Espiritual de Ver 00:00 a 23:23 no Relógio Digital" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
+
+    </figure>
+
 Você já passou pela experiência de olhar casualmente para a tela do celular, para o mostrador do forno ou para o relógio do carro e se deparar exatamente com horas e minutos idênticos, como 11:11, 22:22 ou 07:07? Quando esse fenômeno acontece repetidamente ao longo de dias ou semanas, deixa de parecer mera coincidência matemática e passa a se revelar como um padrão cheio de intenção.
 
-No estudo contemporâneo da numerologia e dos chamados Números Angélicos ou Angelicais (conceito popularizado por pesquisadores e místico-espiritualistas), as horas iguais que aparecem nos relógios digitais são consideradas mensagens diretas do reino espiritual, orientações do Criador e dos anjos da guarda para guiar os seus passos no mundo desperto. Como os seres celestiais operam em frequências energéticas sutis, eles utilizam os canais numéricos do cotidiano moderno para "chamar a sua atenção", revelando o seu estado vibracional atual e oferecendo consolo, avisos ou encorajamento. Neste guia completo, você compreenderá a ciência por trás da sincronicidade numerológica e descobrirá a mensagem exata de cada uma das 24 horas iguais — de 00:00 a 23:23 — para aplicar na sua caminhada pessoal.
+No estudo contemporâneo da numerologia e dos chamados Números Angélicos ou Angelicais (conceito popularizado por pesquisadores e místico-espiritualistas), as horas iguais que aparecem nos relógios digitais são consideradas mensagens diretas do reino espiritual, orientações do Criador e dos anjos da guarda para guiar os seus passos no mundo desperto. Como os seres celestiais operam em frequências energéticas sutis, eles utilizam os canais numéricos do cotidiano moderno para "chamar a sua atenção", revelando o seu estado vibracional atual e oferecendo consolo, avisos ou encorajamento. Neste guia completo, você compreenderá a ciência por trás da sincronicidade numerológica e descobrirá a mensagem exata de cada uma das 24 horas iguais, de 00:00 a 23:23, para aplicar na sua caminhada pessoal.
 
 ## A Ciência da Sincronicidade e a Frequência dos Números
 
