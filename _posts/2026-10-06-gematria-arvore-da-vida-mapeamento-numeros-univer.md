@@ -3,9 +3,9 @@ layout: post
 title: "Gematria e a Árvore da Vida: Como os Números Mapeiam o Universo"
 card_title: "Gematria e Árvore da Vida"
 description: "Aprenda como a Gematria e os dez Sephiroth da Árvore da Vida se conectam para mapear a espiritualidade e a numerologia cabalística de forma simples."
-category: numerologia
-category_slug: numerologia
-category_name: Numerologia
+category: numeros
+category_slug: numeros
+category_name: Numeros
 ---
 
 ### Gematria e a Árvore da Vida: Como os Números Mapeiam o Universo
