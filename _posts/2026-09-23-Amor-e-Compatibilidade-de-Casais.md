@@ -11,6 +11,12 @@ category_name: "numeros"
 
 # Numerologia do Amor e Matriz de Compatibilidade de Casais: Chamas Gêmeas, Almas Gêmeas e Conexões de Destino
 
+<figure style="margin: 25px 0; text-align: center;">
+<img src="{{ '/assets/images/casais-compativeis.jpg' | relative_url }}" alt="Numerologia do Amor e Matriz de Compatibilidade de   Casais: Chamas Gêmeas, Almas Gêmeas e Conexões de Destino" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
+<figcaption style="font-size: 0.85rem; color: var(--text-muted); margin-top: 8px;">Legenda opcional ou crédito da imagem</figcaption>
+</figure>
+
+
 O amor é uma das experiências energéticas e espirituais mais elevadas que um ser humano pode vivenciar ao longo da sua jornada terrestre. Quando duas pessoas se encontram e sentem uma atração magnética inexplicável, a razão humana costuma atribuir esse fenômeno ao acaso ou ao destino. No entanto, sob a perspectiva da física vibracional e da numerologia ancestral, os relacionamentos afetivos são regidos por leis matemáticas sutis e pelo alinhamento das frequências energéticas emanadas pela alma de cada indivíduo.
 
 Conforme demonstrado nos estudos de consciência do Dr. David R. Hawkins, a emoção genuína do amor manifesta-se quando o campo magnético humano passa a vibrar na frequência de 528 Hz. De acordo com a Lei da Compensação e a Lei da Atração — princípios universais que governam a energia no cosmos —, o estado de espírito de uma pessoa atrai inevitavelmente realidades e parceiros que ressoam na mesma faixa vibratória. Quando duas frequências numéricas se cruzam no amor, elas podem gerar uma sinergia de profunda expansão e harmonia, ou expor desafios e lições morais que ambos precisam superar para amadurecer.
