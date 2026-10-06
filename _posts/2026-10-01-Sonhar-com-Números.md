@@ -10,6 +10,10 @@ category_name: "numeros"
 
 # Sonhar com Números: O Significado dos Anjo Números nos Sonhos e a Visão de Carl Jung
 
+<figure style="margin: 25px 0; text-align: center;">
+        <img src="{{ '/assets/images/sonhando-numeros.jpg' | relative_url }}" alt="O Significado dos Anjo Números nos Sonhos e a Visão de Carl Jung" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
+    </figure>
+
 Durante as horas de vigília no mundo desperto, a nossa mente racional está constantemente ocupada com tarefas, estímulos sensoriais e preocupações do cotidiano. Em virtude dessa sobrecarga de informações, as barreiras do ego e os filtros do pensamento lógico frequentemente ignoram os sinais sutis e as sincronicidades que os anjos da guarda e o universo tentam nos enviar. Contudo, quando adormecemos, o cenário muda drasticamente: o ruído do mundo externo silencia, o ego relaxa as suas defesas e o canal de comunicação entre a consciência e o inconsciente profundo abre-se plenamente.
 
 É nesse estado de entrega que surgem os sonhos numéricos. Ver sequências repetidas, mostradores de relógios brilhando no escuro, números de endereços, camisetas esportivas marcadas por algarismos específicos ou presenciar objetos e pessoas dispostos em quantidades exatas durante o sono é uma das formas mais diretas, claras e límpidas pelas quais a dimensão espiritual interage com a psique humana.
