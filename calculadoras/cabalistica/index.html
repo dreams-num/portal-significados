@@ -1,0 +1,141 @@
+---
+layout: default
+title: "Calculadora de Numerologia Cabalística Ocidental | Portal Significados"
+description: "Descubra os números da Alma, Expressão e Destino de forma automatizada e gratuita."
+---
+
+<main class="container post-container">
+    <div class="breadcrumbs">
+        <a href="{{ '/' | relative_url }}">Início</a> &gt; 
+        <a href="{{ '/calculadoras/' | relative_url }}">Calculadoras</a> &gt; 
+        <span>Numerologia Cabalística Ocidental</span>
+    </div>
+
+    <article class="post-content">
+        <h1 style="text-align: center;">✦ Numerologia Cabalística Ocidental ✦</h1>
+        <p style="text-align: center; color: #d4af37; font-style: italic; margin-bottom: 1.5rem;">Descubra os Números da Alma, Expressão e Destino</p>
+
+        <!-- FORMULÁRIO -->
+        <div style="background: #12101a; border: 1px solid rgba(212, 175, 55, 0.35); border-radius: 8px; padding: 25px; margin-bottom: 25px;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 15px; margin-bottom: 20px;">
+                <div style="display: flex; flex-direction: column; gap: 5px;">
+                    <label style="color: #f3e5ab; font-size: 0.85rem; font-weight: bold;">Nome Completo de Nascimento</label>
+                    <input type="text" id="oc_nome" placeholder="Ex: Ana Maria da Silva" style="background: #0d0b14; border: 1px solid #444; color: #fff; padding: 10px; border-radius: 6px; width: 100%; box-sizing: border-box; outline: none;"/>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 5px;">
+                    <label style="color: #f3e5ab; font-size: 0.85rem; font-weight: bold;">Data de Nascimento</label>
+                    <input type="date" id="oc_nascimento" style="background: #0d0b14; border: 1px solid #444; color: #fff; padding: 10px; border-radius: 6px; width: 100%; box-sizing: border-box; outline: none; color-scheme: dark;"/>
+                </div>
+            </div>
+
+            <div style="display: flex; gap: 10px; flex-wrap: wrap; border-top: 1px solid rgba(212, 175, 55, 0.2); padding-top: 20px; margin-top: 10px;">
+                <button onclick="calcularOcidental()" style="background: #d4af37; color: #12101a; border: none; font-weight: bold; cursor: pointer; padding: 12px 25px; font-size: 0.95rem; border-radius: 6px; transition: opacity 0.2s;">✦ Revelar meu Mapa Ocidental</button>
+            </div>
+            <div id="oc_erro" style="color: #ff6b6b; font-style: italic; margin-top: 12px; display: none; font-size: 0.9rem;">Por favor, preencha o nome completo e a data de nascimento.</div>
+        </div>
+
+        <!-- RESULTADO -->
+        <div id="oc_resultado" style="display: none; margin-top: 30px;">
+            <div style="text-align: center; padding: 20px 0; border-bottom: 2px solid rgba(212, 175, 55, 0.35); margin-bottom: 20px;">
+                <div id="oc_res_nome" style="color: #f3e5ab; font-size: 1.8rem; font-weight: bold;"></div>
+                <div style="color: #d4af37; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; margin-top: 5px;">Síntese do Perfil Cabalístico Ocidental</div>
+            </div>
+
+            <div id="oc_cards" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin-bottom: 20px;"></div>
+
+            <div style="background: #12101a; border: 1px solid rgba(212, 175, 55, 0.35); border-left: 4px solid #d4af37; border-radius: 8px; padding: 20px; margin-top: 20px;">
+                <div style="color: #d4af37; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 10px; font-weight: bold;">✦ Como interpretar sua combinação</div>
+                <div id="oc_interpretacao" style="color: #e0e0e0; line-height: 1.7; font-size: 0.95rem;"></div>
+            </div>
+        </div>
+    </article>
+</main>
+
+<script>
+const TABELA_PITAGORICA = {
+  'A':1,'J':1,'S':1, 'B':2,'K':2,'T':2, 'C':3,'L':3,'U':3,
+  'D':4,'M':4,'V':4, 'E':5,'N':5,'W':5, 'F':6,'O':6,'X':6,
+  'G':7,'P':7,'Y':7, 'H':8,'Q':8,'Z':8, 'I':9,'R':9
+};
+
+function removerAcentos(s){return s.normalize('NFD').replace(/[\u0300-\u036f]/g,'');}
+function reduzir(n){while(n>9&&n!==11&&n!==22&&n!==33){n=String(n).split('').reduce((a,d)=>a+Number(d),0);}return n;}
+
+function calcularValorPalavra(str){
+  let soma = 0;
+  for(let c of str){ if(TABELA_PITAGORICA[c]) soma += TABELA_PITAGORICA[c]; }
+  return reduzir(soma);
+}
+
+const SIGNIFICADOS_OCIDENTAIS = {
+  1: "Liderança, independência, originalidade e coragem para abrir novos caminhos.",
+  2: "Cooperação, diplomacia, sensibilidade, empatia e harmonia nas parcerias.",
+  3: "Expressão criativa, comunicação, alegria, otimismo e talento artístico.",
+  4: "Estrutura, ordem, disciplina, praticidade e construção de bases sólidas.",
+  5: "Liberdade, versatilidade, magnetismo, aventura e expansão de horizontes.",
+  6: "Amor familiar, responsabilidade, harmonia, cura e dedicação ao lar e à comunidade.",
+  7: "Sabedoria interior, espiritualidade, análise profunda, busca pela verdade e intuição.",
+  8: "Poder pessoal, realização material, justiça, abundância e capacidade executiva.",
+  9: "Compaixão universal, humanitarismo, conclusão de ciclos e generosidade profunda.",
+  11: "Inspiração espiritual superior, iluminação, intuição aguçada e papel de mestre intuitivo.",
+  22: "Mestre construtor, capacidade de realizar grandes obras em benefício coletivo."
+};
+
+function calcularOcidental(){
+  const nomeInput = document.getElementById('oc_nome').value.trim();
+  const dataInput = document.getElementById('oc_nascimento').value;
+  const erro = document.getElementById('oc_erro');
+
+  if(!nomeInput || !dataInput){ erro.style.display = 'block'; return; }
+  erro.style.display = 'none';
+
+  const nomeLimpo = removerAcentos(nomeInput).toUpperCase().replace(/[^A-Z ]/g,'');
+  let vogais = '', consoantes = '';
+  const vogaisSet = new Set(['A','E','I','O','U']);
+
+  for(let l of nomeLimpo.replace(/\s/g,'')){
+    if(vogaisSet.has(l)) vogais += l;
+    else consoantes += l;
+  }
+
+  const numAlma = calcularValorPalavra(vogais);
+  const numMascara = calcularValorPalavra(consoantes);
+  const numExpressao = reduzir(numAlma + numMascara);
+
+  const [ano, mes, dia] = dataInput.split('-').map(Number);
+  const numDestino = reduzir(reduzir(dia) + reduzir(mes) + reduzir(ano));
+
+  const elRes = document.getElementById('oc_resultado');
+  document.getElementById('oc_res_nome').innerText = nomeInput;
+
+  document.getElementById('oc_cards').innerHTML = `
+    <div style="background: #12101a; border: 1px solid rgba(212, 175, 55, 0.35); border-radius: 8px; padding: 20px;">
+      <div style="color: #d4af37; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; font-weight: bold; margin-bottom: 5px;">Número da Alma (Vogais)</div>
+      <div style="font-size: 2rem; color: #f3e5ab; font-weight: bold; margin-bottom: 8px;">${numAlma}</div>
+      <div style="font-size: 0.9rem; color: #c0c0c0; line-height: 1.5;">${SIGNIFICADOS_OCIDENTAIS[numAlma] || ''}</div>
+    </div>
+    <div style="background: #12101a; border: 1px solid rgba(212, 175, 55, 0.35); border-radius: 8px; padding: 20px;">
+      <div style="color: #d4af37; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; font-weight: bold; margin-bottom: 5px;">Número da Máscara (Consoantes)</div>
+      <div style="font-size: 2rem; color: #f3e5ab; font-weight: bold; margin-bottom: 8px;">${numMascara}</div>
+      <div style="font-size: 0.9rem; color: #c0c0c0; line-height: 1.5;">${SIGNIFICADOS_OCIDENTAIS[numMascara] || ''}</div>
+    </div>
+    <div style="background: #12101a; border: 1px solid rgba(212, 175, 55, 0.35); border-radius: 8px; padding: 20px;">
+      <div style="color: #d4af37; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; font-weight: bold; margin-bottom: 5px;">Número da Expressão</div>
+      <div style="font-size: 2rem; color: #f3e5ab; font-weight: bold; margin-bottom: 8px;">${numExpressao}</div>
+      <div style="font-size: 0.9rem; color: #c0c0c0; line-height: 1.5;">${SIGNIFICADOS_OCIDENTAIS[numExpressao] || ''}</div>
+    </div>
+    <div style="background: #12101a; border: 1px solid rgba(212, 175, 55, 0.35); border-radius: 8px; padding: 20px;">
+      <div style="color: #d4af37; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; font-weight: bold; margin-bottom: 5px;">Caminho de Vida (Data)</div>
+      <div style="font-size: 2rem; color: #f3e5ab; font-weight: bold; margin-bottom: 8px;">${numDestino}</div>
+      <div style="font-size: 0.9rem; color: #c0c0c0; line-height: 1.5;">${SIGNIFICADOS_OCIDENTAIS[numDestino] || ''}</div>
+    </div>
+  `;
+
+  document.getElementById('oc_interpretacao').innerHTML = `
+    O seu número de <strong>Expressão (${numExpressao})</strong> traduz a maneira como o mundo te enxerga e a sua atuação ativa. Em contrapartida, a sua <strong>Alma (${numAlma})</strong> revela os seus desejos profundos e motivações interiores. Quando alinhados ao seu <strong>Caminho de Vida (${numDestino})</strong>, as sincronicidades diárias e padrões numéricos que você percebe servem como orientação constante para suas escolhas.
+  `;
+
+  elRes.style.display = 'block';
+  elRes.scrollIntoView({ behavior: 'smooth' });
+}
+</script>
