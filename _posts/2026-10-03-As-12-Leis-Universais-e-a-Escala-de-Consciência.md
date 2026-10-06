@@ -10,13 +10,13 @@ category_name: "numeros"
 
 # As 12 Leis Universais e a Escala de Consciência de Hawkins: A Física Vibracional da Numerologia
 
-<figure class="post-featured-image">
-  <img src="{{ '/assets/images/test-image1.jpeg' | relative_url }}" alt="Imagem de teste" class="img-fluid rounded">
-</figure>
+<figure style="margin: 25px 0; text-align: center;">
+        <img src="{{ '/assets/images/meditando.jpg' | relative_url }}" alt="As 12 Leis Universais e a Escala de Consciência de Hawkins: A Física Vibracional da Numerologia" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
+    </figure>
 
 A crença de que os números, as sincronicidades e os avisos angélicos influenciam o nosso cotidiano muitas vezes é encarada com ceticismo por quem busca explicações meramente racionais. No entanto, quando examinamos os princípios da física moderna, as descobertas da mecânica quântica e a ciência da consciência, percebemos que o universo invisível e o mundo material compartilham as mesmas regras fundamentais. Como ensinou o célebre físico Albert Einstein através da Lei da Conservação de Energia, a energia não pode ser criada nem destruída; ela apenas se transforma de um estado para outro.
 
-Tudo o que existe no cosmos — desde a menor partícula subatômica até as formações galácticas, passando pelas palavras, sons, pensamentos e algarismos numéricos — é constituído por átomos em constante movimento e vibração. Os números e as letras não são abstrações inertes; eles carregam assinaturas energéticas e frequências vibracionais específicas capazes de interagir com o campo magnético humano.
+Tudo o que existe no cosmos, desde a menor partícula subatômica até as formações galácticas, passando pelas palavras, sons, pensamentos e algarismos numéricos, é constituído por átomos em constante movimento e vibração. Os números e as letras não são abstrações inertes; eles carregam assinaturas energéticas e frequências vibracionais específicas capazes de interagir com o campo magnético humano.
 
 Neste artigo abrangente e profundo, você compreenderá a base científica e metafísica da numerologia através do estudo das **12 Leis Divinas do Universo** e do **Mapa da Consciência do Dr. David R. Hawkins**, aprendendo como elevar a sua frequência vibracional para viver em perfeita sintonia com a orientação dos anjos e com a abundância do cosmos.
 
@@ -24,7 +24,7 @@ Neste artigo abrangente e profundo, você compreenderá a base científica e met
 
 A premissa básica da numerologia e do estudo dos Anjo Números é que vivemos em um universo estritamente energético. As forças que movem a dimensão espiritual operam através de canais vibracionais, da mesma forma que a energia térmica se transforma em vapor ao aquecer a água ou a energia mecânica do atrito gera som.
 
-Quando um código numérico — como 111, 444 ou 888 — aparece repetidamente na tela do relógio ou em recibos do dia a dia, ocorre uma reação de ressonância. O campo energético do indivíduo, impulsionado por pensamentos, dúvidas ou emoções específicas, atrai e conecta-se à frequência do número que carrega a resposta necessária. Essa interação entre o campo magnético humano e as frequências numéricas não é um mero acaso, mas sim o resultado direto das leis energéticas que regem o universo.
+Quando um código numérico, como 111, 444 ou 888 — aparece repetidamente na tela do relógio ou em recibos do dia a dia, ocorre uma reação de ressonância. O campo energético do indivíduo, impulsionado por pensamentos, dúvidas ou emoções específicas, atrai e conecta-se à frequência do número que carrega a resposta necessária. Essa interação entre o campo magnético humano e as frequências numéricas não é um mero acaso, mas sim o resultado direto das leis energéticas que regem o universo.
 
 ## As 12 Leis Espirituais do Universo
 
@@ -32,7 +32,7 @@ Originadas em tradições místicas ancestrais — como o sistema de meditação
 
 ### 1. A Lei da Unidade Divina (Law of Divine Oneness)
 
-É a lei fundamental do cosmos, estabelecendo que todas as coisas na criação — até a menor partícula atômica — estão intimamente interconectadas. Uma analogia clássica para compreender esta lei é a de uma árvore de múltiplos troncos: ainda que na superfície os troncos pareçam estruturas separadas, todos eles emergem da mesma raiz e compartilham a mesma essência vital. Como somos parte de uma única teia de consciência, tudo o que pensamos, sentimos ou fazemos afeta a totalidade da criação.
+É a lei fundamental do cosmos, estabelecendo que todas as coisas na criação, até a menor partícula atômica, estão intimamente interconectadas. Uma analogia clássica para compreender esta lei é a de uma árvore de múltiplos troncos: ainda que na superfície os troncos pareçam estruturas separadas, todos eles emergem da mesma raiz e compartilham a mesma essência vital. Como somos parte de uma única teia de consciência, tudo o que pensamos, sentimos ou fazemos afeta a totalidade da criação.
 
 ### 2. A Lei da Vibração (Law of Vibration)
 
@@ -76,7 +76,7 @@ A vida na Terra opera em ciclos, estações e marés inevitáveis. Há momentos 
 
 ### 12. A Lei do Gênero (Law of Gender)
 
-Esta lei define que a criação exige o equilíbrio harmonioso entre o princípio masculino (Animus — a força de ação, lógica e penetração) e o princípio feminino (Anima — a intuição, o acolhimento e a receptividade).
+Esta lei define que a criação exige o equilíbrio harmonioso entre o princípio masculino (Animus, a força de ação, lógica e penetração) e o princípio feminino (Anima, a intuição, o acolhimento e a receptividade).
 
 ## A Escala de Consciência do Dr. David R. Hawkins
 
