@@ -517,3 +517,26 @@ main a:hover,
         text-align: center;
     }
 }
+
+/* ==========================================================================
+   FUNDO DE UNIVERSO PARA A PÁGINA PRINCIPAL
+   ========================================================================== */
+body.home-universe {
+    background-color: #100C1F;
+    background-image: 
+        /* Efeito de Nebulosa / Poeira Estelar Suave */
+        radial-gradient(circle at 20% 30%, rgba(65, 42, 112, 0.35) 0%, transparent 45%),
+        radial-gradient(circle at 80% 70%, rgba(32, 23, 61, 0.5) 0%, transparent 50%),
+        /* Simulação de Estrelas Brilhantes e Douradas */
+        radial-gradient(1px 1px at 50px 80px, #ffffff 100%, transparent),
+        radial-gradient(1.5px 1.5px at 180px 150px, rgba(240, 194, 101, 0.8) 100%, transparent),
+        radial-gradient(1px 1px at 320px 220px, #ffffff 100%, transparent),
+        radial-gradient(2px 2px at 450px 90px, rgba(255, 255, 255, 0.9) 100%, transparent),
+        radial-gradient(1px 1px at 600px 350px, #ffffff 100%, transparent),
+        radial-gradient(1.5px 1.5px at 780px 180px, rgba(240, 194, 101, 0.6) 100%, transparent),
+        radial-gradient(1px 1px at 900px 420px, #ffffff 100%, transparent),
+        /* Gradiente base do site */
+        radial-gradient(circle at 50% 0%, #20173D 0%, #100C1F 70%);
+    background-repeat: repeat;
+    background-size: 900px 600px;
+}
