@@ -11,8 +11,8 @@ category_name: Gematria
 # Gematria Prática: Decodificando o Significado Sagrado dos Nomes e Palavras
 
 <figure style="margin: 25px 0; text-align: center;">
-        <img src="{{ '/assets/images/calculando-numeros.jpg' | relative_url }}" alt="Gematria Prática: Decodificando o Significado Sagrado dos Nomes e Palavras" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
-</figure>
+        <img src="{{ '/assets/images/nomes-sagrados.jpg' | relative_url }}" alt="Decodificando o Significado Sagrado dos Nomes e Palavras" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
+    </figure>
 
 A curiosidade em relação ao significado oculto das palavras e ao impacto dos números em nossas vidas acompanha a humanidade desde a Antiguidade. Na tradição ocidental do misticismo, a Gematria destaca-se como um dos métodos mais fascinantes de investigação simbólica. Ela funciona como um sistema de numerologia cabalística que revela a arquitetura matemática por trás da linguagem sagrada.
 
@@ -22,7 +22,7 @@ Ao aprender a decodificar palavras e nomes através da Gematria, o leitor leigo 
 
 #### Em resumo: o que a Gematria revela sobre os nomes e palavras?
 
-A Gematria é a arte e a ciência de atribuir valores numéricos às letras de um alfabeto sagrado, tradicionalmente o alfabeto hebraico, para somar o valor total de uma palavra, frase ou nome. O objetivo central é identificar palavras de valores numéricos equivalentes, revelando uma ligação espiritual e essência compartilhada entre elas.
+A Gematria é a arte e a ciência de atribuir valores numéricos às letras de um alfabeto sagrado — tradicionalmente o alfabeto hebraico — para somar o valor total de uma palavra, frase ou nome. O objetivo central é identificar palavras de valores numéricos equivalentes, revelando uma ligação espiritual e essência compartilhada entre elas.
 
 **Em uma perspectiva simbólica, a Gematria demonstra que palavras com o mesmo valor numérico não se coincidem por acaso, mas expressam a mesma energia fundamental no universo.**
 
@@ -137,7 +137,7 @@ Para quem deseja iniciar seus estudos práticos sobre a Gematria sem complicaç�
 3.  **Realize a Redução Teosófica:** Caso obtenha um número grande, some os seus dígitos para encontrar o algarismo simples (de 1 a 9) e identificar a Sephira correspondente na Árvore da Vida.
 4.  **Pesquise Equivalências Numéricas:** Verifique outros termos ou nomes sagrados que possuem o mesmo valor numérico para compreender o diálogo espiritual entre eles.
 
-## Conclusão Editorial
+## Conclusão
 
 A Gematria oferece uma fascinante ponte entre a matemática, a linguagem e a espiritualidade. Ao revelar que os números possuem significados arquetípicos e que as palavras guardam códigos secretos, essa disciplina da numerologia cabalística convida-nos a enxergar o mundo com olhos mais atentos e conscientes.
 
