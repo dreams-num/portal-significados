@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A Fórmula Simbólica das Palavras IAO e INRI: A Gematria das Palavras Sagradas"
+title: "A Fórmula Simbólica das Palavras IAO e INRI"
 card_title: "Fórmulas IAO e INRI"
 description: "Compreenda o significado alfanumérico e espiritual das fórmulas sagradas IAO e INRI através da Gematria, Tarô e Cabala."
 category: gematria
@@ -11,7 +11,7 @@ category_name: Gematria
 # A Fórmula Simbólica das Palavras IAO e INRI: A Gematria das Palavras Sagradas
 
 <figure style="margin: 25px 0; text-align: center;">
-        <img src="{{ '/assets/images/formula-simb.jpg' | relative_url }}" alt="Palavras IAO e INRI: A Gematria das Palavras Sagradas" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
+        <img src="{{ '/assets/images/formula-simb.jpg' | relative_url }}" alt="Uma cruz iluminada em tom dourado com uma rosa no centro e a alavra IAO na base e a palavra INRI no topo da cruz" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
     </figure>
 
 Na tradição esotérica ocidental e no estudo da Qabalah, as palavras sagradas não são meras combinações de sons ou nomes históricos. Elas são consideradas verdadeiras fórmulas matemáticas e vibracionais, compostas por letras que carregam forças astronômicas, energias elementais e leis espirituais. Quando analisadas através da Gematria, a arte cabalística de decodificar o valor numérico das letras, essas palavras revelam segredos profundos sobre a criação, a destruição e a evolução da consciência humana.
