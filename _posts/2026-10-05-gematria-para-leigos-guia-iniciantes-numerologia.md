@@ -8,10 +8,10 @@ category_slug: gematria
 category_name: Gematria
 ---
 
-# Gematria para Leigos: Como Calcular e Entender a Numerologia das Palavras
+# Gematria para Leigos: Como Calcular e Entender
 
 <figure style="margin: 25px 0; text-align: center;">
-        <img src="{{ '/assets/images/gematria-leigos.jpg' | relative_url }}" alt="Como Calcular e Entender a Numerologia das Palavras" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
+        <img src="{{ '/assets/images/gematria-leigos.jpg' | relative_url }}" alt="Um livro aberto sobre uma mesa com uma bússula sobre uma das páginas" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
     </figure>
 
 
