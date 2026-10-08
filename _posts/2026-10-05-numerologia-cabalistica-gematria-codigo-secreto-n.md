@@ -11,7 +11,7 @@ category_name: Gematria
 # Numerologia Cabalística e Gematria: O Código Secreto dos Nomes e Palavras
 
  <figure style="margin: 25px 0; text-align: center;">
-        <img src="{{ 'assets/images/codigo-secreto.jpg' | relative_url }}" alt="O Significado dos Anjo Números nos Sonhos e a Visão de Carl Jung" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
+        <img src="{{ 'assets/images/codigo-secreto.jpg' | relative_url }}" alt="Um livro antigo aberto sobre uma mesa e acima dele codigos dourandos em hebraico flutuando" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
  </figure>
 
 A ideia de que as palavras carregam uma força invisível e que os nomes possuem um destino traçado é uma das intuições mais antigas da história humana. Na tradição mística ocidental, essa visão ganha precisão matemática por meio da Gematria, a ciência mística e alfanumérica que integra a Qabalah (a Cabala hebraica). Longe de ser apenas um jogo de adivinhação, a Gematria é um método profundo para compreender como o universo foi estruturado através da linguagem e dos números.
