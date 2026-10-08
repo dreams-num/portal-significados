@@ -11,7 +11,7 @@ category_name: Gematria
 # Gematria Prática: Decodificando o Significado Sagrado dos Nomes e Palavras
 
 <figure style="margin: 25px 0; text-align: center;">
-        <img src="{{ '/assets/images/nomes-sagrados.jpg' | relative_url }}" alt="Decodificando o Significado Sagrado dos Nomes e Palavras" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
+        <img src="{{ '/assets/images/nomes-sagrados.jpg' | relative_url }}" alt="Uma sala de um templo com colunas com mesa antiga de rocha com inscrições e sobre ela letras do alfabeto hebraico flutuando na cor dourada" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
     </figure>
 
 A curiosidade em relação ao significado oculto das palavras e ao impacto dos números em nossas vidas acompanha a humanidade desde a Antiguidade. Na tradição ocidental do misticismo, a Gematria destaca-se como um dos métodos mais fascinantes de investigação simbólica. Ela funciona como um sistema de numerologia cabalística que revela a arquitetura matemática por trás da linguagem sagrada.
