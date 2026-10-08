@@ -2,7 +2,7 @@
 layout: post
 title: "Sonhar com Dinheiro e Abundância: Prosperidade Material, Recursos Internos e Alertas"
 card_title: "Sonhar com Dinheiro e Abundância"
-description:"Explore o significado psicológico e espiritual de sonhar com dinheiro. Descubra alertas sobre prosperidade, autoestima, escassez e recursos internos."
+description: "Explore o significado psicológico e espiritual de sonhar com dinheiro. Descubra alertas sobre prosperidade, autoestima, escassez e recursos internos."
 category: sonhos
 category_slug: sonhos
 category_name: sonhos
