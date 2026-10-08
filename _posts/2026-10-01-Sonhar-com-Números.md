@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Sonhar com Números: O Significado dos Números Angelicais nos Sonhos e a Visão de Carl Jung"
+title: "Sonhar com Números: O Significado dos Números Angélicos nos Sonhos e a Visão de Carl Jung"
 card_title: "Sonhar com Números"
 description: "Descubra o significado de sonhar com números. Uma análise profunda sobre os Números Angelicais, a função prospectiva dos sonhos e a visão de Carl Jung."
 category: numeros
@@ -8,10 +8,10 @@ category_slug: numeros
 category_name: "numeros"
 ---
 
-# Sonhar com Números: O Significado dos Anjo Números nos Sonhos e a Visão de Carl Jung
+# Sonhar com Números: O Significado e a Visão de Carl Jung
 
 <figure style="margin: 25px 0; text-align: center;">
-        <img src="{{ '/assets/images/sonhando-numeros.jpg' | relative_url }}" alt="O Significado dos Anjo Números nos Sonhos e a Visão de Carl Jung" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
+        <img src="{{ '/assets/images/sonhando-numeros.jpg' | relative_url }}" alt="Uma mulher deitada dormindo e próximo a ela varios números dourados flutuando" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
     </figure>
 
 Durante as horas de vigília no mundo desperto, a nossa mente racional está constantemente ocupada com tarefas, estímulos sensoriais e preocupações do cotidiano. Em virtude dessa sobrecarga de informações, as barreiras do ego e os filtros do pensamento lógico frequentemente ignoram os sinais sutis e as sincronicidades que os anjos da guarda e o universo tentam nos enviar. Contudo, quando adormecemos, o cenário muda drasticamente: o ruído do mundo externo silencia, o ego relaxa as suas defesas e o canal de comunicação entre a consciência e o inconsciente profundo abre-se plenamente.
@@ -35,7 +35,7 @@ Jung formulou então a célebre teoria da **função prospectiva dos sonhos** (p
 Jung estabeleceu uma distinção clara entre dois tipos de experiências noturnas: os "pequenos sonhos" (little dreams) e os "grandes sonhos" (big dreams ou sonhos arquetípicos).
 
 *   **Pequenos Sonhos:** São fragmentos da rotina diária, resíduos de conversas e preocupações superficiais do ego que tendem a ser esquecidos poucos minutos após o despertar.
-*   **Grandes Sonhos:** São eventos psíquicos profundos, carregados de uma atmosfera solene, numinosa e vívida. Eles não nascem do inconsciente pessoal, mas sim do **inconsciente coletivo** — a camada mais profunda da psique humana que abriga os arquétipos universais e a energia sincrônica que conecta toda a criação.
+*   **Grandes Sonhos:** São eventos psíquicos profundos, carregados de uma atmosfera solene, numinosa e vívida. Eles não nascem do inconsciente pessoal, mas sim do **inconsciente coletivo**, a camada mais profunda da psique humana que abriga os arquétipos universais e a energia sincrônica que conecta toda a criação.
 
 Os sonhos numéricos enquadram-se quase sempre na categoria dos grandes sonhos. Eles ligam a mente consciente à sabedoria ancestral da alma, transmitindo mensagens que não são esquecidas ao longo de toda a vida. São o ponto de encontro exato entre o ser humano e o divino.
 
