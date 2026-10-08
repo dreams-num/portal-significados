@@ -80,21 +80,19 @@ const TABELA_HEBRAICA = {
     'X': { heb: 'ש', val: 300 },'J': { heb: 'י', val: 10 }
 };
 
-// Dados Expandidos com base em GEMATRIA.pdf (Liber LVIII)
 const SEFIROTH_DADOS = {
     1: { nome: 'Kether (Coroa)', divino: 'Eheieh (Eu Sou)', anjo: 'Chaioth ha-Qadesh', elemento: 'Luz Primordial', conselho: 'Sua frequência conecta você ao propósito mais elevado e à inspiração originária.' },
-    2: { nome: 'Chokmah (Sabedoria)', divino: 'Yah / IHVH', anjo: 'Auphanim (Rodas)', elemento: 'Esfera Estelar / Zodíaco', conselho: 'Confie na sua intuição pura e nos insights espontâneos que surgem antes da razão.' },
-    3: { nome: 'Binah (Entendimento)', divino: 'IHVH Elohim', anjo: 'Aralim (Tronos)', elemento: 'Saturno / Matriz Estrutural', conselho: 'É momento de dar estrutura, disciplina e limites saudáveis aos seus projetos.' },
-    4: { nome: 'Chesed (Misericórdia)', divino: 'El', anjo: 'Chashmalim (Luminosos)', elemento: 'Júpiter / Expansão e Amor', conselho: 'A generosidade e a visão abundante abrirão caminhos de prosperidade.' },
-    5: { nome: 'Geburah (Força / Justiça)', divino: 'Elohim Gibor', anjo: 'Seraphim (Lamejantes)', elemento: 'Marte / Fogo Purificador', conselho: 'Aja com coragem, elimine o excesso e defenda sua verdade com firmeza.' },
+    2: { nome: 'Chokmah (Sabedoria)', divino: 'Yah / IHVH', anjo: 'Auphanim (Rodas)', elemento: 'Esfera Estelar', conselho: 'Confie na sua intuição pura e nos insights espontâneos que surgem antes da razão.' },
+    3: { nome: 'Binah (Entendimento)', divino: 'IHVH Elohim', anjo: 'Aralim (Tronos)', elemento: 'Saturno / Matriz', conselho: 'É momento de dar estrutura, disciplina e limites saudáveis aos seus projetos.' },
+    4: { nome: 'Chesed (Misericórdia)', divino: 'El', anjo: 'Chashmalim', elemento: 'Júpiter / Expansão', conselho: 'A generosidade e a visão abundante abrirão caminhos de prosperidade.' },
+    5: { nome: 'Geburah (Força / Justiça)', divino: 'Elohim Gibor', anjo: 'Seraphim', elemento: 'Marte / Fogo Purificador', conselho: 'Aja com coragem, elimine o excesso e defenda sua verdade com firmeza.' },
     6: { nome: 'Tiphareth (Beleza)', divino: 'Eloah Va Daath', anjo: 'Melakim (Reis)', elemento: 'Sol / Centro de Equilíbrio', conselho: 'Busque o equilíbrio do coração; você é o centro radiante da sua própria jornada.' },
-    7: { nome: 'Netzach (Vitória)', divino: 'IHVH Tzabaoth', anjo: 'Tharshishim (Brilhantes)', elemento: 'Vênus / Criatividade', conselho: 'Persevere através da arte, da emoção e do cultivo de relacionamentos harmoniosos.' },
-    8: { nome: 'Hod (Esplendor)', divino: 'Elohim Tzabaoth', anjo: 'Beni Elohim (Filhos de Deus)', elemento: 'Mercúrio / Intelecto', conselho: 'Organize suas ideias, estude e comunique suas verdades com clareza.' },
+    7: { nome: 'Netzach (Vitória)', divino: 'IHVH Tzabaoth', anjo: 'Tharshishim', elemento: 'Vênus / Criatividade', conselho: 'Persevere através da arte, da emoção e do cultivo de relacionamentos harmoniosos.' },
+    8: { nome: 'Hod (Esplendor)', divino: 'Elohim Tzabaoth', anjo: 'Beni Elohim', elemento: 'Mercúrio / Intelecto', conselho: 'Organize suas ideias, estude e comunique suas verdades com clareza.' },
     9: { nome: 'Yesod (Fundamento)', divino: 'Shadai / El Chai', anjo: 'Aishim (Chamas)', elemento: 'Lua / Inconsciente e Astral', conselho: 'Honre sua intuição e consolide suas bases emocionais antes de dar o próximo passo.' },
     10: { nome: 'Malkuth (Reino)', divino: 'Adonai ha-Aretz', anjo: 'Kerubim (Guardiões)', elemento: 'Quatro Elementos / Plano Físico', conselho: 'Materialize suas ideias na ação diária; traga o espiritual para o mundo concreto.' }
 };
 
-// Tabela de Arcanos do Tarô (1 a 22)
 const ARCANOS_TARO = {
     1: 'I - O Mago (Iniciativa)', 2: 'II - A Sacerdotisa (Intuição)', 3: 'III - A Imperatriz (Fertilidade)',
     4: 'IV - O Imperador (Estrutura)', 5: 'V - O Hierofante (Sabedoria)', 6: 'VI - Os Enamorados (Escolha)',
@@ -134,9 +132,8 @@ function calcularAstro() {
     const divErro = document.getElementById('as_erro');
     const divResultado = document.getElementById('as_resultado');
 
-    // Validação da Data DD/MM/AAAA
     const partesData = dataInput.split('/');
-    if (!nomeInput || partesData.length !== 3 || partesData.length !== 2 || partesData.length !== 2 || partesData.length !== 4) {
+    if (!nomeInput || partesData.length !== 3 || partesData[0].length !== 2 || partesData[1].length !== 2 || partesData[2].length !== 4) {
         divErro.innerText = "Por favor, preencha o nome completo e a data no formato DD/MM/AAAA (ex: 15/08/1990).";
         divErro.style.display = 'block';
         return;
@@ -161,9 +158,10 @@ function calcularAstro() {
         }
     }
 
-    // Soma dos dígitos da data
     let somaData = 0;
-    (partesData + partesData + partesData).split('').forEach(d => somaData += parseInt(d));
+    partesData.join('').split('').forEach(d => {
+        if (!isNaN(parseInt(d))) somaData += parseInt(d);
+    });
 
     const sefiraId = reduzirParaSefira(somaGematria + somaData);
     const sefira = SEFIROTH_DADOS[sefiraId];
