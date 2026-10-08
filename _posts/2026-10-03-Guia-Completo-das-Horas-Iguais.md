@@ -8,7 +8,7 @@ category_slug: horas-iguais
 category_name: "Horas Iguais"
 ---
 
-# O Guia Completo das Horas Iguais: O Significado Espiritual de Ver 00:00 a 23:23 no Relógio Digital
+# O Guia Completo das Horas Iguais: Vendo 00:00 a 23:23 Horas
 
  <figure style="margin: 25px 0; text-align: center;">
         <img src="{{ '/assets/images/relogio-digital.jpg' | relative_url }}" alt="Horas Iguais: O Significado Espiritual de Ver 00:00 a 23:23 no Relógio Digital" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
