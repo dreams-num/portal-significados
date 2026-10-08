@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "O Número 666 e os Quadrados Mágicos na Cabala: O Simbolismo Solar da Qabalah"
+title: "O Número 666 e os Quadrados Mágicos na Cabala"
 card_title: "O Número 666 na Cabala"
 description: "Descubra o verdadeiro significado do número 666 na Cabala e a matemática do Quadrado Mágico do Sol. Desmistifique o símbolo solar da Qabalah."
 category: gematria
@@ -11,9 +11,8 @@ category_name: Gematria
 # O Número 666 e os Quadrados Mágicos na Cabala: O Simbolismo Solar da Qabalah
 
 <figure style="margin: 25px 0; text-align: center;">
-   <img src="{{ '/assets/images/quadrados.jpg' | relative_url }}" alt="Cifras Criptográficas da Cabala" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
+   <img src="{{ '/assets/images/quadrados.jpg' | relative_url }}" alt="Um quadro dourado com cifras criptográficas da Cabala" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
 </figure>
-
 
 Poucos números despertam tanta curiosidade, receio e fascínio na cultura ocidental quanto o número 666. Frequentemente associado a presságios negativos no imaginário popular e na literatura de ficção, esse numeral possui, na verdade, uma origem matemática e espiritual completamente diversa quando analisado através da Qabalah e da numerologia esotérica clássica.
 
