@@ -11,9 +11,8 @@ category_name: Gematria
 # Os Quatro Mundos da Cabala: Da Energia Pura à Matéria
 
 <figure style="margin: 25px 0; text-align: center;">
-        <img src="{{ '/assets/images/energia-materia.jpg' | relative_url }}" alt="Decodificando o Significado Sagrado dos Nomes e Palavras" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
+        <img src="{{ '/assets/images/energia-materia.jpg' | relative_url }}" alt="um vale com montanhas e água com luzes simbolizando energia sobre o céu do vale" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
     </figure>
-
 
 Como uma ideia abstrata se transforma em um objeto físico? De onde surgem as intenções, os sentimentos e as ações que moldam a nossa vida diária? Na sabedoria mística da Qabalah, a resposta para a origem de tudo o que existe reside na doutrina dos **Quatro Mundos** (*Olahmoth*). Essa teoria cosmológica explica como a Luz Divina pura desce gradualmente por diferentes dimensões de densidade até se materializar no universo físico em que vivemos.
 
