@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Dicionário de Números Cabalísticos: O Significado Místico de 13 a 777"
+title: "Dicionário Cabalístico: O Significado Místico de 13 a 777"
 card_title: "Dicionário de Números"
 description: "Descubra o significado esotérico e as equações da Gematria para os principais números da Cabala, de 13 a 777, em um guia de consulta prática."
 category: gematria
@@ -10,13 +10,11 @@ category_name: Gematria
 
 # Dicionário de Números Cabalísticos: O Significado Místico de 13 a 777
 
-
 <figure style="margin: 25px 0; text-align: center;">
-        <img src="{{ '/assets/images/num-mistico.jpg' | relative_url }}" alt="Decodificando o Significado Sagrado dos Nomes e Palavras" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
+        <img src="{{ '/assets/images/num-mistico.jpg' | relative_url }}" alt="Vários números e mandalas douradas num fundo abstrato que simula o universo" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
     </figure>
 
-
-A busca por padrões matemáticos no tecido da realidade é uma das práticas mais fascinantes da tradição ocidental. Na Qabalah (a Cabala hebraica), os números não são meras ferramentas de contagem quantitativa, mas sim coordenadas espirituais profundas. Através da Gematria — o método de análise alfanumérica em que cada letra hebraica possui um valor numérico fixo —, palavras, nomes e conceitos abstratos revelam sua verdadeira essência matemática.
+A busca por padrões matemáticos no tecido da realidade é uma das práticas mais fascinantes da tradição ocidental. Na Qabalah (a Cabala hebraica), os números não são meras ferramentas de contagem quantitativa, mas sim coordenadas espirituais profundas. Através da Gematria, o método de análise alfanumérica em que cada letra hebraica possui um valor numérico fixo, palavras, nomes e conceitos abstratos revelam sua verdadeira essência matemática.
 
 Quando duas palavras aparentemente distintas possuem a mesma soma numérica na Gematria, a tradição cabalística estabelece que elas compartilham uma afinidade vibracional e uma conexão oculta no plano espiritual. Assim, entender o valor numérico dos termos sagrados funciona como consultar um mapa de frequências da criação.
 
@@ -148,7 +146,7 @@ O número 314 é a cifra do poder de proteção e da regência do plano angélic
 *  **Shadai (ShDI):** *Shin* (300) + *Daleth* (4) + *Yod* (10) = 314. Significa "O Todo-Poderoso".
 *  **Metatron (MTTRVN):** *Mem* (40) + *Tet* (9) + *Tet* (9) + *Resh* (200) + *Vau* (6) + *Nun* (50) = 314.
 
-Curiosamente, na matemática moderna, 314 são os três primeiros dígitos da constante **Pi** ($\pi \approx 3,14$), que governa a proporção do círculo perfeito, demonstrando como a tradição antiga antecipou símbolos da geometria sagrada.
+Curiosamente, na matemática moderna, 314 são os três primeiros dígitos da constante **Pi** (approx 3,14), que governa a proporção do círculo perfeito, demonstrando como a tradição antiga antecipou símbolos da geometria sagrada.
 
 ### O Número 358 — O Messias e a Serpente
 Este é um dos mistérios mais célebres da Gematria cabalística. O número 358 revela a transmutação da energia vital em redenção espiritual através da equivalência entre duas palavras opostas:
