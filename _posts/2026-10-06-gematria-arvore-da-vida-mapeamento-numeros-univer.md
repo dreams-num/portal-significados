@@ -11,7 +11,7 @@ category_name: Gematria
 # Gematria e a Árvore da Vida: Como os Números Mapeiam o Universo
 
 <figure style="margin: 25px 0; text-align: center;">
-        <img src="{{ '/assets/images/arvore-vida.jpg' | relative_url }}" alt="Gematria e a Árvore da Vida" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
+        <img src="{{ '/assets/images/arvore-vida.jpg' | relative_url }}" alt="A Árvore da Vida em tom dourado" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
     </figure>
 
 Quando olhamos para a natureza, para o movimento das estrelas ou para a arquitetura da matéria, percebemos que tudo no universo segue uma ordem geométrica e matemática. Na tradição mística ocidental, a Cabala (ou *Qabalah*) e a Gematria revelam que essa mesma harmonia matemática governa os estados de consciência e as leis espirituais.
