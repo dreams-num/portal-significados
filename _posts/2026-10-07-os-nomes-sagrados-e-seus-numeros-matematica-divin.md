@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Os Nomes Sagrados e Seus Números: A Matemática Divina da Bíblia"
+title: "Os Nomes Sagrados e a Matemática Divina da Bíblia"
 card_title: "Nomes Sagrados Cabala"
 description: "Descubra o valor numérico e o significado oculto dos Nomes Divinos na Cabala, do Tetragrammaton ao Shemhamphorasch."
 category: gematria
@@ -11,11 +11,10 @@ category_name: Gematria
 # Os Nomes Sagrados e Seus Números: A Matemática Divina da Bíblia
 
 <figure style="margin: 25px 0; text-align: center;">
-   <img src="{{ '/assets/images/num-biblia.jpg' | relative_url }}" alt="A Conexão Sagrada entre as 22 Letras e os Arcanos Maiores" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
+   <img src="{{ '/assets/images/num-biblia.jpg' | relative_url }}" alt="Um livro antigo aberto sobre uma mesa com letras hebraicas em cor dourada flutuando sobre o livro" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
 </figure>
 
-
-Na tradição esotérica ocidental e no estudo da Qabalah, as palavras não são meras combinações arbitrárias de sons para designar objetos ou conceitos. Elas são consideradas forças vibracionais e matrizes geométricas que estruturam a própria realidade. Quando os sábios cabalistas examinaram os textos sagrados das escrituras antigas, perceberam que cada Nome Divino — as diferentes formas como o Criador se revela na Bíblia — carrega um valor numérico exato através da Gematria.
+Na tradição esotérica ocidental e no estudo da Qabalah, as palavras não são meras combinações arbitrárias de sons para designar objetos ou conceitos. Elas são consideradas forças vibracionais e matrizes geométricas que estruturam a própria realidade. Quando os sábios cabalistas examinaram os textos sagrados das escrituras antigas, perceberam que cada Nome Divino, as diferentes formas como o Criador se revela na Bíblia, carrega um valor numérico exato através da Gematria.
 
 Essa "matemática divina" revela que os nomes de Deus não foram escolhidos ao acaso. Cada título sagrado funciona como uma chave de sintonização espiritual que descreve uma função cosmológica, um atributo da consciência ou um estado da natureza. Ao somar o valor numérico das letras de um nome em hebraico, o estudante da numerologia cabalística descobre equações ocultas que conectam conceitos teológicos profundos a princípios matemáticos universais.
 
