@@ -4,170 +4,188 @@ title: "Astrogematria Hebraica e Sefirot | Portal Significados"
 description: "Descubra seu nome em hebraico, a Sefirot regente e os ciclos cósmicos de forma gratuita."
 ---
 
-<main class="container post-container">
-    <div class="breadcrumbs">
-        <a href="{{ '/' | relative_url }}">Início</a> &gt; 
-        <a href="{{ '/calculadoras/' | relative_url }}">Calculadoras</a> &gt; 
-        <span>Astrogematria Hebraica</span>
+<article class="post-content">
+    <h1 style="text-align: center; color: #d4af37; margin-bottom: 5px;">✦ Astrogematria Hebraica ✦</h1>
+    <p style="text-align: center; color: #f3e5ab; font-style: italic; margin-bottom: 1.5rem;">O Nome, as Sefirot e os Ciclos Cósmicos</p>
+
+    <!-- FORMULÁRIO -->
+    <div style="background: #12101a; border: 1px solid rgba(212, 175, 55, 0.35); border-radius: 8px; padding: 25px; margin-bottom: 25px;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 15px; margin-bottom: 20px;">
+            <div style="display: flex; flex-direction: column; gap: 5px;">
+                <label style="color: #f3e5ab; font-size: 0.85rem; font-weight: bold;">Nome Completo</label>
+                <input type="text" id="as_nome" placeholder="Ex: Maria da Silva" style="background: #0d0b14; border: 1px solid #444; color: #fff; padding: 10px; border-radius: 6px; width: 100%; box-sizing: border-box; outline: none;"/>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 5px;">
+                <label style="color: #f3e5ab; font-size: 0.85rem; font-weight: bold;">Data de Nascimento</label>
+                <input type="date" id="as_nascimento" style="background: #0d0b14; border: 1px solid #444; color: #fff; padding: 10px; border-radius: 6px; width: 100%; box-sizing: border-box; outline: none; color-scheme: dark;"/>
+            </div>
+        </div>
+
+        <div style="display: flex; gap: 10px; flex-wrap: wrap; border-top: 1px solid rgba(212, 175, 55, 0.2); padding-top: 20px; margin-top: 10px;">
+            <button onclick="calcularAstro()" style="background: #d4af37; color: #12101a; border: none; font-weight: bold; cursor: pointer; padding: 12px 25px; font-size: 0.95rem; border-radius: 6px; transition: opacity 0.2s; width: 100%;">
+                ✦ Calcular Astrogematria Hebraica
+            </button>
+        </div>
+        <div id="as_erro" style="color: #ff6b6b; font-style: italic; margin-top: 12px; display: none; font-size: 0.9rem; text-align: center;">
+            Por favor, preencha o nome e a data de nascimento.
+        </div>
     </div>
 
-    <article class="post-content">
-        <h1 style="text-align: center;">✦ Astrogematria Hebraica ✦</h1>
-        <p style="text-align: center; color: #d4af37; font-style: italic; margin-bottom: 1.5rem;">O Nome, as Sefirot e os Ciclos Cósmicos</p>
+    <!-- CARREGAMENTO ESPIRITUAL (EFEITO VISUAL) -->
+    <div id="as_loading" style="display: none; text-align: center; padding: 20px; color: #d4af37; font-style: italic;">
+        ✦ Mapeando letras hebraicas e energias cósmicas...
+    </div>
 
-        <!-- FORMULÁRIO -->
-        <div style="background: #12101a; border: 1px solid rgba(212, 175, 55, 0.35); border-radius: 8px; padding: 25px; margin-bottom: 25px;">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 15px; margin-bottom: 20px;">
-                <div style="display: flex; flex-direction: column; gap: 5px;">
-                    <label style="color: #f3e5ab; font-size: 0.85rem; font-weight: bold;">Nome Completo</label>
-                    <input type="text" id="as_nome" placeholder="Ex: Maria da Silva" style="background: #0d0b14; border: 1px solid #444; color: #fff; padding: 10px; border-radius: 6px; width: 100%; box-sizing: border-box; outline: none;"/>
-                </div>
-                <div style="display: flex; flex-direction: column; gap: 5px;">
-                    <label style="color: #f3e5ab; font-size: 0.85rem; font-weight: bold;">Data de Nascimento</label>
-                    <input type="date" id="as_nascimento" style="background: #0d0b14; border: 1px solid #444; color: #fff; padding: 10px; border-radius: 6px; width: 100%; box-sizing: border-box; outline: none; color-scheme: dark;"/>
-                </div>
-            </div>
-
-            <div style="display: flex; gap: 10px; flex-wrap: wrap; border-top: 1px solid rgba(212, 175, 55, 0.2); padding-top: 20px; margin-top: 10px;">
-                <button onclick="calcularAstro()" style="background: #d4af37; color: #12101a; border: none; font-weight: bold; cursor: pointer; padding: 12px 25px; font-size: 0.95rem; border-radius: 6px; transition: opacity 0.2s;">✦ Calcular Astrogematria Hebraica</button>
-            </div>
-            <div id="as_erro" style="color: #ff6b6b; font-style: italic; margin-top: 12px; display: none; font-size: 0.9rem;">Por favor, preencha o nome e a data de nascimento.</div>
+    <!-- RESULTADO -->
+    <div id="as_resultado" style="display: none; margin-top: 30px;">
+        <div style="text-align: center; padding: 25px 15px; background: radial-gradient(circle, rgba(212,175,55,0.08) 0%, rgba(18,16,26,0.8) 100%); border: 1px solid rgba(212, 175, 55, 0.35); border-radius: 8px; margin-bottom: 25px;">
+            <div id="as_res_nome" style="color: #f3e5ab; font-size: 1.8rem; font-weight: bold; margin-bottom: 5px;"></div>
+            <div style="color: #c0c0c0; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em;">Valor Guematria Hebraica</div>
+            <div id="as_res_valor" style="font-size: 3.8rem; color: #d4af37; font-weight: bold; line-height: 1.1; margin: 5px 0;">0</div>
+            <div id="as_res_detalhes_num" style="color: #f3e5ab; font-size: 0.95rem;"></div>
         </div>
 
-        <!-- RESULTADO -->
-        <div id="as_resultado" style="display: none; margin-top: 30px;">
-            <div style="text-align: center; padding: 25px 0; border-bottom: 2px solid rgba(212, 175, 55, 0.35); margin-bottom: 25px;">
-                <div id="as_res_nome" style="color: #f3e5ab; font-size: 1.8rem; font-weight: bold; margin-bottom: 5px;"></div>
-                <div style="color: #c0c0c0; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em;">Valor Guematria Hebraica</div>
-                <div id="as_res_valor" style="font-size: 3.5rem; color: #d4af37; font-weight: bold; line-height: 1.1; margin: 5px 0;"></div>
-                <div id="as_res_detalhes_num" style="color: #f3e5ab; font-size: 0.95rem;"></div>
-            </div>
+        <h2 style="color: #d4af37; font-size: 1.2rem; border-bottom: 1px solid rgba(212, 175, 55, 0.2); padding-bottom: 5px; margin-top: 25px;">Posição Cósmica e Sefirá do Nome</h2>
+        <div id="as_cards_grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin: 15px 0;"></div>
 
-            <h2 style="color: #d4af37; font-size: 1.2rem; border-bottom: 1px solid rgba(212, 175, 55, 0.2); padding-bottom: 5px; margin-top: 25px;">Posição Cósmica e Sefirá do Nome</h2>
-            <div id="as_cards_grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin: 15px 0;"></div>
-
-            <h2 style="color: #d4af37; font-size: 1.2rem; border-bottom: 1px solid rgba(212, 175, 55, 0.2); padding-bottom: 5px; margin-top: 25px;">Conselho da Tradição para o seu Momento</h2>
-            <div style="background: #12101a; border: 1px solid #d4af37; border-radius: 8px; padding: 20px; margin: 15px 0; text-align: center;">
-                <div style="color: #d4af37; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 8px; font-weight: bold;">✦ Mensagem Cabalística ✦</div>
-                <div id="as_conselho" style="color: #f3e5ab; font-style: italic; font-size: 1.05rem; line-height: 1.6;"></div>
-            </div>
-
-            <h2 style="color: #d4af37; font-size: 1.2rem; border-bottom: 1px solid rgba(212, 175, 55, 0.2); padding-bottom: 5px; margin-top: 25px;">Decomposição das Letras no Hebraico</h2>
-            <div style="background: #12101a; border: 1px solid rgba(212, 175, 55, 0.35); border-radius: 8px; padding: 20px; margin: 15px 0; overflow-x: auto;">
-                <div id="as_letras_container" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;"></div>
-            </div>
+        <h2 style="color: #d4af37; font-size: 1.2rem; border-bottom: 1px solid rgba(212, 175, 55, 0.2); padding-bottom: 5px; margin-top: 25px;">Conselho da Tradição para o seu Momento</h2>
+        <div style="background: #12101a; border: 1px solid #d4af37; border-radius: 8px; padding: 20px; margin: 15px 0; text-align: center;">
+            <div style="color: #d4af37; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 8px; font-weight: bold;">✦ Mensagem Cabalística ✦</div>
+            <div id="as_conselho" style="color: #f3e5ab; font-style: italic; font-size: 1.05rem; line-height: 1.6;"></div>
         </div>
-    </article>
-</main>
 
+        <h2 style="color: #d4af37; font-size: 1.2rem; border-bottom: 1px solid rgba(212, 175, 55, 0.2); padding-bottom: 5px; margin-top: 25px;">Decomposição das Letras no Hebraico</h2>
+        <div style="background: #12101a; border: 1px solid rgba(212, 175, 55, 0.35); border-radius: 8px; padding: 20px; margin: 15px 0; overflow-x: auto;">
+            <div id="as_letras_container" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;"></div>
+        </div>
+
+        <!-- COMPARTILHAMENTO -->
+        <div style="text-align: center; margin-top: 25px;">
+            <button onclick="copiarResumoGematria()" style="background: transparent; color: #d4af37; border: 1px solid #d4af37; padding: 10px 20px; font-size: 0.9rem; font-weight: bold; border-radius: 6px; cursor: pointer; transition: background 0.2s;">
+                📋 Copiar Resultado para Compartilhar
+            </button>
+        </div>
+    </div>
+</article>
+
+<!-- JAVASCRIPT OTIMIZADO E COMPATÍVEL -->
 <script>
 const TABELA_HEBRAICA = {
-  'A':{valor:1,hebraico:'א',nome:'Alef'},'E':{valor:1,hebraico:'א',nome:'Alef'},
-  'B':{valor:2,hebraico:'ב',nome:'Bet'},'V':{valor:2,hebraico:'ב',nome:'Vet'},
-  'G':{valor:3,hebraico:'ג',nome:'Guimel'},'D':{valor:4,hebraico:'ד',nome:'Dalet'},
-  'H':{valor:5,hebraico:'ה',nome:'Hê'},'O':{valor:6,hebraico:'ו',nome:'Vav'},
-  'U':{valor:6,hebraico:'ו',nome:'Vav'},'Z':{valor:7,hebraico:'ז',nome:'Zayin'},
-  'X':{valor:8,hebraico:'ח',nome:'Chet'},'T':{valor:9,hebraico:'ט',nome:'Tet'},
-  'I':{valor:10,hebraico:'י',nome:'Yod'},'Y':{valor:10,hebraico:'י',nome:'Yod'},
-  'C':{valor:20,hebraico:'כ',nome:'Caf'},'K':{valor:20,hebraico:'כ',nome:'Caf'},
-  'Q':{valor:20,hebraico:'כ',nome:'Caf'},'L':{valor:30,hebraico:'ל',nome:'Lamed'},
-  'M':{valor:40,hebraico:'מ',nome:'Mem'},'N':{valor:50,hebraico:'נ',nome:'Nun'},
-  'S':{valor:60,hebraico:'ס',nome:'Samech'},'P':{valor:80,hebraico:'פ',nome:'Pê'},
-  'F':{valor:80,hebraico:'פ',nome:'Fê'},'R':{valor:200,hebraico:'ר',nome:'Resh'},
-  'J':{valor:300,hebraico:'ש',nome:'Shin'},'W':{valor:400,hebraico:'ת',nome:'Tav'},
+    'A': { heb: 'א', val: 1 },  'B': { heb: 'ב', val: 2 },  'V': { heb: 'ו', val: 6 },
+    'G': { heb: 'ג', val: 3 },  'D': { heb: 'ד', val: 4 },  'E': { heb: 'ה', val: 5 },
+    'Z': { heb: 'ז', val: 7 },  'H': { heb: 'ח', val: 8 },  'T': { heb: 'ט', val: 9 },
+    'I': { heb: 'י', val: 10 }, 'Y': { heb: 'י', val: 10 }, 'K': { heb: 'כ', val: 20 },
+    'L': { heb: 'ל', val: 30 }, 'M': { heb: 'מ', val: 40 }, 'N': { heb: 'נ', val: 50 },
+    'S': { heb: 'ס', val: 60 }, 'O': { heb: 'ע', val: 70 }, 'P': { heb: 'פ', val: 80 },
+    'F': { heb: 'פ', val: 80 }, 'C': { heb: 'ק', val: 100 },'Q': { heb: 'ק', val: 100 },
+    'R': { heb: 'ר', val: 200 },'U': { heb: 'ו', val: 6 },  'W': { heb: 'ו', val: 6 },
+    'X': { heb: 'ש', val: 300 },'J': { heb: 'י', val: 10 }
 };
 
-const SIGNOS=[
-  {nome:'Áries',simbolo:'♈',inicio:0,fim:30,elemento:'Fogo',regente:'Marte'},
-  {nome:'Touro',simbolo:'♉',inicio:30,fim:60,elemento:'Terra',regente:'Vênus'},
-  {nome:'Gêmeos',simbolo:'♊',inicio:60,fim:90,elemento:'Ar',regente:'Mercúrio'},
-  {nome:'Câncer',simbolo:'♋',inicio:90,fim:120,elemento:'Água',regente:'Lua'},
-  {nome:'Leão',simbolo:'♌',inicio:120,fim:150,elemento:'Fogo',regente:'Sol'},
-  {nome:'Virgem',simbolo:'♍',inicio:150,fim:180,elemento:'Terra',regente:'Mercúrio'},
-  {nome:'Libra',simbolo:'♎',inicio:180,fim:210,elemento:'Ar',regente:'Vênus'},
-  {nome:'Escorpião',simbolo:'♏',inicio:210,fim:240,elemento:'Água',regente:'Marte'},
-  {nome:'Sagitário',simbolo:'♐',inicio:240,fim:270,elemento:'Fogo',regente:'Júpiter'},
-  {nome:'Capricórnio',simbolo:'♑',inicio:270,fim:300,elemento:'Terra',regente:'Saturno'},
-  {nome:'Aquário',simbolo:'♒',inicio:300,fim:330,elemento:'Ar',regente:'Urano'},
-  {nome:'Peixes',simbolo:'♓',inicio:330,fim:360,elemento:'Água',regente:'Netuno'},
-];
-
-const SEFIROT={
-  1:{nome:'Kether',planeta:'Urano',significado:'Coroa divina — princípio, unidade e forte intuição espiritual',conselho:'Confie na sua intuição original. Sincronicidades e números iguais que você vê são marcos do seu despertar.'},
-  2:{nome:'Chokmah',planeta:'Netuno',significado:'Sabedoria primordial — visão ampla e inspiração sutil',conselho:'Busque expandir sua consciência através da arte e dos sonhos. Sua sensibilidade é um farol.'},
-  3:{nome:'Binah',planeta:'Saturno',significado:'Compreensão profunda — estrutura, paciência e aprendizado',conselho:'Use sua capacidade de análise para estruturar seus projetos de vida com paciência e foco.'},
-  4:{nome:'Chesed',planeta:'Júpiter',significado:'Misericórdia — expansão, generosidade e abundância',conselho:'Seja generoso com seus talentos. O universo recompensa quem compartilha sabedoria.'},
-  5:{nome:'Gevurah',planeta:'Marte',significado:'Força e rigor — coragem, superação e limites',conselho:'Aprenda a impor limites com amor. Seus desafios são degraus para sua verdadeira força.'},
-  6:{nome:'Tipheret',planeta:'Sol',significado:'Beleza e harmonia — centro do ser e alinhamento',conselho:'Cultive o equilíbrio entre dar e receber. Você é um ponto de harmonia no ambiente.'},
-  7:{nome:'Netzach',planeta:'Vênus',significado:'Vitória e desejo — amor, criatividade e paixão',conselho:'Siga sua paixão artística ou intuitiva sem culpa. A beleza que você cria cura.'},
-  8:{nome:'Hod',planeta:'Mercúrio',significado:'Esplendor — intelecto, escrita e comunicação',conselho:'Suas palavras têm poder de manifestação. Use a comunicação para inspirar outros.'},
-  9:{nome:'Yesod',planeta:'Lua',significado:'Fundação — conexão onírica, sonhos e ciclos emocionais',conselho:'Preste muita atenção aos seus sonhos e intuições. O plano invisível conversa com você.'},
-  11:{nome:'Daat',planeta:'Oculto',significado:'Conhecimento oculto — mestre espiritual e percepção',conselho:'Você carrega uma visão profunda que poucos compreendem. Confie na sua intuição avançada.'},
-  22:{nome:'Kether–Malkuth',planeta:'Todos',significado:'O caminho completo — construtor de realidades',conselho:'Você veio para materializar grandes ideias e inspirar coletivamente.'}
+const SEFIROTH_DADOS = {
+    1: { nome: 'Kether (Coroa)', elemento: 'Luz Primordial / Arquetípico', conselho: 'Sua frequência conecta você ao propósito mais elevado e à inspiração originária.' },
+    2: { nome: 'Chokmah (Sabedoria)', elemento: 'Zodíaco / Esfera Estelar', conselho: 'Confie na sua intuição pura e nos insights espontâneos que surgem antes da razão.' },
+    3: { nome: 'Binah (Entendimento)', elemento: 'Saturno / Matriz Estrutural', conselho: 'É momento de dar estrutura, disciplina e limites saudáveis aos seus projetos.' },
+    4: { nome: 'Chesed (Misericórdia)', elemento: 'Júpiter / Expansão e Amor', conselho: 'A generosidade e a visão abundante abrirão caminhos de prosperidade.' },
+    5: { nome: 'Geburah (Força / Justiça)', elemento: 'Marte / Fogo Purificador', conselho: 'Aja com coragem, elimine o excesso e defenda sua verdade com firmeza.' },
+    6: { nome: 'Tiphareth (Beleza)', elemento: 'Sol / Centro de Equilíbrio', conselho: 'Busque o equilíbrio do coração; você é o centro radiante da sua própria jornada.' },
+    7: { nome: 'Netzach (Vitória)', elemento: 'Vênus / Criatividade', conselho: 'Persevere através da arte, da emoção e do cultivo de relacionamentos harmoniosos.' },
+    8: { nome: 'Hod (Esplendor)', elemento: 'Mercúrio / Intelecto', conselho: 'Organize suas ideias, estude e comunique suas verdades com clareza.' },
+    9: { nome: 'Yesod (Fundamento)', elemento: 'Lua / Inconsciente e Astral', conselho: 'Honre sua intuição e consolide suas bases emocionais antes de dar o próximo passo.' },
+    10: { nome: 'Malkuth (Reino)', elemento: 'Quatro Elementos / Plano Físico', conselho: 'Materialize suas ideias na ação diária; traga o espiritual para o mundo concreto.' }
 };
 
-function removerAcentos(s){return s.normalize('NFD').replace(/[\u0300-\u036f]/g,'');}
-function reduzir(n){while(n>9&&n!==11&&n!==22){n=String(n).split('').reduce((a,d)=>a+Number(d),0);}return n;}
+function normalizarTexto(txt) {
+    return txt.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase();
+}
 
-function calcularAstro(){
-  const nomeInput = document.getElementById('as_nome').value.trim();
-  const dataInput = document.getElementById('as_nascimento').value;
-  const erro = document.getElementById('as_erro');
-
-  if(!nomeInput || !dataInput){ erro.style.display = 'block'; return; }
-  erro.style.display = 'none';
-
-  const nl = removerAcentos(nomeInput).toUpperCase().replace(/[^A-Z]/g,'');
-  let valorBruto = 0;
-  const detalhes = [];
-
-  for(const l of nl){
-    if(TABELA_HEBRAICA[l]){
-      valorBruto += TABELA_HEBRAICA[l].valor;
-      detalhes.push({letra: l, ...TABELA_HEBRAICA[l]});
+function reduzirParaSefira(num) {
+    while (num > 10) {
+        let soma = 0;
+        String(num).split('').forEach(d => soma += parseInt(d));
+        num = soma;
     }
-  }
+    return num === 0 ? 10 : num;
+}
 
-  const grauTotal = valorBruto % 360;
-  const signo = SIGNOS.find(s => grauTotal >= s.inicio && grauTotal < s.fim) || SIGNOS[0];
-  const numSefira = reduzir(valorBruto);
-  const sefira = SEFIROT[numSefira] || SEFIROT[1];
+// MANTÉM O NOME ORIGINAL DA FUNÇÃO: calcularAstro()
+function calcularAstro() {
+    const nomeInput = document.getElementById('as_nome').value.trim();
+    const dataInput = document.getElementById('as_nascimento').value;
+    const divErro = document.getElementById('as_erro');
+    const divLoading = document.getElementById('as_loading');
+    const divResultado = document.getElementById('as_resultado');
 
-  document.getElementById('as_res_nome').innerText = nomeInput;
-  document.getElementById('as_res_valor').innerText = valorBruto;
-  document.getElementById('as_res_detalhes_num').innerText = `Sefirá Regente: ${numSefira} (${sefira.nome}) · Grau: ${grauTotal}°`;
+    if (!nomeInput || !dataInput) {
+        divErro.style.display = 'block';
+        return;
+    }
+    divErro.style.display = 'none';
 
-  document.getElementById('as_cards_grid').innerHTML = `
-    <div style="background: #12101a; border: 1px solid rgba(212, 175, 55, 0.35); border-radius: 8px; padding: 20px;">
-      <div style="color: #d4af37; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; font-weight: bold; margin-bottom: 5px;">Signo Cabalístico</div>
-      <div style="font-size: 1.5rem; color: #f3e5ab; font-weight: bold; margin-bottom: 5px;">${signo.simbolo} ${signo.nome}</div>
-      <div style="font-size: 0.9rem; color: #c0c0c0;">Regente: ${signo.regente}</div>
-    </div>
-    <div style="background: #12101a; border: 1px solid rgba(212, 175, 55, 0.35); border-radius: 8px; padding: 20px;">
-      <div style="color: #d4af37; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; font-weight: bold; margin-bottom: 5px;">Elemento Ativo</div>
-      <div style="font-size: 1.5rem; color: #f3e5ab; font-weight: bold; margin-bottom: 5px;">${signo.elemento}</div>
-      <div style="font-size: 0.9rem; color: #c0c0c0;">Influência Elemental</div>
-    </div>
-    <div style="background: #12101a; border: 1px solid rgba(212, 175, 55, 0.35); border-radius: 8px; padding: 20px;">
-      <div style="color: #d4af37; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; font-weight: bold; margin-bottom: 5px;">Arquétipo da Sefirá</div>
-      <div style="font-size: 1.5rem; color: #f3e5ab; font-weight: bold; margin-bottom: 5px;">${sefira.nome}</div>
-      <div style="font-size: 0.9rem; color: #c0c0c0;">${sefira.significado}</div>
-    </div>
-  `;
+    divResultado.style.display = 'none';
+    if (divLoading) divLoading.style.display = 'block';
 
-  document.getElementById('as_conselho').innerText = `"${sefira.conselho}"`;
+    setTimeout(() => {
+        if (divLoading) divLoading.style.display = 'none';
+        divResultado.style.display = 'block';
 
-  document.getElementById('as_letras_container').innerHTML = detalhes.map(l => `
-    <div style="background: #0d0b14; border: 1px solid rgba(212, 175, 55, 0.25); border-radius: 6px; padding: 10px 14px; text-align: center; min-width: 55px;">
-      <div style="font-size: 1.1rem; color: #d4af37; font-weight: bold;">${l.letra}</div>
-      <div style="font-size: 1.3rem; color: #f3e5ab; margin: 2px 0;">${l.hebraico}</div>
-      <div style="font-size: 0.75rem; color: #8a7a54;">${l.nome}</div>
-      <div style="font-size: 0.85rem; color: #d4af37; margin-top: 2px;">${l.valor}</div>
-    </div>
-  `).join('');
+        const nomeTratado = normalizarTexto(nomeInput);
+        let somaGematria = 0;
+        let htmlLetras = '';
 
-  const resDiv = document.getElementById('as_resultado');
-  resDiv.style.display = 'block';
-  resDiv.scrollIntoView({ behavior: 'smooth' });
+        for (let char of nomeTratado) {
+            if (TABELA_HEBRAICA[char]) {
+                const item = TABELA_HEBRAICA[char];
+                somaGematria += item.val;
+                htmlLetras += `
+                    <div style="background: #0d0b14; border: 1px solid rgba(212, 175, 55, 0.4); border-radius: 6px; padding: 8px 12px; text-align: center; min-width: 50px;">
+                        <div style="font-size: 1.6rem; color: #d4af37; line-height: 1;">${item.heb}</div>
+                        <div style="font-size: 0.8rem; color: #fff; font-weight: bold;">${char}</div>
+                        <div style="font-size: 0.75rem; color: #aaa;">${item.val}</div>
+                    </div>
+                `;
+            }
+        }
+
+        let somaData = 0;
+        dataInput.replace(/-/g, '').split('').forEach(d => somaData += parseInt(d));
+
+        const sefiraId = reduzirParaSefira(somaGematria + somaData);
+        const sefira = SEFIROTH_DADOS[sefiraId];
+
+        document.getElementById('as_res_nome').innerText = nomeInput;
+        document.getElementById('as_res_valor').innerText = somaGematria;
+        document.getElementById('as_res_detalhes_num').innerText = `Redução da Soma do Nome: ${reduzirParaSefira(somaGematria)}`;
+
+        document.getElementById('as_cards_grid').innerHTML = `
+            <div style="background: #12101a; border: 1px solid rgba(212, 175, 55, 0.25); border-radius: 6px; padding: 15px;">
+                <div style="font-size: 0.75rem; color: #888; text-transform: uppercase;">Sefirá Regente</div>
+                <div style="font-size: 1.1rem; color: #d4af37; font-weight: bold; margin-top: 4px;">${sefira.nome}</div>
+            </div>
+            <div style="background: #12101a; border: 1px solid rgba(212, 175, 55, 0.25); border-radius: 6px; padding: 15px;">
+                <div style="font-size: 0.75rem; color: #888; text-transform: uppercase;">Correspondência Cosmológica</div>
+                <div style="font-size: 1.1rem; color: #d4af37; font-weight: bold; margin-top: 4px;">${sefira.elemento}</div>
+            </div>
+            <div style="background: #12101a; border: 1px solid rgba(212, 175, 55, 0.25); border-radius: 6px; padding: 15px;">
+                <div style="font-size: 0.75rem; color: #888; text-transform: uppercase;">Soma Cósmica Natal</div>
+                <div style="font-size: 1.1rem; color: #d4af37; font-weight: bold; margin-top: 4px;">${somaData}</div>
+            </div>
+        `;
+
+        document.getElementById('as_conselho').innerText = `"${sefira.conselho}"`;
+        document.getElementById('as_letras_container').innerHTML = htmlLetras || '<p style="color:#aaa;">Nenhuma letra hebraica padrão identificada.</p>';
+
+        divResultado.scrollIntoView({ behavior: 'smooth' });
+    }, 600);
+}
+
+function copiarResumoGematria() {
+    const nome = document.getElementById('as_res_nome').innerText;
+    const valor = document.getElementById('as_res_valor').innerText;
+    const texto = `✦ Astrogematria Hebraica ✦\nNome: ${nome}\nValor da Guematria: ${valor}\nCalcule o seu nome em nosso portal!`;
+
+    navigator.clipboard.writeText(texto).then(() => {
+        alert('Resultado copiado com sucesso! Você já pode compartilhar nas redes sociais.');
+    });
 }
 </script>
