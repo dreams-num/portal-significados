@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Como Calcular o Seu Número de Caminho de Vida e Usar a Numerologia nas 4 Escolas Ancestrais: Pitagórica, Caldeia, Cabala e Védica"
+title: "Como Calcular o Seu Número do Caminho de Vida e Usar a Numerologia nas 4 Escolas Ancestrais: Pitagórica, Caldeia, Cabala e Védica"
 card_title: "Seu Caminho de Vida"
 description: "Aprenda a calcular o seu Número de Caminho de Vida e explore as 4 escolas ancestrais da numerologia: Pitagórica, Caldeia, Cabala e Védica."
 category: numeros
@@ -8,21 +8,21 @@ category_slug: numeros
 category_name: "numeros"
 ---
 
-# Como Calcular o Seu Número de Caminho de Vida nas 4 Escolas Ancestrais
+# Como Calcular o Número do Caminho de Vida nas 4 Escolas Ancestrais
 
 <figure style="margin: 25px 0; text-align: center;">
-        <img src="{{ '/assets/images/caminho-vida.jpg' | relative_url }}" alt="Como Calcular o Seu Número de Caminho de Vida" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
+        <img src="{{ '/assets/images/caminho-vida.jpg' | relative_url }}" alt="Um arfetado em forma de mandala com letras hebraicas e numeros flutuando ao redor" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
     </figure>
 
-Na jornada do autoconhecimento e da expansão espiritual, poucas ferramentas oferecem um mapa tão preciso sobre a nossa personalidade, os nossos talentos inatos e as provações da nossa alma quanto o **Número de Caminho de Vida** (*Life Path Number*). Considerado o cálculo mais importante da numerologia contemporânea e ancestral, o Caminho de Vida revela a trajetória escolhida pela própria alma para alcançar o seu nível mais elevado de evolução nesta encarnação.
+Na jornada do autoconhecimento e da expansão espiritual, poucas ferramentas oferecem um mapa tão preciso sobre a nossa personalidade, os nossos talentos inatos e as provações da nossa alma quanto o **Número do Caminho de Vida**. Considerado o cálculo mais importante da numerologia contemporânea e ancestral, o Caminho de Vida revela a trajetória escolhida pela própria alma para alcançar o seu nível mais elevado de evolução nesta encarnação.
 
 Entretanto, a numerologia não é uma disciplina rígida ou uniforme. Ao longo dos milênios, diferentes civilizações desenvolveram abordagens próprias para decodificar os códigos matemáticos e energéticos que regem a existência. Desde os antigos templos da Índia védica até os mestres da Grécia Antiga, surgiram **quatro grandes escolas tradicionais**: a **Védica**, a **Caldeia**, a **Cabala** e a **Pitagórica**.
 
-Neste guia definitivo e aprofundado, você aprenderá os dois métodos passo a passo para calcular o seu Número de Caminho de Vida, compreenderá o significado de cada número e descobrirá as particularidades de cada uma das quatro escolas ancestrais de numerologia para aplicar essa sabedoria em sua rotina desperta.
+Neste guia definitivo e aprofundado, você aprenderá os dois métodos passo a passo para calcular o seu Número do Caminho de Vida, compreenderá o significado de cada número e descobrirá as particularidades de cada uma das quatro escolas ancestrais de numerologia para aplicar essa sabedoria em sua rotina desperta.
 
-## Como Calcular o Seu Número de Caminho de Vida: Passo a Passo Detalhado
+## Como Calcular o Seu Número do Caminho de Vida: Passo a Passo Detalhado
 
-O Número de Caminho de Vida é obtido a partir da data completa do seu nascimento. Na prática numerológica, existem dois métodos consagrados para realizar essa operação matemática. O resultado final pode ser reduzido a um único algarismo (de **1 a 9**) ou mantido em um **Número Mestre (11, 22 ou 33)**.
+O Número do Caminho de Vida é obtido a partir da data completa do seu nascimento. Na prática numerológica, existem dois métodos consagrados para realizar essa operação matemática. O resultado final pode ser reduzido a um único algarismo (de **1 a 9**) ou mantido em um **Número Mestre (11, 22 ou 33)**.
 
 ### Método A: O Método Simplificado (Soma Direta)
 
@@ -72,7 +72,7 @@ Ainda que todas as frentes numerológicas compartilhem a premissa de que existe 
 
 ### 1. Numerologia Védica (Indiana ou Tamil)
 
-Considerada a escola numerológica mais antiga do mundo, a **Numerologia Védica** tem suas raízes nos *Vedas* — os textos sagrados do Hinduísmo formulados através das profundas meditações dos sábios da Antiguidade. Na tradição védica, a palavra para o número zero é ***Shoonya***, que representa o vazio criativo e o potencial infinito do Criador.
+Considerada a escola numerológica mais antiga do mundo, a **Numerologia Védica** tem suas raízes nos *Vedas*, os textos sagrados do Hinduísmo formulados através das profundas meditações dos sábios da Antiguidade. Na tradição védica, a palavra para o número zero é ***Shoonya***, que representa o vazio criativo e o potencial infinito do Criador.
 
 A Numerologia Védica estabelece uma conexão direta entre os números de 1 a 9 e as energias vibracionais dos **nove regentes celestes (astros e planetas)**:
 
@@ -93,7 +93,7 @@ Uma leitura completa na Numerologia Védica gera três pilares numéricos:
 
 ### 2. Numerologia Caldeia (Babilônica ou Mesopotâmica)
 
-Originada na antiga Mesopotâmia há mais de 2.000 anos e introduzida no Ocidente pelo famoso místico e quiromante irlandês Cheiro (William John Warner), a **Numerologia Caldeia** é reconhecida como uma das abordagens mais precisas para a análise do nome. A premissa central caldeia afirma que *"tudo no universo é energia"* e que frequências vibracionais idênticas se atraem mutually.
+Originada na antiga Mesopotâmia há mais de 2.000 anos e introduzida no Ocidente pelo famoso místico e quiromante irlandês Cheiro (William John Warner), a **Numerologia Caldeia** é reconhecida como uma das abordagens mais precisas para a análise do nome. A premissa central caldeia afirma que *"tudo no universo é energia"* e que frequências vibracionais idênticas se atraem mutualmente.
 
 A escola Caldeia defende que os sons emitidos pelas palavras e nomes são ondas vivas que alteram o ambiente. Ao analisar o nome de uma pessoa, a numerologia caldeia identifica três campos energéticos:
 - **Energia Introdutória (Primeiro Nome):** A vibração projetada socialmente sobre as pessoas nos contatos do dia a dia.
