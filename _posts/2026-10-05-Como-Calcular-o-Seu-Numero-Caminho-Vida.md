@@ -1,4 +1,4 @@
---
+---
 layout: post
 title: "Como Calcular o Seu Número de Caminho de Vida e Usar a Numerologia nas 4 Escolas Ancestrais: Pitagórica, Caldeia, Cabala e Védica"
 card_title: "Seu Caminho de Vida"
