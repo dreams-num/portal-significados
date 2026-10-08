@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Gematria e Tarô: A Conexão das 22 Letras com os Arcanos Maiores"
+title: "Gematria e Tarô: A Conexão com os Arcanos Maiores"
 card_title: "Gematria e o Tarô"
 description: "Descubra como os 22 Arcanos Maiores do Tarô se conectam às 22 letras do alfabeto hebraico e aos caminhos da Árvore da Vida através da Gematria."
 category: gematria
@@ -11,9 +11,8 @@ category_name: Gematria
 # Gematria e Tarô: A Conexão Sagrada entre as 22 Letras e os Arcanos Maiores
 
 <figure style="margin: 25px 0; text-align: center;">
-   <img src="{{ '/assets/images/conexao-sagrada.jpg' | relative_url }}" alt="A Conexão Sagrada entre as 22 Letras e os Arcanos Maiores" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
+   <img src="{{ '/assets/images/conexao-sagrada.jpg' | relative_url }}" alt="Uma mesa decorada com velas e cristais com 5 cartas de tarot ao centro dispostas em forma de cruz" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
 </figure>
-
 
 A busca por respostas sobre o destino, o autoconhecimento e a estrutura do universo sempre encontrou no Tarô e na Numerologia dois de seus pilares mais fascinantes. O que muitas pessoas não sabem ao lançar as cartas ou ao estudar os números é que existe uma linguagem secreta e unificada ligando esses dois universos: a Gematria cabalística.
 
