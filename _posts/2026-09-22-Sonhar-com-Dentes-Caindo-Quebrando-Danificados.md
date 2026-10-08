@@ -2,7 +2,7 @@
 layout: post
 title: "Sonhar com Dentes Caindo, Quebrando ou Danificados: Medo, Transição e Renovação"
 card_title: "Sonhar com Dentes"
-description:"Entenda o significado de sonhar com dentes caindo, quebrando ou danificados. Uma análise psicológica e espiritual sobre medo, transição e renovação."
+description: "Entenda o significado de sonhar com dentes caindo, quebrando ou danificados. Uma análise psicológica e espiritual sobre medo, transição e renovação."
 category: sonhos
 category_slug: sonhos
 category_name: sonhos
