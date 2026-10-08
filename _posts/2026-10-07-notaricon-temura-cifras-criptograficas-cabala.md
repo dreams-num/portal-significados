@@ -11,9 +11,8 @@ category_name: Gematria
 # Notaricon e Temurá: As Cifras Criptográficas da Cabala
 
 <figure style="margin: 25px 0; text-align: center;">
-   <img src="{{ '/assets/images/cifras.jpg' | relative_url }}" alt="Cifras Criptográficas da Cabala" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
+   <img src="{{ '/assets/images/cifras.jpg' | relative_url }}" alt="Um pergaminho antigo aberto sobre uma mesa com cifras criptográficas da Cabala" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
 </figure>
-
 
 A busca pelo conhecimento oculto contido nos textos sagrados levou os sábios e místicos da tradição cabalística a desenvolverem métodos avançados de análise textual. Enquanto a Gematria se dedica ao estudo dos valores numéricos das letras e palavras, a tradição da Qabalah literal guarda outros dois pilares fundamentais de interpretação e criptografia: o **Notaricon** e a **Temurá**.
 
@@ -109,11 +108,11 @@ Ao aplicar a cifra Atbash sobre a palavra *Sheshakh*:
 * A segunda letra *Shin* (Sh) torna-se novamente *Beth* (B).
 * A letra *Kaph* (K) torna-se *Lamed* (L).
 
-A palavra resultante da conversão é **Babel** (BBL) — a cidade de Babilônia. O autor profético utilizou a Temurá para registrar o nome de Babilônia sob um código secreto que permanecia invisível para leitores não iniciados.
+A palavra resultante da conversão é **Babel** (BBL), a cidade de Babilônia. O autor profético utilizou a Temurá para registrar o nome de Babilônia sob um código secreto que permanecia invisível para leitores não iniciados.
 
 ### Thasharq: A Leitura Inversa das Palavras
 
-Outro método prático da Temurá é o **Thasharq** (ThShRQ). Trata-se da leitura anagramática direta de uma palavra no sentido inverso — da esquerda para a direita ou da última letra para a primeira.
+Outro método prático da Temurá é o **Thasharq** (ThShRQ). Trata-se da leitura anagramática direta de uma palavra no sentido inverso, da esquerda para a direita ou da última letra para a primeira.
 
 O nome *Thasharq* é ele próprio um exemplo do método, pois resulta da escrita do alfabeto hebraico de trás para a frente (começando com *Tau*, *Shin*, *Resh*, *Qoph*). Ao inverter a ordem de uma palavra, altera-se o seu sentido aparente e revela-se a sua força velada.
 
