@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "O Significado Espiritual e Psicológico de Sonhar com Cobras e Serpentes: Transformação, Alertas e a Mente Inconsciente"
+title: "O Significado Espiritual e Psicológico de Sonhar com Cobras e Serpentes"
 card_title: "Sonhar com Cobras"
 description: "Descubra o significado de sonhar com cobras e serpentes. Explore a simbologia psicológica e espiritual da transformação, dos alertas e da mente inconsciente."
 category: sonhos
@@ -11,12 +11,12 @@ category_name: "Sonhos"
 # O Significado Espiritual e Psicológico de Sonhar com Cobras e Serpentes: Transformação, Alertas e a Mente Inconsciente
 
 <figure style="margin: 25px 0; text-align: center;">
-        <img src="{{ '/assets/images/sonhando-cobras.jpg' | relative_url }}" alt="Sonhar com Cobras e Serpentes" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
+        <img src="{{ '/assets/images/sonhando-cobras.jpg' | relative_url }}" alt="Mulher deitada na cama dormindo e uma cobra olhando para ela" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
 </figure>
 
 Sonhar com cobras ou serpentes é uma das experiências mais marcantes e frequentes da vida humana. Pela sua presença vívida, o surgimento de uma serpente no mundo dos sonhos costuma provocar reações emocionais intensas no despertar: angústia, sobressalto, curiosidade ou uma profunda sensação de mistério. 
 
-No universo da interpretação simbólica, a cobra ocupa um lugar de destaque por ser um símbolo visceral e ambivalente. Ela não representa apenas o perigo ou a ameaça; é também uma das mais antigas imagens arquetípicas da transformação, da cura e da renovação da consciência humana. 
+Na interpretação simbólica, a cobra ocupa um papel de destaque por ser um símbolo visceral e ambivalente. Ela não representa apenas o perigo ou a ameaça; também é uma das mais antigas imagens arquetípicas da transformação, da cura e da renovação da consciência humana.
 
 Para compreender com clareza o que a mente noturna está tentando comunicar, é preciso examinar esse réptil sob dois ângulos fundamentais que se completam: o simbolismo psicológico do inconsciente e as revelações espirituais de alerta e intuição.
 
@@ -35,9 +35,9 @@ Os significados podem variar conforme o contexto:
 
 ---
 
-## A Perspectiva Psicológica: A Troca de Pele e a Sombra Junguiana
+## A Perspectiva Psicológica: a troca de pele e a sombra junguiana
 
-Sob a ótica da psicologia analítica e do estudo das imagens universais, a característica mais marcante da serpente é a sua capacidade biológica de trocar periodicamente de pele. Esse processo de renovação física faz da cobra o símbolo supremo da metamorfose e da regeneração.
+Na perspectiva da psicologia analítica e do estudo das imagens universais, o traço mais marcante da serpente a forma como ela troca a pele periodicamente. Esse processo de renovação do corpo faz da cobra o símbolo máximo da metamorfose e da regeneração.
 
 ### A Morte do Velho Paradigma e a Renovação Interior
 
