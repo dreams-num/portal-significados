@@ -35,7 +35,9 @@ Os aspectos fundamentais para compreender a Gematria incluem:
 
 ## Como Funciona a Matemática Sagrada da Gematria?
 
-A Gematria opera com uma lógica direta, porém com reflexos que tocam o fundo da filosofia: o abecedário hebraico, com suas 22 letras, não dispõe de algarismos próprios. As primeiras nove letras são os números de 1 a 9, as nove que se seguem são as dezenas de 10 a 90, e as últimas contemplam as centenas de 100 a 400.
+A Gematria opera com uma lógica direta, mas com reflexos que alcançam as profundezas da filosofia. O abecedário hebraico, composto por 22 letras, não possui algarismos independentes. As primeiras nove letras representam os números de 1 a 9. As nove letras subsequentes designam as dezenas, de 10 a 90. As últimas letras simbolizam as centenas, de 100 a 400.
+
+Além das 22 letras tradicionais, existem cinco formas finais, chamadas Sofit, utilizadas ao final das palavras. Seus valores abrangem as centenas de 500 a 900.
 
 Adicionais às 22 letras usuais, há cinco versões finais, conhecidas como *Sofit*, empregadas no encerramento de palavras, cujos valores alcançam as centenas de 500 a 900. Ao se escrever uma palavra, é feita a soma das correspondências numéricas de cada uma de suas letras.
 
