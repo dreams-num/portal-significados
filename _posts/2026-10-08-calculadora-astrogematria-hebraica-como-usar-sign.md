@@ -17,7 +17,7 @@ category_name: Gematria
 
 A busca para compreender as forças invisíveis que regem a nossa vida acompanha a humanidade há milênios. Na tradição da Qabalah ocidental, a linguagem não é vista apenas como um meio de comunicação social, mas como uma estrutura geométrica e matemática que modela a própria realidade. Cada letra do alfabeto hebraico carrega um valor numérico sagrado, uma atribuição astrológica e uma vibração espiritual específica.
 
-A **Calculadora de Astrogematria Hebraica** foi desenvolvida para tornar acessível a qualquer leitor o fascinante estudo da numerologia cabalística. Ao cruzar as letras do seu nome completo com os números da sua data de nascimento, a ferramenta decodifica a assinatura alfanumérica da sua identidade, revelando a sua Sefirá regente na Árvore da Vida, o Nome Divino correspondente e o Arcano Maior do Tarô que ilumina o seu momento presente.
+A **Calculadora de Astrogematria Hebraica** foi desenvolvida para tornar acessível a qualquer leitor o fascinante estudo da numerologia cabalística. Ao cruzar as letras do seu nome completo com os números da sua data de nascimento, a ferramenta decodifica a [assinatura astrogemática]({{ '/calculadoras/astrogematria/' | relative_url }}) para revelar os seus códigos ocultos como  a sua Sefirá regente na Árvore da Vida, o Nome Divino correspondente e o Arcano Maior do Tarô que ilumina o seu momento presente.
 
 Neste artigo, você aprenderá exatamente como funciona a matemática interna dessa ferramenta, como interpretar cada um dos resultados fornecidos e de que maneira a sabedoria dos antigos mestres cabalistas pode ser aplicada na sua rotina.
 
