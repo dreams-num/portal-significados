@@ -8,12 +8,11 @@ category_slug: gematria
 category_name: Gematria
 ---
 
-# Calculadora de Astrogematria: Decodificando Seu Nome, Sefirá Regente e Arcano
+# Decodificando Seu Nome, Sefirá Regente e Arcano na Calculadora
 
 <figure style="margin: 25px 0; text-align: center;">
    <img src="{{ '/assets/images/calc-gematria.jpg' | relative_url }}" alt="Letras hebraicas douradas e brilhantes, a Árvore da Vida e o Tarot sagrado flutuando sobre um antigo pergaminho aberto" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
 </figure>
-
 
 A busca para compreender as forças invisíveis que regem a nossa vida acompanha a humanidade há milênios. Na tradição da Qabalah ocidental, a linguagem não é vista apenas como um meio de comunicação social, mas como uma estrutura geométrica e matemática que modela a própria realidade. Cada letra do alfabeto hebraico carrega um valor numérico sagrado, uma atribuição astrológica e uma vibração espiritual específica.
 
