@@ -14,7 +14,7 @@ category_name: Gematria
         <img src="{{ '/assets/images/nomes-sagrados.jpg' | relative_url }}" alt="Uma sala de um templo com colunas com mesa antiga de rocha com inscrições e sobre ela letras do alfabeto hebraico flutuando na cor dourada" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
     </figure>
 
-A curiosidade em relação ao significado oculto das palavras e ao impacto dos números em nossas vidas acompanha a humanidade desde a Antiguidade. Na tradição ocidental do misticismo, a Gematria destaca-se como um dos métodos mais fascinantes de investigação simbólica. Ela funciona como um sistema de numerologia cabalística que revela a arquitetura matemática por trás da linguagem sagrada.
+O desejo de descobrir o que as palavras escondem e como os números moldam nossos dias tem estado com as pessoas desde muito tempo atrás. No lado ocidental das crenças misteriosas, a Gematria brilha como uma das formas mais cativantes de olhar para os símbolos. Ela funciona como um sistema de numerologia cabalística que revela a arquitetura matemática por trás da linguagem sagrada.
 
 Enquanto a numerologia convencional atribuída ao ocidente moderno costuma focar no perfil de personalidade ou em datas de nascimento, a Gematria possui um propósito fundamentalmente analítico e espiritual. Sua premissa é de que o alfabeto e os números não são invenções humanas separadas, mas duas expressões da mesma realidade cósmica.
 
@@ -22,7 +22,7 @@ Ao aprender a decodificar palavras e nomes através da Gematria, o leitor leigo 
 
 #### Em resumo: o que a Gematria revela sobre os nomes e palavras?
 
-A Gematria é a arte e a ciência de atribuir valores numéricos às letras de um alfabeto sagrado — tradicionalmente o alfabeto hebraico — para somar o valor total de uma palavra, frase ou nome. O objetivo central é identificar palavras de valores numéricos equivalentes, revelando uma ligação espiritual e essência compartilhada entre elas.
+A Gematria é a prática e o estudo de dar pesos numéricos às letras de um conjunto de símbolos antigo, geralmente as letras hebraicas, para juntar o peso total de uma palavra, oração ou nome. A meta principal é achar palavras com pesos numéricos iguais, mostrando uma relação espiritual e um cerne partilhado entre elas.
 
 **Em uma perspectiva simbólica, a Gematria demonstra que palavras com o mesmo valor numérico não se coincidem por acaso, mas expressam a mesma energia fundamental no universo.**
 
@@ -35,13 +35,15 @@ Os aspectos fundamentais para compreender a Gematria incluem:
 
 ## Como Funciona a Matemática Sagrada da Gematria?
 
-O funcionamento da Gematria baseia-se em uma regra simples, mas de profundas implicações filosóficas: no alfabeto hebraico de 22 letras, não existem numerais separados. As primeiras nove letras representam as unidades de 1 a 9, as nove letras seguintes correspondem às dezenas de 10 a 90, e as últimas letras cobrem as centenas de 100 a 400.
+A Gematria opera com uma lógica direta, porém com reflexos que tocam o fundo da filosofia: o abecedário hebraico, com suas 22 letras, não dispõe de algarismos próprios. As primeiras nove letras são os números de 1 a 9, as nove que se seguem são as dezenas de 10 a 90, e as últimas contemplam as centenas de 100 a 400.
 
-Além das 22 letras padrão, existem cinco formas finais chamadas *Sofit*, utilizadas quando a letra encerra uma palavra, cujos valores estendem-se até as centenas de 500 a 900. Quando uma palavra é escrita, calcula-se a soma individual de cada uma de suas letras.
-
-Por exemplo, a palavra hebraica *Achad* (que significa "Unidade" ou "Um") é formada pelas letras *Aleph* (1), *Chet* (8) e *Daleth* (4), cuja soma resulta no número 13. Por sua vez, a palavra *Ahebah* (que significa "Amor") é composta por *Aleph* (1), *He* (5), *Bet* (2) e *He* (5), somando exatamente os mesmos 13 pontos.
+Adicionais às 22 letras usuais, há cinco versões finais, conhecidas como *Sofit*, empregadas no encerramento de palavras, cujos valores alcançam as centenas de 500 a 900. Ao se escrever uma palavra, é feita a soma das correspondências numéricas de cada uma de suas letras.
 
 Através dessa igualdade matemática, os sábios da Cabala demonstraram que a essência espiritual da Unidade e a essência do Amor são idênticas. Amar é vivenciar a unidade, e a unidade verdadeira expressa-se através do amor.
+
+Por exemplo, a palavra em hebraico Achad (que designa “Unidade” ou “Um”) é constituída pelas letras *Aleph* (1), *Chet* (8) e *Daleth* (4), cuja soma totaliza o algarismo 13. De forma similar, a palavra *Ahebah*  (que aponta para “Amor”) é formada por *Aleph*  (1),  *He* (5), *Bet* (2) e *He* (5), totalizando exatamente os mesmos 13 pontos.
+
+Mediante essa equivalência numérica, os mestres da Cabala evidenciaram que a natureza espiritual da Unidade e a natureza do Amor são uma só. Praticar o amor é experimentar a unidade, e a real unidade se manifesta por meio do amor.
 
 ## Os Três Pilares da Cabala Literal: Gematria, Notaricon e Temurá
 
@@ -123,7 +125,7 @@ O número 314 conecta a palavra *Shadai* (o Deus Todo-Poderoso) ao nome do arcan
 Um dos exemplos mais famosos da Gematria. A palavra *Messias* (*MShICh*) soma 358, o mesmo valor da palavra *Nachash* (*NChSh*), a Serpente do Gênesis. A Cabala explica que a energia primordial da Serpente (a força vital instintiva), quando sublimada e transmutada, transforma-se no próprio agente de redenção (o Messias).
 
 ##### 9. O Número 666 e o Simbolismo do Sol
-Na tradição cabalística autêntica, o 666 não possui conotação demoníaca. Ele é o número místico do Quadrado Mágico do Sol — uma matriz de 36 números (6x6) cuja soma total é 666. Representa o apogeu da consciência solar, do brilho intelectual e da realização no plano material.
+Na tradição cabalística autêntica, o 666 não possui conotação demoníaca. Ele é o número místico do Quadrado Mágico do Sol, uma matriz de 36 números (6x6) cuja soma total é 666. Representa o apogeu da consciência solar, do brilho intelectual e da realização no plano material.
 
 ##### 10. O Número 777 e a Escala da Vida Suprema
 O número 777 é consagrado como o número da Vida Suprema e da purificação dos 22 caminhos da Árvore da Vida nos três mundos superiores. Ele simboliza a vitória da iluminação sobre a ilusão e o equilíbrio perfeito das forças espirituais.
