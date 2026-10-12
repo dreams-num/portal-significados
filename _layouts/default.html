@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }} | Universo dos Significados</title>
+    <title>{% if page.title %}{{ page.title }} | Universo dos Significados{% else %}Universo dos Significados | Sonhos, Horas Iguais e Numerologia{% endif %}</title>
     
     <!-- Links diretos do Google Fonts para garantir carregamento global -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
