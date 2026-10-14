@@ -6,6 +6,16 @@
 
     <!-- O plugin jekyll-seo-tag já gera title, description, canonical e schema automaticamente -->
     {% seo %}
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N5PPL1V1P0"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-N5PPL1V1P0');
+        </script>
     
   
     <!-- Links diretos do Google Fonts para garantir carregamento global -->
