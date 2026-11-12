@@ -14,4 +14,28 @@ layout: default
     <article class="post-content">
         {{ content }}
     </article>
+
+    {% comment %} Navegação extra para artigos de sonhos: outros sonhos do mesmo tema + volta ao dicionário {% endcomment %}
+    {% if page.category_slug == 'sonhos' %}
+        {% assign has_related = false %}
+        {% if page.sonho_grupo %}
+            {% assign related = site.posts | where: "category_slug", "sonhos" | where: "sonho_grupo", page.sonho_grupo | sort: "title" %}
+            {% assign has_related = true %}
+        {% endif %}
+        <aside class="related-dreams">
+            {% if has_related %}
+                <h2>Outros sonhos sobre {{ page.sonho_grupo }}</h2>
+                <ul class="dream-list">
+                    {% assign shown = 0 %}
+                    {% for p in related %}
+                        {% if p.url != page.url and shown < 6 %}
+                            {% assign shown = shown | plus: 1 %}
+                            <li><a href="{{ p.url | relative_url }}" class="dream-item"><span class="dream-item-title">{{ p.card_title | default: p.title }}</span></a></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            {% endif %}
+            <a class="related-dreams-all" href="{{ '/sonhos/' | relative_url }}{% if page.sonho_grupo %}?tema={{ page.sonho_grupo | slugify: 'latin' }}{% endif %}">&larr; Ver todos os sonhos{% if page.sonho_grupo %} de {{ page.sonho_grupo }}{% endif %}</a>
+        </aside>
+    {% endif %}
 </main>
