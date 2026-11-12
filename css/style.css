@@ -316,13 +316,13 @@ article p {
 
 /* Links do conteúdo */
 main a, 
-.container a:not(.btn-square):not(.badge-active):not(.logo) {
+.container a:not(.btn-square):not(.badge-active):not(.logo):not(.dream-pill):not(.dream-letter-link) {
     color: #f3e5ab !important;
     text-decoration: none;
 }
 
 main a:hover, 
-.container a:not(.btn-square):not(.badge-active):not(.logo):hover {
+.container a:not(.btn-square):not(.badge-active):not(.logo):not(.dream-pill):not(.dream-letter-link):hover {
     color: var(--gold-primary) !important;
     text-decoration: underline;
 }
@@ -544,4 +544,287 @@ body.home-universe {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+}
+
+/* ==========================================================================
+   8. DICIONÁRIO DE SONHOS — BUSCA, TEMAS E ÍNDICE A–Z
+   ========================================================================== */
+.dream-intro { color: var(--text-muted); margin: 6px 0 18px; }
+
+/* Barra de busca fixa logo abaixo do cabeçalho */
+.dream-toolbar {
+    position: sticky;
+    top: var(--header-h, 64px);
+    z-index: 50;
+    padding: 10px 0;
+    margin-bottom: 8px;
+}
+/* classe aplicada pelo sonhos.js quando a barra gruda sob o cabeçalho */
+.dream-toolbar.is-stuck {
+    background: rgba(16, 12, 31, 0.94);
+    box-shadow: 0 0 0 100vmax rgba(16, 12, 31, 0.94);
+    clip-path: inset(0 -100vmax);
+}
+
+.dream-search { position: relative; }
+
+.dream-search input {
+    width: 100%;
+    padding: 14px 46px 14px 48px;
+    background: var(--bg-input);
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 1rem; /* 16px: evita zoom automático no iPhone */
+    -webkit-appearance: none;
+    appearance: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.dream-search input::placeholder { color: var(--text-muted); }
+.dream-search input:focus {
+    outline: none;
+    border-color: var(--gold-primary);
+    box-shadow: 0 0 0 3px rgba(240, 194, 101, 0.2);
+}
+.dream-search input::-webkit-search-cancel-button { display: none; }
+
+.dream-search-icon {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--gold-primary);
+    pointer-events: none;
+}
+
+.dream-clear {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    color: #f3e5ab;
+    font-size: 1.3rem;
+    line-height: 1;
+    cursor: pointer;
+}
+.dream-clear:hover { background: rgba(255, 255, 255, 0.16); }
+.dream-clear[hidden] { display: none; }
+
+/* Chips de tema */
+.dream-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 12px 0 6px;
+}
+.dream-chips[hidden], .dream-letters[hidden], .dream-empty[hidden] { display: none; }
+
+.dream-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 14px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    color: #f3e5ab;
+    font-family: inherit;
+    font-size: 0.88rem;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+.dream-chip:hover:not(:disabled) { border-color: var(--gold-primary); }
+.dream-chip[aria-pressed="true"] {
+    background: var(--btn-gradient);
+    border-color: transparent;
+    color: #1C1410;
+    font-weight: 700;
+}
+.dream-chip:disabled { opacity: 0.35; cursor: default; }
+.dream-chip-n { font-size: 0.75rem; opacity: 0.7; }
+
+/* Índice A–Z */
+.dream-letters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin: 12px 0 4px;
+}
+.dream-letter-link {
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+a.dream-letter-link {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    color: #f3e5ab !important;
+    text-decoration: none !important;
+}
+a.dream-letter-link:hover {
+    background: var(--gold-primary);
+    color: #1C1410 !important;
+}
+.dream-letter-link.is-off { color: rgba(156, 163, 175, 0.35); }
+
+.dream-count {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin: 14px 0 4px;
+    min-height: 1.3em;
+}
+
+/* Listas */
+.dream-list, .dream-pills {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.dream-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 10px;
+}
+.dream-list li { margin: 0; }
+
+.dream-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    height: 100%;
+    padding: 12px 16px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    text-decoration: none !important;
+    transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.dream-item:hover {
+    transform: translateY(-2px);
+    border-color: var(--gold-primary);
+    box-shadow: 0 6px 18px rgba(212, 175, 55, 0.2);
+}
+.dream-item-title {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.3;
+    color: #f3e5ab;
+}
+.dream-item-tag {
+    flex-shrink: 0;
+    padding: 2px 9px;
+    border-radius: 999px;
+    background: rgba(240, 194, 101, 0.12);
+    color: var(--gold-primary);
+    font-size: 0.72rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* Seções por letra */
+.dream-letter-section {
+    margin-top: 28px;
+    scroll-margin-top: calc(var(--header-h, 64px) + 80px);
+}
+.dream-letter {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--gold-primary);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+    padding-bottom: 6px;
+    margin-bottom: 14px;
+}
+
+/* Mais procurados */
+.dream-featured { margin-top: 20px; }
+.dream-section-title {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.dream-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+a.dream-pill {
+    display: inline-block;
+    padding: 7px 16px;
+    border-radius: 999px;
+    background: var(--btn-gradient);
+    color: #1C1410 !important;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none !important;
+    box-shadow: 0 4px 15px rgba(230, 176, 78, 0.25);
+}
+a.dream-pill:hover { background: #F3CD76; }
+
+/* Nenhum resultado */
+.dream-empty {
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 20px;
+    background: var(--bg-card);
+    border: 1px dashed var(--border-color);
+    border-radius: 16px;
+}
+.dream-empty-title {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+.dream-empty p { color: var(--text-muted); }
+.dream-reset {
+    margin-top: 16px;
+    padding: 9px 22px;
+    border: none;
+    border-radius: 20px;
+    background: var(--btn-gradient);
+    color: #1C1410;
+    font-family: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Sonhos relacionados (fim de cada artigo) */
+.related-dreams {
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(212, 175, 55, 0.2);
+}
+.related-dreams h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2rem;
+    color: var(--gold-primary);
+    margin-bottom: 14px;
+}
+.related-dreams .dream-list { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+.related-dreams-all { display: inline-block; margin-top: 16px; font-weight: 600; }
+
+@media (max-width: 768px) {
+    /* lista de sonhos em 1 coluna no celular */
+    .dream-list { grid-template-columns: 1fr; gap: 8px; }
+    .dream-item { padding: 13px 14px; }
+    /* chips e letras em linha única, rolando para o lado */
+    .dream-chips, .dream-letters { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 6px; scrollbar-width: none; }
+    .dream-chips::-webkit-scrollbar, .dream-letters::-webkit-scrollbar { display: none; }
+    .dream-letter-link { flex: 0 0 32px; }
 }
