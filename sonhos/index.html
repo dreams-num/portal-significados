@@ -12,13 +12,13 @@ description: "Entenda a interpretação dos seus sonhos e mensagens do subconsci
     <h1>Dicionário de Sonhos</h1>
     <p>Selecione o tema do seu sonho para ler a interpretação:</p>
 
-    <!-- Grade Dinâmica Corrigida para Links de Sonhos -->
+    <!-- Grade Dinâmica Definitiva de Sonhos -->
     <div class="hours-grid">
         {% assign sorted_dreams = site.posts | sort: "title" %}
         {% for post in sorted_dreams %}
-            {% assign cat_string = post.category | join: ',' | downcase %}
-            {% assign cats_string = post.categories | join: ',' | downcase %}
-            {% if cat_string contains 'sonho' or cats_string contains 'sonho' %}
+            {% assign cat_string = post.category | downcase | strip %}
+            {% assign slug_string = post.category_slug | downcase | strip %}
+            {% if cat_string == 'sonhos' or slug_string == 'sonhos' %}
                 <a href="{{ post.url | relative_url }}" class="hour-card active-hour">
                     <span class="card-title">{{ post.card_title | default: post.title }}</span>
                     <span class="badge-active">Ver</span>
