@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "TESTE DE ATUALIZAÇÃO - Dicionário de Sonhos"
+title: "Dicionário de Sonhos | Portal Significados"
 description: "Entenda a interpretação dos seus sonhos e mensagens do subconsciente."
 ---
 
@@ -12,13 +12,13 @@ description: "Entenda a interpretação dos seus sonhos e mensagens do subconsci
     <h1>Dicionário de Sonhos</h1>
     <p>Selecione o tema do seu sonho para ler a interpretação:</p>
 
-    <!-- Grade Filtrada Exclusivamente para Sonhos -->
+    <!-- Grade Dinâmica Ultra-Resiliente para Sonhos -->
     <div class="hours-grid">
         {% assign sorted_dreams = site.posts | sort: "title" %}
         {% for post in sorted_dreams %}
-            {% assign target_cat = post.category | downcase | strip %}
-            {% assign target_slug = post.category_slug | downcase | strip %}
-            {% if target_cat == 'sonhos' or target_slug == 'sonhos' %}
+            {% assign cat_string = post.category | join: ',' | downcase %}
+            {% assign cats_string = post.categories | join: ',' | downcase %}
+            {% if cat_string contains 'sonho' or cats_string contains 'sonho' %}
                 <a href="{{ post.url | relative_url }}" class="hour-card active-hour">
                     <span class="card-title">{{ post.card_title | default: post.title }}</span>
                     <span class="badge-active">Ver</span>
