@@ -10,19 +10,18 @@ description: "Entenda a interpretação dos seus sonhos e mensagens do subconsci
     </div>
 
     <h1>Dicionário de Sonhos</h1>
-    <p>Selecione o tema do seu sonho para ler a interpretação:</p>
 
-    <!-- Lista Dinâmica de Artigos de Sonhos -->
+    <!-- TESTE DE DIAGNÓSTICO -->
+    <p><strong>Total de posts detectados no site:</strong> {{ site.posts.size }}</p>
+
     <div class="hours-grid">
-        {% assign sorted_dreams = site.posts | sort: "title" %}
-        {% for post in sorted_dreams %}
-            {% assign cat = post.category | downcase %}
-            {% if cat == 'sonhos' or post.category_slug == 'sonhos' %}
-                <a href="{{ post.url | relative_url }}" class="hour-card active-hour">
-                    <span class="card-title">{{ post.card_title | default: post.title }}</span>
-                    <span class="badge-active">Ver</span>
-                </a>
-            {% endif %}
+        {% for post in site.posts %}
+            <a href="{{ post.url | relative_url }}" class="hour-card active-hour">
+                <span class="card-title">{{ post.title }}</span>
+                <span class="badge-active">Cat: {{ post.category }}</span>
+            </a>
+        {% else %}
+            <p style="color: red;">Nenhum post foi encontrado pelo Jekyll na pasta _posts!</p>
         {% endfor %}
     </div>
 </main>
