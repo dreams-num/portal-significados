@@ -10,20 +10,61 @@ description: "Entenda a interpretação dos seus sonhos e mensagens do subconsci
     </div>
 
     <h1>Dicionário de Sonhos</h1>
-    <p>Selecione o tema do seu sonho para ler a interpretação:</p>
+    <p class="dream-intro">Digite o que apareceu no seu sonho (ex.: cobra, dente, água) ou navegue por tema e ordem alfabética.</p>
 
-    <!-- Grade Dinâmica Definitiva de Sonhos -->
-    <div class="hours-grid">
+    <!-- Barra de busca (fica fixa ao rolar a página) -->
+    <div class="dream-toolbar" id="dreamToolbar">
+        <form class="dream-search" role="search" onsubmit="return false;">
+            <svg class="dream-search-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><line x1="16.5" y1="16.5" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <input type="search" id="dreamSearch" placeholder="Buscar sonho (ex.: cobra)" aria-label="Buscar sonho" autocomplete="off" enterkeyhint="search">
+            <button type="button" id="dreamClear" class="dream-clear" aria-label="Limpar busca" hidden>&times;</button>
+        </form>
+    </div>
+
+    <!-- Preenchidos pelo JS (sonhos.js) -->
+    <div class="dream-chips" id="dreamGroups" role="group" aria-label="Filtrar por tema" hidden></div>
+    <nav class="dream-letters" id="dreamLetters" aria-label="Ir para a letra" hidden></nav>
+    <p class="dream-count" id="dreamCount" role="status" aria-live="polite"></p>
+
+    <!--
+      Lista completa de sonhos, gerada pelo Jekyll.
+      Serve de fallback sem JavaScript e é lida pelo sonhos.js, que a reorganiza (A–Z, busca, filtros).
+      Campos opcionais no front matter de cada artigo:
+        card_title   → título exibido na lista (já existia)
+        tema         → palavra usada para ordenar/agrupar por letra (ex.: "Cobra" em "Sonhar com Cobra")
+        sonho_grupo  → tema/categoria (ex.: "Animais", "Pessoas", "Natureza")
+        keywords     → sinônimos para a busca, separados por vírgula (ex.: "serpente, víbora, naja")
+        destaque     → true para aparecer em "Mais procurados"
+    -->
+    <div class="dream-results" id="dreamResults">
+        <ul class="dream-list" id="dreamSource">
         {% assign sorted_dreams = site.posts | sort: "title" %}
         {% for post in sorted_dreams %}
             {% assign cat_string = post.category | downcase | strip %}
             {% assign slug_string = post.category_slug | downcase | strip %}
             {% if cat_string == 'sonhos' or slug_string == 'sonhos' %}
-                <a href="{{ post.url | relative_url }}" class="hour-card active-hour">
-                    <span class="card-title">{{ post.card_title | default: post.title }}</span>
-                    <span class="badge-active">Ver</span>
-                </a>
+                <li>
+                    <a href="{{ post.url | relative_url }}" class="dream-item"
+                       data-titulo="{{ post.card_title | default: post.title | escape }}"
+                       data-tema="{{ post.tema | escape }}"
+                       data-grupo="{{ post.sonho_grupo | escape }}"
+                       data-keywords="{{ post.keywords | escape }}"
+                       data-desc="{{ post.description | escape }}"
+                       data-destaque="{% if post.destaque %}1{% endif %}">
+                        <span class="dream-item-title">{{ post.card_title | default: post.title }}</span>
+                        {% if post.sonho_grupo %}<span class="dream-item-tag">{{ post.sonho_grupo }}</span>{% endif %}
+                    </a>
+                </li>
             {% endif %}
         {% endfor %}
+        </ul>
+    </div>
+
+    <div class="dream-empty" id="dreamEmpty" hidden>
+        <p class="dream-empty-title">Não encontramos esse sonho por aqui.</p>
+        <p>Tente uma palavra mais simples (ex.: “cobra” em vez de “cobra venenosa”), confira a ortografia ou limpe os filtros.</p>
+        <button type="button" class="dream-reset" id="dreamReset">Ver todos os sonhos</button>
     </div>
 </main>
+
+<script src="{{ '/js/sonhos.js' | relative_url }}"></script>
