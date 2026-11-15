@@ -1,6 +1,7 @@
 mapa_numerologico:
   alt: "Descubra seu destino com o Mapa Numerológico Caldeu Completo"
   image: "/assets/images/banner-mapa-numerologico.webp"
+  image_mobile: "/assets/images/banner-mapa-numerologico-mobile.webp"
   url: "#seu-link-afiliado-mapa"
 
 tarot_amor_oraculos:
