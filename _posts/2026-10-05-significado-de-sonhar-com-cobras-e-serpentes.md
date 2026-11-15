@@ -4,15 +4,13 @@ title: "O Significado Espiritual e Psicológico de Sonhar com Cobras e Serpentes
 card_title: "Sonhar com Cobras"
 description: "Descubra o significado de sonhar com cobras e serpentes. Explore a simbologia psicológica e espiritual da transformação, dos alertas e da mente inconsciente."
 category: sonhos
-category_slug: sonhos
-category_name: "Sonhos"
+sonho_grupo: "Animais e Natureza"
+keywords: "cobra, serpente, picada, bicho, peçonhenta, transformação, inconsciente"
+image: "/assets/images/sonhar-com-cobras.webp"
+image_alt: "O Significado Espiritual e Psicológico de Sonhar com Cobras e Serpentes"
 ---
 
 # O Significado Espiritual e Psicológico de Sonhar com Cobras e Serpentes: Transformação, Alertas e a Mente Inconsciente
-
-<figure style="margin: 25px 0; text-align: center;">
-        <img src="{{ '/assets/images/sonhando-cobras.jpg' | relative_url }}" alt="Mulher deitada na cama dormindo e uma cobra olhando para ela" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
-</figure>
 
 Sonhar com cobras ou serpentes é uma das experiências mais marcantes e frequentes da vida humana. Pela sua presença vívida, o surgimento de uma serpente no mundo dos sonhos costuma provocar reações emocionais intensas no despertar: angústia, sobressalto, curiosidade ou uma profunda sensação de mistério. 
 
