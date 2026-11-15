@@ -4,15 +4,13 @@ title: "Sonhar com Dentes Caindo, Quebrando ou Danificados"
 card_title: "Sonhar com Dentes"
 description: "Entenda o significado de sonhar com dentes caindo, quebrando ou danificados. Uma análise psicológica e espiritual sobre medo, transição e renovação."
 category: sonhos
-category_slug: sonhos
-category_name: sonhos
+sonho_grupo: "Corpo e Sinais Físicos"
+keywords: "dentes, dente caindo, dente quebrado, arcada dentária, mastigação, transição, insegurança"
+image: "/assets/images/sonhar-com-dentes-caindo-quebrando-ou-danificados.webp"
+image_alt: "Sonhar com Dentes Caindo, Quebrando ou Danificados"
 ---
 
 # Sonhar com Dentes Caindo, Quebrando ou Danificados: Medo, Transição e Renovação
-
-<figure style="margin: 25px 0; text-align: center;">
-        <img src="{{ '/assets/images/dentes-caindo.jpg' | relative_url }}" alt="Um dente no centro da imagem num fundo abstrato azulado" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
-    </figure>
 
 Poucos sonhos provocam um sobressalto tão imediato ao acordar quanto os que envolvem problemas com os dentes. A sensação vívida de sentir um dente mole na boca, de vê-lo quebrar em pedaços na mão ou de notar múltiplos dentes caindo sem controle gera uma resposta visceral de pavor e aflição. Ao despertar, é quase instintivo passar a língua pela boca para confirmar se tudo continua no lugar.
 
