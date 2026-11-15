@@ -8,8 +8,6 @@ category_slug: sonhos
 category_name: Sonhos
 sonho_grupo: "Morte e Luto"
 keywords: "escadaria, degraus, enterro, funeral, velório, cemitério, sepultamento, defunto, morte, chorar, chorando, lágrimas"
-destaque: true
-tema: "Caixão"
 ---
 
 <figure style="margin: 25px 0; text-align: center;">
