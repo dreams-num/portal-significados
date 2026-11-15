@@ -10,10 +10,6 @@ image: "/assets/images/sonhar-com-escadas-caixao-e-choro.webp"
 image_alt: "Sonhar com Escadas, Caixão e Choro"
 ---
 
-<figure style="margin: 25px 0; text-align: center;">
-  <img src="{{ '/assets/images/sonhar-com-escadas-caixao-e-choro.webp' | relative_url }}" alt="Sonhar com Escadas, Caixão e Choro" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
-</figure>
-
 ### Sonhar com Escadas, Caixão e Choro: Ascensão de Consciência, Encerramentos e Purificação
 
 A linguagem do inconsciente frequentemente utiliza imagens dramáticas e cheias de solenidade para despertar o sonhador para grandes verdades espirituais e psicológicas. Entre as visões noturnas que mais mobilizam sentimentos intensos estão a subida ou descida de escadas, a contemplação de um caixão e a vivência de um choro copioso durante o sono.
