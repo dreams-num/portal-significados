@@ -12,6 +12,9 @@ layout: default
     </div>
 
     <article class="post-content">
+        <!-- Insere a imagem principal automaticamente baseada no YAML -->
+        {% include post-image.html %}
+
         {{ content }}
     </article>
 
