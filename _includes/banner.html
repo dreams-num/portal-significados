@@ -1,0 +1,16 @@
+{% assign b = site.data.banners[include.id] %}
+{% if b %}
+<div class="affiliate-banner-wrapper" style="text-align: center; margin: 35px 0;">
+    <a href="{{ b.url }}" target="_blank" rel="nofollow sponsored" aria-label="{{ b.alt }}">
+        <picture>
+            {% if b.image_mobile %}
+            <source media="(max-width: 768px)" srcset="{{ b.image_mobile | relative_url }}">
+            {% endif %}
+            <img src="{{ b.image | relative_url }}" 
+                 alt="{{ b.alt }}" 
+                 loading="lazy"
+                 style="max-width: 100%; height: auto; border-radius: 16px; border: 1px solid var(--border-color); display: block; margin: 0 auto; transition: transform 0.2s ease;">
+        </picture>
+    </a>
+</div>
+{% endif %}
