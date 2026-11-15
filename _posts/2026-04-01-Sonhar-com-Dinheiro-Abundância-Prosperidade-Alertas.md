@@ -84,8 +84,6 @@ O grande ensinamento dos sonhos com dinheiro é a compreensão de que a verdadei
 
 Quando você aprende a ler a mensagem dos seus sonhos com prosperidade, percebe que a escassez nem sempre é uma realidade financeira, mas frequentemente um bloqueio de atitude. Ajustar a sua mentalidade, cultivar a gratidão e reconhecer o seu valor interior são os primeiros passos para que a abundância se manifeste em todas as áreas da sua vida desperta.
 
-{% include banner.html id="mapa_numerologico" %}
-
 ## Como Interpretar o Seu Sonho com Dinheiro: Passo a Passo Reflexivo
 
 1. **Analise a sua emoção durante o sonho:** Você se sentiu aliviado, ganancioso, culpado, generoso ou apavorado? O sentimento revela se o seu sonho trata de gratidão e expansão ou de medo e ganância reprimida.
