@@ -4,15 +4,13 @@ title: "Sonhar com Dinheiro e Abundância"
 card_title: "Sonhar com Dinheiro e Abundância"
 description: "Explore o significado psicológico e espiritual de sonhar com dinheiro. Descubra alertas sobre prosperidade, autoestima, escassez e recursos internos."
 category: sonhos
-category_slug: sonhos
-category_name: sonhos
+sonho_grupo: "Dinheiro e Abundância"
+keywords: "dinheiro, notas, moedas, riqueza, abundância, prosperidade, notas falsas, escassez"
+image: "/assets/images/sonhar-com-dinheiro-e-abundancia.webp"
+image_alt: "Sonhar com Dinheiro e Abundância"
 ---
 
 # Sonhar com Dinheiro e Abundância: Prosperidade Material, Recursos Internos e Alertas
-
-<figure style="margin: 25px 0; text-align: center;">
-   <img src="{{ '/assets/images/dinheiro-abundancia.jpg' | relative_url }}" alt="Um baú aberto cheio de moedas e notas de dinheiro dourados no meio de arvores à noite" style="max-width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
-</figure>
 
 O dinheiro é uma das invenções mais poderosas e simbólicas da história humana. Na vida desperta, ele representa o meio pelo qual trocamos nossa energia, tempo e trabalho por bens, segurança, conforto e liberdade. No entanto, quando as cédulas, moedas, cofres ou tesouros surgem no vasto território dos sonhos, a mente subjetiva raramente está tratando apenas de saldos bancários ou notas de papel.
 
