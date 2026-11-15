@@ -41,7 +41,6 @@
   }
 
   /* ---------- carrega os itens ---------- */
-  var OUTROS = 'Outros';
   var items = Array.prototype.map.call(source.querySelectorAll('a.dream-item'), function (a) {
     var d = a.dataset;
     var titulo = d.titulo || a.textContent.trim();
@@ -65,8 +64,8 @@
   });
   if (!items.length) return;
 
+  // Filtra apenas itens que possuem grupo definido (remove "Outros" automático)
   var temGrupos = items.some(function (i) { return i.grupo; });
-  if (temGrupos) items.forEach(function (i) { if (!i.grupo) i.grupo = OUTROS; });
 
   var byTema = function (a, b) { return a.temaN.localeCompare(b.temaN, 'pt'); };
   items.sort(byTema);
@@ -126,13 +125,14 @@
   function renderGroups(base) {
     if (!temGrupos) { elGroups.hidden = true; return; }
     var counts = {};
-    base.forEach(function (i) { counts[i.grupo] = (counts[i.grupo] || 0) + 1; });
+    base.forEach(function (i) { if (i.grupo) counts[i.grupo] = (counts[i.grupo] || 0) + 1; });
     var nomes = Object.keys(counts);
+    
     // garante que o filtro ativo continue visível mesmo com 0 resultados
-    items.forEach(function (i) { if (nomes.indexOf(i.grupo) === -1) nomes.push(i.grupo); });
+    items.forEach(function (i) { if (i.grupo && nomes.indexOf(i.grupo) === -1) nomes.push(i.grupo); });
+    
+    // Ordenação alfabética simples dos grupos reais
     nomes.sort(function (a, b) {
-      if (a === OUTROS) return 1;
-      if (b === OUTROS) return -1;
       return a.localeCompare(b, 'pt');
     });
 
