@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Sonhar com Dinheiro e Abundância"
+title: "Sonhar com Dinheiro: Prosperidade e Abundância"
 card_title: "Sonhar com Dinheiro e Abundância"
 description: "Explore o significado psicológico e espiritual de sonhar com dinheiro. Descubra alertas sobre prosperidade, autoestima, escassez e recursos internos."
 category: sonhos
 sonho_grupo: "Dinheiro e Abundância"
-keywords: "dinheiro, notas, moedas, riqueza, abundância, prosperidade, notas falsas, escassez"
+keywords: "sonhar com dinheiro, notas e moedas, riqueza, abundância, prosperidade, notas falsas, escassez, recursos internos, significado dos sonhos"
 image: "/assets/images/sonhar-com-dinheiro-e-abundancia.webp"
-image_alt: "Sonhar com Dinheiro e Abundância"
+image_alt: "Ilustração de um baú aberto com muito dinheiro dentro."
 ---
 
 # Sonhar com Dinheiro e Abundância: Prosperidade Material, Recursos Internos e Alertas
