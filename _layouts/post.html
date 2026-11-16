@@ -5,8 +5,10 @@ layout: default
 <main class="main-content container post-container">
     <div class="breadcrumbs">
         <a href="{{ '/' | relative_url }}">Início</a>
-        {% if page.category_slug %}
-            &gt; <a href="{{ '/' | append: page.category_slug | append: '/' | relative_url }}">{{ page.category_name }}</a>
+        {% if page.category %}
+            {% assign cat_slug = page.category_slug | default: page.category | slugify: 'latin' %}
+            {% assign cat_label = page.category_name | default: page.category | capitalize %}
+            &gt; <a href="{{ '/' | append: cat_slug | append: '/' | relative_url }}">{{ cat_label }}</a>
         {% endif %}
         &gt; <span>{{ page.title }}</span>
     </div>
@@ -18,27 +20,46 @@ layout: default
         {{ content }}
     </article>
 
-    {% comment %} Navegação extra para artigos de sonhos: outros sonhos do mesmo tema + volta ao dicionário {% endcomment %}
-    {% if page.category_slug == 'sonhos' %}
-        {% assign has_related = false %}
+    {% comment %} Bloco automático de interlinkagem (Artigos Relacionados) {% endcomment %}
+    {% if page.category %}
+        {% assign cat_slug = page.category_slug | default: page.category | slugify: 'latin' %}
+        
         {% if page.sonho_grupo %}
-            {% assign related = site.posts | where: "category_slug", "sonhos" | where: "sonho_grupo", page.sonho_grupo | sort: "title" %}
-            {% assign has_related = true %}
+            {% assign relacionados = site.posts | where: "sonho_grupo", page.sonho_grupo | sort: "title" %}
+            {% assign titulo_relacionados = "Outros sonhos sobre " | append: page.sonho_grupo %}
+        {% else %}
+            {% assign relacionados = site.posts | where: "category", page.category | sort: "date" | reverse %}
+            {% assign titulo_relacionados = "Leia também" %}
         {% endif %}
-        <aside class="related-dreams">
-            {% if has_related %}
-                <h2>Outros sonhos sobre {{ page.sonho_grupo }}</h2>
-                <ul class="dream-list">
-                    {% assign shown = 0 %}
-                    {% for p in related %}
-                        {% if p.url != page.url and shown < 6 %}
-                            {% assign shown = shown | plus: 1 %}
-                            <li><a href="{{ p.url | relative_url }}" class="dream-item"><span class="dream-item-title">{{ p.card_title | default: p.title }}</span></a></li>
-                        {% endif %}
-                    {% endfor %}
-                </ul>
+
+        {% assign outros = "" | split: "" %}
+        {% for p in relacionados %}
+            {% if p.url != page.url %}
+                {% assign outros = outros | push: p %}
             {% endif %}
-            <a class="related-dreams-all" href="{{ '/sonhos/' | relative_url }}{% if page.sonho_grupo %}?tema={{ page.sonho_grupo | slugify: 'latin' }}{% endif %}">&larr; Ver todos os sonhos{% if page.sonho_grupo %} de {{ page.sonho_grupo }}{% endif %}</a>
-        </aside>
+        {% endfor %}
+
+        {% if outros.size > 0 or cat_slug == 'sonhos' %}
+            <aside class="related-dreams">
+                {% if outros.size > 0 %}
+                    <h2>{{ titulo_relacionados }}</h2>
+                    <ul class="dream-list">
+                        {% for p in outros limit: 6 %}
+                            <li>
+                                <a href="{{ p.url | relative_url }}" class="dream-item">
+                                    <span class="dream-item-title">{{ p.card_title | default: p.title }}</span>
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+
+                {% if cat_slug == 'sonhos' %}
+                    <a class="related-dreams-all" href="{{ '/sonhos/' | relative_url }}{% if page.sonho_grupo %}?tema={{ page.sonho_grupo | slugify: 'latin' }}{% endif %}">&larr; Ver todos os sonhos{% if page.sonho_grupo %} de {{ page.sonho_grupo }}{% endif %}</a>
+                {% else %}
+                    <a class="related-dreams-all" href="{{ '/' | append: cat_slug | append: '/' | relative_url }}">&larr; Ver todos os artigos desta categoria</a>
+                {% endif %}
+            </aside>
+        {% endif %}
     {% endif %}
 </main>
