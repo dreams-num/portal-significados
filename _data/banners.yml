@@ -15,10 +15,11 @@ tarot_amor_oraculos:
   image: "/assets/images/banner-curso-tarot.webp"
   url: "#seu-link-afiliado-tarot"
 
-limpeza_energetica:
-  alt: "Protocolo de Proteção Espiritual e Limpeza Energética"
-  image: "/assets/images/banner-limpeza-energetica.webp"
-  url: "#seu-link-afiliado-limpeza"
+sinastria_lais:
+  alt: "Sinastria por Lais Càsttèlo"
+  image: "/assets/images/banner_sinastria_1200x400.webp"
+  image_mobile: "/assets/images/banner_sinastria_800x800.webp"
+  url: "https://pay.kiwify.com.br/rGgqZMX?afid=LZQe9Ds2"
 
 prosperidade_abundancia:
   alt: "Guia de Manifestação, Lei da Atração e Abundância"
