@@ -15,3 +15,9 @@ curso_tarot_nei:
   image: "/assets/images/banner-curso-tarot-nei-1200x400.webp"
   image_mobile: "/assets/images/banner-curso-tarot-nei-800x800.webp"
   url: "https://meli.la/2TQAm2f"
+
+  12_placas_zodiaco:
+  alt: "Decoração Mistica Esoterica"
+  image: "/assets/images/banner_placas_zodiaco_1200x400.webp"
+  image_mobile: "/assets/images/banner_placas_zodiaco_800x800.webp"
+  url: "https://meli.la/2ZVWuyR"
