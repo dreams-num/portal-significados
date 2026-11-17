@@ -39,6 +39,8 @@ Ainda que não existam números inerentemente "ruins" no reino espiritual, uma v
 *   **O Número 5 (A Busca pela Liberdade e pelo Caos):** O 5 é o regente da aventura, do movimento constante, da imprevisibilidade e da independência irrestrita. Em um relacionamento amoroso, essa vibração pode manifestar-se como pavor da rotina, relutância em assumir compromissos de longo prazo e uma busca incessante por novidades que desestabiliza a constância do lar.
 *   **O Número 7 (A Introspecção e a Solitude do Filósofo):** O 7 é o número da mente analítica, da pesquisa espiritual e do recolhimento meditativo. A energia do 7 exige momentos prolongados de isolamento e silêncio interior. Em uma convivência a dois, o excesso de vibração 7 pode fazer com que a pessoa pareça fria, distante ou emocionalmente inacessível, gerando um sentimento de solidão no parceiro.
 
+{% include banner.html id="sinastria_lais" %}
+
 ## A Diferença entre Almas Gêmeas e Chamas Gêmeas e Seus Códigos Angélicos
 
 No estudo dos encontros espirituais, é fundamental distinguir a natureza de uma conexão de **Alma Gêmea** de uma união de **Chama Gêmea**. Os anjos da guarda utilizam sequências numéricas específicas para avisar quando um desses vínculos está se aproximando ou se ativando no plano físico.
