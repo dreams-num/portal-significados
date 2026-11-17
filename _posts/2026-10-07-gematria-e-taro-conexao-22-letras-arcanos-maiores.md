@@ -107,6 +107,10 @@ A tabela a seguir resume a estrutura de equivalência da Gematria com o Tarô, f
 | ש | Shin | 300 | O Julgamento (XX) | Fogo / Espírito (Elemento) |
 | ת | Tau | 400 | O Mundo (XXI) | Saturno / Terra (Planeta/Elemento) |
 
+
+
+{% include banner.html id="curso_tarot_nei" %}
+
 ## Como Utilizar a Gematria do Tarô para Estudo e Autoconhecimento
 
 Integrar os números da Gematria com as lâminas do Tarô enriquece significativamente a prática de tiragens, meditações diárias e estudos filosóficos. Aqui está um passo a passo simples para aplicar essa sabedoria no seu dia a dia:
