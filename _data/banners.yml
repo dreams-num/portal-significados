@@ -16,15 +16,35 @@ curso_tarot_nei:
   image_mobile: "/assets/images/banner-curso-tarot-nei-800x800.webp"
   url: "https://meli.la/2TQAm2f"
 
-  12_placas_zodiaco:
+12_placas_zodiaco:
   alt: "Decoração Mistica Esoterica"
   image: "/assets/images/banner_placas_zodiaco_1200x400.webp"
   image_mobile: "/assets/images/banner_placas_zodiaco_800x800.webp"
   url: "https://meli.la/2ZVWuyR"
 
-  quadro_decorativo:
+quadro_decorativo:
   alt: "Quadro Homem Astrologia Com Vidro"
   image: "/assets/images/banner_quadro_astrologia_1200x400.webp"
   image_mobile: "/assets/images/banner_quadro_astrologia_800x800.webp"
   url: "https://meli.la/2VgYAsc"
+
+grimorio_nome:
+  alt: "Grimorio 200 Folhas Harry Potter Com Seu Nome "
+  image: "/assets/images/banner_grimorio_nome_1200x400.webp"
+  image_mobile: "/assets/images/banner_grimorio_nome_800x800.webp"
+  url: "https://meli.la/2ejEQHn"
+
+mandala_flor_lotus:
+  alt: "Mandala Flor De Lotus Acrílico 120 cm Geometria Sagrada"
+  image: "/assets/images/banner_mandala_flor_lotus_1200x400.webp"
+  image_mobile: "/assets/images/banner_mandala_flor_lotus_800x800.webp"
+  url: "https://meli.la/1TjpAn3"
+
+velas_decorativas:
+  alt: "Kit 24 Velas Decorativa Aromática Mandala Em Lata Arabesco"
+  image: "/assets/images/banner_velas_decorativas_1200x400.webp"
+  image_mobile: "/assets/images/banner_velas_decorativas_800x800.webp"
+  url: "https://meli.la/2TEvT6p"
+
+
 
