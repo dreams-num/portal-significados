@@ -21,3 +21,10 @@ curso_tarot_nei:
   image: "/assets/images/banner_placas_zodiaco_1200x400.webp"
   image_mobile: "/assets/images/banner_placas_zodiaco_800x800.webp"
   url: "https://meli.la/2ZVWuyR"
+
+  quadro_decorativo:
+  alt: "Quadro Homem Astrologia Com Vidro"
+  image: "/assets/images/banner_quadro_astrologia_1200x400.webp"
+  image_mobile: "/assets/images/banner_quadro_astrologia_800x800.webp"
+  url: "https://meli.la/2VgYAsc"
+
