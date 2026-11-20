@@ -2,7 +2,7 @@
 layout: post
 title: "Sonhar com Escadas, Caixão e Choro: Ascensão de Consciência, Encerramentos e Purificação"
 card_title: "Sonhar com Escada e Caixão"
-description: "Descubra o significado de sonhar com escadas, caixão e choro. Compreenda os símbolos de elevação de consciência, fim de ciclos e catarse."
+description: "Descubra o significado de sonhar com escadas, caixão e choro."
 category: sonhos
 sonho_grupo: "Morte e Luto"
 keywords: "escadaria, degraus, enterro, funeral, velório, cemitério, sepultamento, defunto, morte, chorar, chorando, lágrimas"
@@ -102,6 +102,7 @@ Para aplicar os ensinamentos profundos dessa tríade simbólica no seu dia a dia
 3. **Suba um Degrau por Vez:** Diante de grandes objetivos, não se desespere olhando para o topo da montanha. Concentre-se em vencer o degrau de hoje com ética, disciplina e dedicação.
 4. **Celebre os Seus Recomeços:** Compreenda que cada fim é apenas a semente de um novo começo muito mais luminoso. Abra os braços para as oportunidades que estão surgindo na sua jornada.
 
-### Conclusão
-
 Sonhar com escadas, caixão e choro é um solene e amoroso convite da sua psique para que você não tenha medo das transições da existência. Ao chorar o que precisa ser lavado e enterrar o que já cumpriu o seu papel, você se descobre leve e fortalecido para subir, degrau por degrau, até o cume da sua própria realização espiritual e humana.
+
+{% include banner.html id="mandala_flor_lotus" %}
+
