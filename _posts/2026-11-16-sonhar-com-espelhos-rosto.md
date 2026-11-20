@@ -62,6 +62,8 @@ Um dos símbolos mais temidos na cultura popular, mas com leitura precisa no son
 
 ---
 
+{% include banner.html id="curso_tarot_nei" %}
+
 ## Como Interpretar o Seu Sonho com Espelhos e Máscaras: Passo a Passo
 
 Para extrair o ensinamento prático do seu sonho, siga este roteiro reflexivo:
