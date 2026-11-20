@@ -25,7 +25,7 @@ curso_tarot_nei:
 quadro_decorativo:
   alt: "Quadro Homem Astrologia Com Vidro"
   image: "/assets/images/banner_quadro_astrologia_1200x400.webp"
-  image_mobile: "/assets/images/banner_quadro_astrologia_800x800.webp"
+  image_mobile: "assets/images/banner_quadro_astrologia_800X800.webp"
   url: "https://meli.la/2VgYAsc"
 
 grimorio_nome:
