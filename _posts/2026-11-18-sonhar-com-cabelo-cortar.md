@@ -44,6 +44,8 @@ Por estarem situados na cabeça, os fios de cabelo representam a multidão de pe
 
 ---
 
+{% include banner.html id="12_placas_zodiaco" %}
+
 ## Cenários Frequentes com Cabelos e Seus Significados
 
 Para decifrar com precisão o seu sonho, é essencial observar o estado do cabelo, quem estava manuseando os fios e as emoções sentidas durante a visão.
@@ -83,3 +85,5 @@ Para extrair o ensinamento prático do seu sonho, siga este método de análise:
 3. **Como você tratava o seu cabelo no sonho?** Cuidar, pentear e admirar o cabelo indica amor-próprio e organização; negligenciar ou ver o cabelo destruído pede atenção urgente à sua saúde física e emocional.
 
 > **O cabelo nos sonhos é a moldura da nossa alma e a extensão da nossa força interior.** Ao aprender a ler as mensagens que ele transmite no cenário noturno, você recupera a sua autoconfiança, protege a sua mente e se prepara para caminhar pelo mundo com autoridade, beleza e autenticidade.
+
+{% include banner.html id="limpeza_reiki" %}
