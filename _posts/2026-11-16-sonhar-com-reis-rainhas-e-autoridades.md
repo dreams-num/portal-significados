@@ -59,6 +59,8 @@ Encontrar monarcas de épocas passadas aponta para o resgate de princípios nobr
 ##### Sonhar que serve a uma autoridade como súdito ou escravo
 Ver-se em uma posição servil diante de uma figura de poder alerta para a abdicação do seu livre-arbítrio. Você está permitindo que outras pessoas tomem decisões por você, aceitando migalhas de reconhecimento em troca de uma falsa sensação de segurança.
 
+{% include banner.html id="mandala_flor_lotus" %}
+
 #### Perspectivas Espirituais e Psicológicas dos Símbolos
 
 Sob a visão espiritual, o Rei Supremo é o próprio Criador. Encontrar figuras majestosas em sonhos luminescentes simboliza a reconexão com a Nobreza Divina da qual a alma é herdeira. O sonho lembra que você não nasceu para a pequenez ou para a miséria espiritual, mas para governar os seus pensamentos com amor e justiça.
