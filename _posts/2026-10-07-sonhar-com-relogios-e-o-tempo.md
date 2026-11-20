@@ -43,6 +43,8 @@ Ver horas exatas ou números repetidos em um mostrador (como 07:00, 12:00 ou seq
 
 Se a hora marcada possui um significado pessoal (como a hora de nascimento de um filho ou um horário marcante do passado), o sonho resgata essa memória para oferecer sabedoria diante de um dilema atual. De modo geral, ver horas exatas traz a confirmação de que você está no lugar certo e no tempo correto.
 
+{% include banner.html id="12_placas_zodiaco" %}
+
 ##### Sonhar com relógio quebrado ou parado
 
 Um relógio parado ou com o visor trincado simboliza **estagnação, bloqueio ou recusa em evoluir**. Esse sonho indica que o sonhador está preso a uma fase do passado, alimentando ressentimentos ou recusando-se a aceitar uma mudança inevitável.
@@ -99,6 +101,8 @@ A interpretação do seu sonho deve se traduzir em passos práticos para o seu b
 2. **Gerencie a Ansiedade:** Se o sonho trouxe sensação de pânico ou correria, pratique exercícios de respiração, meditação e estabeleça limites saudáveis na sua carga de trabalho.
 3. **Honre os Seus Compromissos:** Verifique se há promessas antigas ou tarefas pendentes que você tem procrastinado e resolva-as para liberar energia mental.
 4. **Valorize o Presente:** Lembre-se de que o único momento em que você possui poder real de ação é o agora. Use a consciência do tempo para cultivar relacionamentos e viver com autenticidade.
+
+{% include banner.html id="curso_tarot_nei" %}
 
 #### Conclusão
 
