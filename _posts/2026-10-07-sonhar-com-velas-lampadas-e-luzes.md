@@ -49,6 +49,8 @@ Observar uma vela tremeluzindo até se apagar ou ver alguém soprando a sua cham
 
 Se a vela for apagada por um vento forte, o sonho alerta para tempestades emocionais imprevistas que exigirão resiliência. O conselho do inconsciente é reacender a chama interna através da oração, da meditação e do afaste de conversas tóxicas.
 
+{% include banner.html id="velas_decorativas" %}
+
 ##### Sonhar que acende uma vela no escuro
 
 Acender uma vela no meio da escuridão absoluta representa o ato supremo de **coragem e renovação da esperança**. Esse sonho surge para pessoas que atravessaram momentos dolorosos de luto, depressão ou crises financeiras, marcando o exato instante em que a pessoa decide reagir.
@@ -100,7 +102,7 @@ Para integrar as bênçãos e os avisos do seu sonho com luz na vida desperta, c
 3. **Reacenda a Fé na Provação:** Se você viu uma pequena chama no escuro, não desista dos seus objetivos diante das dificuldades temporárias; continue avançando com confiança.
 4. **Desconecte para Descansar:** Se a lâmpada do sonho estava piscando ou queimada, desligue as telas dos dispositivos eletrônicos mais cedo, busque o contato com a natureza e durma o suficiente para recuperar a vitalidade.
 
-#### Conclusão
+{% include banner.html id="limpeza_reiki" %}
 
 Sonhar com velas, lâmpadas e luzes é um abraço consolador do universo à sua jornada. Esse símbolo lembra que, por mais densa que seja a escuridão do mundo ou das provações temporárias, uma única fagulha de luz e fé é suficiente para dissipar as sombras e revelar a beleza da verdade.
 
