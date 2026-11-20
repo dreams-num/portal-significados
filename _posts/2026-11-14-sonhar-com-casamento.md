@@ -37,6 +37,8 @@ Casar-se exige renunciar à vida de solteiro e assumir responsabilidades de long
 
 ---
 
+{% include banner.html id="sinastria_lais" %}
+
 ## A Perspectiva Espiritual: Alianças, Cobertura e Fidelidade ao Propósito
 
 No plano espiritual e nas tradições clássicas de interpretação de símbolos, o casamento é o emblema máximo do pacto, da aliança sagrada e da elevação de posição moral.
