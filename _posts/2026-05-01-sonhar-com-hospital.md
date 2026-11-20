@@ -8,6 +8,7 @@ sonho_grupo: "Corpo e Sinais Físicos"
 keywords: "sonhar com hospital, sonhar com prisão, sonhar com doença, processos de cura, restrições, libertação interior, autocuidado, saúde, significado dos sonhos"
 image: "/assets/images/sonhar-hospital.webp"
 image_alt: "Ilustração sobre sonhar com hospital, prisão e doença"
+last_modified_at: 2026-11-20
 ---
 
 # Sonhar com Hospital, Prisão e Doença: Processos de Cura, Restrições e Libertação Interior
