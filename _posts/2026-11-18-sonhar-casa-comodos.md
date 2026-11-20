@@ -75,6 +75,8 @@ O banheiro é o local da higiene diária e da eliminação dos resíduos do corp
 
 ---
 
+{% include banner.html id="quadro_decorativo" %}
+
 ## Cenários Frequentes com Casas e Seus Significados
 
 ### 1. Descobrir um Cômodo Escondido ou Novo na Casa
