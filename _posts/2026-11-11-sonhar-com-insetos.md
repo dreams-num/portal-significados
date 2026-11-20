@@ -33,6 +33,8 @@ A aranha é um dos arquétipos mais complexos da psique humana. Por um lado, ela
 
 ---
 
+{% include banner.html id="limpeza_reiki" %}
+
 ## A Perspectiva Espiritual: Disciplina, Frutificação e Alertas de Estagnação
 
 No plano espiritual e nas tradições sagradas, o comportamento dos insetos traz lições valiosas de sabedoria moral, trabalho duro e discernimento do ambiente.
