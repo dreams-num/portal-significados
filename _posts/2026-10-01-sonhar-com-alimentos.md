@@ -44,6 +44,8 @@ As frutas representam a coroação de um ciclo de cultivo. Elas surgem após o t
 
 ---
 
+{% include banner.html id="grimorio_nome" %}
+
 ## Cenários Frequentes com Alimentos e Seus Significados
 
 ### 1. Sonhar com Pão (Fresco vs. Estragado)
