@@ -44,6 +44,8 @@ Espiritualmente, o ato de estudar de forma compenetrada em sonho é um convite d
 
 ---
 
+{% include banner.html id="12_placas_zodiaco" %}
+
 ## Cenários Frequentes com Livros e Estudos e Seus Significados
 
 ### 1. Sonhar Lendo um Livro
@@ -63,6 +65,8 @@ A biblioteca é o santuário do saber e o arquivo da memória coletiva.
 - **Significado:** Símbolo supremo da autoria do próprio destino. Indica que você deixou de ser um mero espectador passivo da vida para se tornar o escritor da sua história. Revela a prontidão para deixar um legado duradouro, expressar as suas ideias com autoridade e criar novos caminhos com autonomia.
 
 ---
+
+{% include banner.html id="velas_decorativas" %}
 
 ## Como Interpretar o Seu Sonho com Livros e Estudos: Passo a Passo
 
