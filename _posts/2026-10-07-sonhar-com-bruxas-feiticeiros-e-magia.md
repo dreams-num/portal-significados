@@ -33,6 +33,8 @@ A **bruxa sábia ou anciã** (*Wise Woman*) representa o aspecto protetor e intu
 
 O **mago ou alquimista** é o arquétipo do Mestre Interno (*Senex* ou *Wise Old Man*), aquele que ensina a transmutar o chumbo da dor e das dificuldades no ouro da sabedoria e da prosperidade.
 
+{% include banner.html id="limpeza_reiki" %}
+
 #### Cenários Frequentes e Suas Interpretações Detalhadas
 
 O papel que você desempenha no ritual ou no encontro mágico define o significado prático da mensagem.
@@ -66,6 +68,8 @@ Sob a ótica espiritual, sonhar com magia é um convite para reconhecer que o mu
 
 Psicologicamente, a magia nos sonhos representa o processo de **transmutação psíquica**. Quando não conseguimos resolver um dilema pela lógica racional pura, a psique recorre à linguagem mágica para unir a intuição à razão, permitindo encontrar saídas criativas e inovadoras para conflitos antigos.
 
+{% include banner.html id="grimorio_nome" %}
+
 #### Como Agir Após Sonhar com Bruxas e Magia
 
 Para ancorar a sabedoria desse sonho em sua rotina diária, adote as seguintes práticas:
@@ -74,7 +78,5 @@ Para ancorar a sabedoria desse sonho em sua rotina diária, adote as seguintes p
 2. **Purifique o Seu Espaço Pessoal:** Faça uma limpeza física e energética em sua casa ou ambiente de trabalho. Livre-se de objetos quebrados, papéis acumulados e energias estagnadas.
 3. **Proteja-se contra Manipulações:** Observe se você não está cedendo a vontades alheias por culpa ou medo. Diga "não" a solicitações que firam os seus valores.
 4. **Cultive o Seu Conhecimento:** Busque estudar temas que expandam a sua visão de mundo, como psicologia, filosofia, artes ou práticas espirituais equilibradas.
-
-#### Conclusão
 
 Sonhar com bruxas, feiticeiros e magia é um lembrete fascinante de que você não é uma vítima passiva das circunstâncias. O verdadeiro poder mágico habita na sua capacidade de escolher seus pensamentos, dominar suas emoções e agir com intenção nobre. Ao reivindicar o seu poder pessoal e alinhar a sua intuição à sua razão, você se torna capaz de transformar qualquer desafio em uma oportunidade gloriosa de aprendizado e vitória.
