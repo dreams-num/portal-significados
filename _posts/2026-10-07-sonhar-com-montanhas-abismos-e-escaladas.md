@@ -61,6 +61,8 @@ A queda em um abismo está associada à sensação de **perda de controle** ou d
 
 Embora desconfortável, esse sonho funciona como um alarme do inconsciente: ele pede para você soltar as expectativas rígidas e reconhecer que tocar o fundo muitas vezes é o ponto de partida para reconstruir as suas fundações com mais solidez.
 
+{% include banner.html id="quadro_decorativo" %}
+
 ##### Sonhar com caminhada em uma trilha de montanha segura
 
 Caminhar por uma trilha bem demarcada na montanha indica que você está seguindo um caminho planejado e equilibrado para atingir suas metas. Há um alinhamento harmonioso entre a sua intuição e as suas ações práticas.
@@ -101,8 +103,6 @@ A sabedoria dos sonhos deve ser traduzida em atitudes práticas no mundo real. A
 2. **Enfrente Seus Abismos com Cautela:** Se o sonho trouxe a imagem do precipício, analise quais medos ou incertezas estão travando os seus passos e busque apoio emocional ou profissional.
 3. **Celebre Pequenas Conquistas:** Lembre-se de que a escalada é feita passo a passo. Reconheça o progresso que você já fez até aqui, sem se pressionar apenas pelo topo.
 4. **Cultive a Perspectiva:** Diante das crises, adote a visão da montanha: eleve-se mentalmente para observar a situação de um ponto mais alto e objetivo.
-
-#### Conclusão
 
 Sonhar com montanhas, abismos e escaladas é um convite majestoso da sua psique para despertar o seu poder pessoal. As alturas simbolizam o seu potencial ilimitado, enquanto as profundezas lembram da necessidade de pés firmes e autoconhecimento.
 
