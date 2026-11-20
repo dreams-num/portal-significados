@@ -39,6 +39,8 @@ Nos textos sagrados da sabedoria antiga, o dinheiro inesperado e limpo que apare
 ### 2. A Sacralidade do Fluxo e a Armadilha da Acumulação
 Não é prosperidade espiritual acumular coisas avidamente e guardá-las para si. A mente espiritual e o fluxo da vida estarão em consonância, e as coisas cuidarão de si mesmas. Quando o sonho mostra cofres, bancos ou um desejo obsessivo de esconder coisas, a mente espiritual está alertando sobre o “espírito de escassez”. O dinheiro representa energia, e pode haver um apego extremo às coisas, especialmente no âmbito material, fazendo com que as pessoas percam o alinhamento com o fluxo da vida.
 
+{% include banner.html id="mandala_flor_lotus" %}
+
 ## Achar, Ganhar ou Perder Dinheiro: As Ações e Seus Significados
 
 O simbolismo do dinheiro nos sonhos depende, em grande parte, das principais ações presentes no sonho.
