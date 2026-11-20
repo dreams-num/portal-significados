@@ -48,6 +48,8 @@ Historicamente, em diversas tradições espirituais e textos sagrados, a ordem p
 
 ---
 
+{% include banner.html id="12_placas_zodiaco" %}
+
 ## Cenários Frequentes e Seus Significados
 
 ### 1. Sonhar que Está Voando: As Diferentes Formas do Voo
@@ -63,6 +65,9 @@ Historicamente, em diversas tradições espirituais e textos sagrados, a ordem p
 - **Andar Descalço em um Local Público ou Formal:** Indica o medo da exposição pública, o receio de ter fraquezas reveladas ou a sensação de inadequação diante de um grupo social exigente.
 
 ---
+
+{% include banner.html id="velas_decorativas" %}
+
 
 ## Como Interpretar e Aplicar a Mensagem no Seu Dia a Dia
 
