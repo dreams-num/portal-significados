@@ -31,6 +31,8 @@ A prisão é o local onde a liberdade de movimento é retirada devido a infraç�
 
 ---
 
+{% include banner.html id="limpeza_reiki" %}
+
 ## A Perspectiva Espiritual: Livramento de Aflições, Limpeza e Libertação
 
 ### 1. O Livramento da Aflição
