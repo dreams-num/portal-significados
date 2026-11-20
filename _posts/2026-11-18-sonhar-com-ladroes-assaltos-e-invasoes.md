@@ -32,7 +32,9 @@ O lar e os pertences pessoais nos sonhos funcionam como extensões da própria p
 
 O **ladrão** é o arquétipo do parasita ou do elemento desagregador. Ele entra sem pedir licença e se apodera daquilo que não lhe pertence. Quando o ladrão invade o seu sonho, a psique está denunciando que você está permitindo que influências externas (como pessoas folgadas, ambientes de trabalho abusivos ou hábitos autodestrutivos) roubem os seus recursos mais valiosos.
 
-Além disso, o ladrão pode representar o medo irracional da escassez ou o sentimento de impostor — a crença oculta de que a sua felicidade e o seu sucesso são frágeis e podem ser tomados de você a qualquer momento.
+Além disso, o ladrão pode representar o medo irracional da escassez ou o sentimento de impostor, a crença oculta de que a sua felicidade e o seu sucesso são frágeis e podem ser tomados de você a qualquer momento.
+
+{% include banner.html id="limpeza_reiki" %}
 
 #### Cenários Frequentes e Suas Interpretações Detalhadas
 
@@ -75,7 +77,5 @@ Para transformar o alerta do sonho em proteção real para o seu cotidiano, siga
 2. **Proteja as Suas Informações:** Evite expor conquistas financeiras, planos futuros ou dramas familiares em redes sociais ou para pessoas pouco confiáveis.
 3. **Avalie o Seu Tempo e Energia:** Analise quais hábitos ou compromissos inúteis estão "roubando" as horas que você deveria dedicar ao descanso, à família e aos seus projetos.
 4. **Trabalhe o Sentimento de Merecimento:** Fortaleça a sua convicção de que você é merecedor da sua prosperidade e que ninguém possui o poder de tirar o que foi edificado com trabalho honesto e bênção divina.
-
-#### Conclusão
 
 Sonhar com ladrões, assaltos e invasões é um alerta rigoroso, mas extremamente benéfico. O sonho não prevê um crime real, mas convida você a se tornar o guardião consciente da sua própria vida. Ao fechar as portas para influências tóxicas, valorizar o seu tempo e proteger o seu santuário interno, você garante que a sua paz, o seu valor e a sua alegria permaneçam para sempre inabaláveis.
