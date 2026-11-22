@@ -34,9 +34,13 @@ description: "Descubra seu Número de Destino gratuitamente pela data de nascime
             </label>
 
             <input
-                type="date"
+                type="text"
                 id="dest_data"
-                style="width:100%; box-sizing:border-box; padding:12px; background:#0d0b14; border:1px solid #444; color:#fff; border-radius:6px; color-scheme:dark;"
+                placeholder="DD/MM/AAAA"
+                maxlength="10"
+                inputmode="numeric"
+                autocomplete="bday"
+                style="width:100%; box-sizing:border-box; padding:12px; background:#0d0b14; border:1px solid #444; color:#fff; border-radius:6px;"
             >
 
             <p style="font-size:0.82rem; color:#aaa; margin-top:10px;">
@@ -326,77 +330,73 @@ description: "Descubra seu Número de Destino gratuitamente pela data de nascime
         return numero;
     }
 
-    function calcularDestino() {
-        const data = campoData.value;
+   function calcularDestino() {
+    const data = campoData.value.trim();
 
-        erro.style.display = 'none';
-        resultado.style.display = 'none';
+    erro.style.display = 'none';
+    resultado.style.display = 'none';
 
-        if (!data) {
-            erro.textContent = 'Por favor, informe sua data de nascimento.';
-            erro.style.display = 'block';
-            return;
-        }
+    const correspondencia = data.match(/^(\d{2})\/(\d{2})\/(\d{4})$/);
 
-        const partes = data.split('-').map(Number);
-
-        if (partes.length !== 3) {
-            erro.textContent = 'Data de nascimento inválida.';
-            erro.style.display = 'block';
-            return;
-        }
-
-        const [ano, mes, dia] = partes;
-        const dataNascimento = new Date(Date.UTC(ano, mes - 1, dia));
-        const dataValidada = dataNascimento.getUTCFullYear() === ano &&
-            dataNascimento.getUTCMonth() === mes - 1 &&
-            dataNascimento.getUTCDate() === dia;
-
-        const hoje = new Date();
-        const hojeUTC = Date.UTC(
-            hoje.getFullYear(),
-            hoje.getMonth(),
-            hoje.getDate()
-        );
-
-        if (!dataValidada || ano < 1900 || dataNascimento.getTime() > hojeUTC) {
-            erro.textContent = 'Informe uma data de nascimento válida, entre 1900 e hoje.';
-            erro.style.display = 'block';
-            return;
-        }
-
-        const algarismos = data.replace(/-/g, '').split('').map(Number);
-
-        const somaInicial = algarismos.reduce(
-            (total, numero) => total + numero,
-            0
-        );
-
-        const numeroDestino = reduzirNumero(somaInicial);
-        const info = significados[numeroDestino];
-
-        document.getElementById('dest_numero').textContent = numeroDestino;
-        document.getElementById('dest_nome').textContent = info.nome;
-
-        document.getElementById('dest_composicao').textContent =
-            'Data de nascimento: ' +
-            String(dia).padStart(2, '0') + '/' +
-            String(mes).padStart(2, '0') + '/' + ano +
-            '. Soma dos algarismos: ' +
-            algarismos.join(' + ') +
-            ' = ' + somaInicial +
-            '. Número final: ' + numeroDestino + '.';
-
-        document.getElementById('dest_interpretacao').textContent =
-            info.texto;
-
-        resultado.style.display = 'block';
-
-        resultado.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        });
+    if (!correspondencia) {
+        erro.textContent = 'Informe a data no formato DD/MM/AAAA.';
+        erro.style.display = 'block';
+        return;
     }
+
+    const dia = Number(correspondencia[1]);
+    const mes = Number(correspondencia[2]);
+    const ano = Number(correspondencia[3]);
+
+    const dataNascimento = new Date(Date.UTC(ano, mes - 1, dia));
+
+    const dataValida =
+        dataNascimento.getUTCFullYear() === ano &&
+        dataNascimento.getUTCMonth() === mes - 1 &&
+        dataNascimento.getUTCDate() === dia;
+
+    const hoje = new Date();
+    const hojeUTC = Date.UTC(
+        hoje.getFullYear(),
+        hoje.getMonth(),
+        hoje.getDate()
+    );
+
+    if (!dataValida || ano < 1900 || dataNascimento.getTime() > hojeUTC) {
+        erro.textContent = 'Informe uma data válida, entre 1900 e hoje.';
+        erro.style.display = 'block';
+        return;
+    }
+
+    const algarismos = data.replace(/\//g, '').split('').map(Number);
+
+    const somaInicial = algarismos.reduce(
+        (total, numero) => total + numero, 0
+    );
+
+    const numeroDestino = reduzirNumero(somaInicial);
+    const info = significados[numeroDestino];
+
+    document.getElementById('dest_numero').textContent = numeroDestino;
+    document.getElementById('dest_nome').textContent = info.nome;
+
+    document.getElementById('dest_composicao').textContent =
+        'Data de nascimento: ' + data +
+        '. Soma dos algarismos: ' +
+        algarismos.join(' + ') +
+        ' = ' + somaInicial +
+        '. Número final: ' + numeroDestino + '.';
+
+    document.getElementById('dest_interpretacao').textContent =
+        info.texto;
+
+    resultado.style.display = 'block';
+
+    resultado.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    });
+}
 
     botao.addEventListener('click', calcularDestino);
 
