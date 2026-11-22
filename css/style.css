@@ -828,3 +828,80 @@ a.dream-pill:hover { background: #F3CD76; }
     .dream-chips::-webkit-scrollbar, .dream-letters::-webkit-scrollbar { display: none; }
     .dream-letter-link { flex: 0 0 32px; }
 }
+
+
+/* SEO content - Dream dictionary */
+
+.dream-seo-content {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+  line-height: 1.7;
+}
+
+.dream-seo-content h2 {
+  margin-top: 28px;
+  margin-bottom: 12px;
+  line-height: 1.35;
+}
+
+.dream-seo-content h2:first-child {
+  margin-top: 0;
+}
+
+.dream-seo-content h3 {
+  margin-top: 20px;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.dream-seo-content p {
+  margin-bottom: 12px;
+}
+
+.dream-seo-content ul {
+  margin: 12px 0 18px;
+  padding-left: 22px;
+}
+
+.dream-seo-content li {
+  margin-bottom: 6px;
+}
+
+.dream-seo-content .dream-faq {
+  margin-top: 16px;
+}
+
+.dream-seo-content .dream-faq h3 {
+  margin-top: 18px;
+}
+
+.dream-seo-content .dream-related-link {
+  margin: 10px 0;
+}
+
+.dream-seo-content .dream-related-link a {
+  color: #e8bd55;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+.dream-seo-content .dream-related-link a:hover {
+  color: #ffd978;
+}
+
+@media (max-width: 600px) {
+  .dream-seo-content {
+    margin-top: 24px;
+    padding-top: 20px;
+  }
+
+  .dream-seo-content h2 {
+    margin-top: 24px;
+  }
+
+  .dream-seo-content h3 {
+    margin-top: 18px;
+  }
+}
