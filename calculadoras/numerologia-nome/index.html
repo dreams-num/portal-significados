@@ -1,24 +1,409 @@
 ---
 layout: default
-title: "Calculadora de Numerologia | Portal Significados"
-description: "Calcule o seu número de destino de forma rápida e gratuita."
+title: "Calculadora do Número de Destino pela Data de Nascimento"
+description: "Descubra seu Número de Destino gratuitamente pela data de nascimento. Calcule seu Caminho de Vida e conheça o significado numerológico do resultado."
 ---
 
 <main class="container post-container">
     <div class="breadcrumbs">
-        <a href="{{ '/' | relative_url }}">Início</a> &gt; 
-        <a href="{{ '/calculadoras/' | relative_url }}">Calculadoras</a> &gt; 
+        <a href="{{ '/' | relative_url }}">Início</a> &gt;
+        <a href="{{ '/calculadoras/' | relative_url }}">Calculadoras</a> &gt;
         <span>Calculadora de Destino</span>
     </div>
 
     <article class="post-content">
-        <h1>Calculadora de Destino</h1>
-        <p>Insira os seus dados abaixo para calcular o significado:</p>
 
-        <div style="background: #12101a; border: 1px solid rgba(212, 175, 55, 0.35); padding: 25px; border-radius: 12px; margin-top: 20px;">
-            <input type="text" id="userInput" placeholder="Digite seu nome completo" style="width: 100%; padding: 12px; background: #0d0b14; border: 1px solid #444; color: #fff; border-radius: 6px; margin-bottom: 15px;">
-            <button id="calcBtn" class="btn-accept" style="cursor: pointer;">Calcular</button>
-            <div id="result" style="margin-top: 20px; color: #f3e5ab; font-weight: bold;"></div>
+        <h1 style="text-align:center;">✦ Calculadora do Número de Destino ✦</h1>
+
+        <p style="text-align:center; color:#d4af37; font-style:italic;">
+            Descubra seu Caminho de Vida pela Numerologia
+        </p>
+
+        <p>
+            A Calculadora do Número de Destino utiliza sua data de nascimento
+            para encontrar um número associado ao Caminho de Vida na numerologia.
+            Informe sua data e descubra o resultado, sua composição e uma
+            interpretação simbólica.
+        </p>
+
+        <!-- CALCULADORA -->
+        <div style="background:#12101a; border:1px solid rgba(212,175,55,0.35); border-radius:8px; padding:25px; margin:25px 0;">
+
+            <label for="dest_data" style="display:block; color:#f3e5ab; font-size:0.9rem; font-weight:bold; margin-bottom:10px;">
+                Sua data de nascimento
+            </label>
+
+            <input
+                type="date"
+                id="dest_data"
+                style="width:100%; box-sizing:border-box; padding:12px; background:#0d0b14; border:1px solid #444; color:#fff; border-radius:6px; color-scheme:dark;"
+            >
+
+            <p style="font-size:0.82rem; color:#aaa; margin-top:10px;">
+                Informe o dia, mês e ano do seu nascimento.
+            </p>
+
+            <button
+                type="button"
+                id="dest_calcular"
+                style="width:100%; background:#d4af37; color:#12101a; border:0; font-weight:bold; cursor:pointer; padding:13px; border-radius:6px; margin-top:15px;"
+            >
+                ✦ Calcular meu Número de Destino
+            </button>
+
+            <div
+                id="dest_erro"
+                role="alert"
+                aria-live="polite"
+                style="display:none; color:#ff7777; margin-top:15px; font-size:0.9rem;"
+            ></div>
+
         </div>
+
+        <!-- RESULTADO -->
+        <div id="dest_resultado" style="display:none; margin-top:30px;">
+
+            <div style="text-align:center; padding:25px 10px; border-bottom:2px solid rgba(212,175,55,0.35);">
+
+                <div style="color:#d4af37; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.1em;">
+                    Seu Número de Destino
+                </div>
+
+                <div id="dest_numero" style="font-size:4rem; color:#f3e5ab; font-weight:bold; line-height:1.3;">
+                </div>
+
+                <div id="dest_nome" style="font-size:1.15rem; color:#d4af37; font-weight:bold;">
+                </div>
+
+            </div>
+
+            <div style="background:#12101a; border:1px solid rgba(212,175,55,0.35); border-radius:8px; padding:20px; margin-top:20px;">
+
+                <h2 style="color:#d4af37; font-size:1.1rem;">
+                    Como seu número foi calculado?
+                </h2>
+
+                <div id="dest_composicao" style="color:#e0e0e0; line-height:1.8;">
+                </div>
+
+            </div>
+
+            <div style="background:#12101a; border-left:4px solid #d4af37; border-radius:8px; padding:20px; margin-top:20px;">
+
+                <h2 style="color:#d4af37; font-size:1.1rem;">
+                    Significado do seu Número de Destino
+                </h2>
+
+                <div id="dest_interpretacao" style="color:#e0e0e0; line-height:1.8;">
+                </div>
+
+            </div>
+
+            <p style="font-size:0.82rem; color:#aaa; margin-top:15px;">
+                Este resultado representa uma interpretação simbólica
+                baseada em tradições numerológicas. Não constitui uma
+                previsão científica sobre personalidade ou acontecimentos futuros.
+            </p>
+
+        </div>
+
+        <!-- CONTEÚDO SEO -->
+        <section style="margin-top:40px;">
+
+            <h2>O que é o Número de Destino na Numerologia?</h2>
+
+            <p>
+                O Número de Destino, também conhecido em algumas tradições
+                como Caminho de Vida, é obtido a partir da data completa
+                de nascimento. Na numerologia, esse número recebe
+                interpretações relacionadas a tendências simbólicas,
+                características e temas associados à trajetória pessoal.
+            </p>
+
+            <p>
+                O cálculo utiliza os algarismos do dia, mês e ano de
+                nascimento. A soma é reduzida até chegar a um número
+                de 1 a 9, preservando os números mestres 11, 22 e 33
+                quando aparecem como resultado da redução.
+            </p>
+
+            <h2>Como calcular o Número de Destino?</h2>
+
+            <p>
+                Para encontrar seu número, some todos os algarismos
+                da sua data de nascimento. Se o resultado tiver
+                mais de um algarismo, some seus dígitos novamente,
+                respeitando os números mestres.
+            </p>
+
+            <p>
+                Por exemplo, para uma pessoa nascida em 15/08/1990:
+            </p>
+
+            <ul>
+                <li>1 + 5 + 0 + 8 + 1 + 9 + 9 + 0 = 33.</li>
+                <li>O resultado é 33, um número mestre.</li>
+            </ul>
+
+            <p>
+                Nesse método, o número 33 é mantido sem redução adicional.
+            </p>
+
+            <h2>Significado dos números de destino</h2>
+
+            <h3>Número 1</h3>
+            <p>Representa simbolicamente iniciativa, independência, liderança e originalidade.</p>
+
+            <h3>Número 2</h3>
+            <p>Está associado à cooperação, diplomacia, sensibilidade e equilíbrio nas relações.</p>
+
+            <h3>Número 3</h3>
+            <p>Simboliza comunicação, criatividade, expressão e sociabilidade.</p>
+
+            <h3>Número 4</h3>
+            <p>Está relacionado à organização, disciplina, estabilidade e construção.</p>
+
+            <h3>Número 5</h3>
+            <p>Representa liberdade, movimento, versatilidade e experiências novas.</p>
+
+            <h3>Número 6</h3>
+            <p>Está associado à responsabilidade, harmonia, cuidado e relações familiares.</p>
+
+            <h3>Número 7</h3>
+            <p>Simboliza investigação, reflexão, conhecimento e busca interior.</p>
+
+            <h3>Número 8</h3>
+            <p>Representa realização, administração, ambição e organização material.</p>
+
+            <h3>Número 9</h3>
+            <p>Está associado à compaixão, generosidade, humanitarismo e conclusão de ciclos.</p>
+
+            <h3>Número Mestre 11</h3>
+            <p>Simboliza inspiração, intuição e sensibilidade espiritual.</p>
+
+            <h3>Número Mestre 22</h3>
+            <p>Está relacionado à capacidade de planejamento, construção e realização de projetos coletivos.</p>
+
+            <h3>Número Mestre 33</h3>
+            <p>Representa simbolicamente compaixão, serviço, cuidado e dedicação ao coletivo.</p>
+
+            <h2>Perguntas frequentes sobre o Número de Destino</h2>
+
+            <h3>O Número de Destino muda ao longo da vida?</h3>
+            <p>
+                Não. No método apresentado, o resultado é calculado
+                a partir da data de nascimento, que permanece a mesma.
+            </p>
+
+            <h3>Preciso informar meu nome para fazer o cálculo?</h3>
+            <p>
+                Não. Esta calculadora utiliza somente a data de nascimento.
+                O nome é utilizado em outros métodos de numerologia.
+            </p>
+
+            <h3>O que são números mestres?</h3>
+            <p>
+                São números que algumas tradições numerológicas
+                preservam sem redução adicional, principalmente 11, 22 e 33.
+            </p>
+
+            <h3>O Número de Destino prevê o futuro?</h3>
+            <p>
+                Não. A numerologia oferece interpretações simbólicas.
+                O resultado não é um método científico de previsão
+                de acontecimentos.
+            </p>
+
+        </section>
+
+        <!-- LINKS INTERNOS -->
+        <section style="margin-top:35px;">
+
+            <h2>Continue explorando Numerologia</h2>
+
+            <ul>
+                <li>
+                    <a href="{{ '/calculadoras/cabalistica/' | relative_url }}">
+                        Calculadora de Numerologia Cabalística
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{{ '/calculadoras/mapa-numerologico/' | relative_url }}">
+                        Calculadora de Mapa Numerológico
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{{ '/calculadoras/numerologia-nome/' | relative_url }}">
+                        Calculadora de Numerologia do Nome
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{{ '/calculadoras/astrogematria/' | relative_url }}">
+                        Calculadora de Astrogematria Hebraica
+                    </a>
+                </li>
+            </ul>
+
+            <p>
+                <a href="{{ '/calculadoras/' | relative_url }}">
+                    Voltar para todas as calculadoras
+                </a>
+            </p>
+
+        </section>
+
     </article>
 </main>
+
+<script>
+(function () {
+    const botao = document.getElementById('dest_calcular');
+    const campoData = document.getElementById('dest_data');
+    const erro = document.getElementById('dest_erro');
+    const resultado = document.getElementById('dest_resultado');
+
+    const significados = {
+        1: {
+            nome: 'Iniciativa e Independência',
+            texto: 'O número 1 está simbolicamente associado à liderança, autonomia, iniciativa e capacidade de começar novos projetos.'
+        },
+        2: {
+            nome: 'Cooperação e Equilíbrio',
+            texto: 'O número 2 representa simbolicamente diplomacia, sensibilidade, colaboração e busca por harmonia nas relações.'
+        },
+        3: {
+            nome: 'Criatividade e Expressão',
+            texto: 'O número 3 está associado à comunicação, criatividade, expressão pessoal e sociabilidade.'
+        },
+        4: {
+            nome: 'Organização e Estabilidade',
+            texto: 'O número 4 simboliza disciplina, planejamento, estrutura e construção de bases sólidas.'
+        },
+        5: {
+            nome: 'Liberdade e Movimento',
+            texto: 'O número 5 está relacionado à versatilidade, liberdade, adaptação e busca por novas experiências.'
+        },
+        6: {
+            nome: 'Responsabilidade e Harmonia',
+            texto: 'O número 6 representa simbolicamente cuidado, compromisso, equilíbrio e responsabilidade nas relações.'
+        },
+        7: {
+            nome: 'Conhecimento e Reflexão',
+            texto: 'O número 7 está associado à investigação, introspecção, conhecimento e busca por compreensão.'
+        },
+        8: {
+            nome: 'Realização e Administração',
+            texto: 'O número 8 simboliza organização, capacidade administrativa, realização e objetivos materiais.'
+        },
+        9: {
+            nome: 'Compaixão e Humanitarismo',
+            texto: 'O número 9 representa simbolicamente generosidade, empatia, consciência coletiva e conclusão de ciclos.'
+        },
+        11: {
+            nome: 'Inspiração e Intuição',
+            texto: 'O número mestre 11 está associado à inspiração, sensibilidade, intuição e percepção simbólica.'
+        },
+        22: {
+            nome: 'Construção e Realização',
+            texto: 'O número mestre 22 simboliza planejamento, capacidade de construção e realização de projetos de grande alcance.'
+        },
+        33: {
+            nome: 'Compaixão e Serviço',
+            texto: 'O número mestre 33 está relacionado à compaixão, dedicação, cuidado e contribuição para o coletivo.'
+        }
+    };
+
+    function reduzirNumero(numero) {
+        while (numero > 9 && numero !== 11 && numero !== 22 && numero !== 33) {
+            numero = String(numero)
+                .split('')
+                .reduce((soma, digito) => soma + Number(digito), 0);
+        }
+
+        return numero;
+    }
+
+    function calcularDestino() {
+        const data = campoData.value;
+
+        erro.style.display = 'none';
+        resultado.style.display = 'none';
+
+        if (!data) {
+            erro.textContent = 'Por favor, informe sua data de nascimento.';
+            erro.style.display = 'block';
+            return;
+        }
+
+        const partes = data.split('-').map(Number);
+
+        if (partes.length !== 3) {
+            erro.textContent = 'Data de nascimento inválida.';
+            erro.style.display = 'block';
+            return;
+        }
+
+        const [ano, mes, dia] = partes;
+        const dataNascimento = new Date(Date.UTC(ano, mes - 1, dia));
+        const dataValidada = dataNascimento.getUTCFullYear() === ano &&
+            dataNascimento.getUTCMonth() === mes - 1 &&
+            dataNascimento.getUTCDate() === dia;
+
+        const hoje = new Date();
+        const hojeUTC = Date.UTC(
+            hoje.getFullYear(),
+            hoje.getMonth(),
+            hoje.getDate()
+        );
+
+        if (!dataValidada || ano < 1900 || dataNascimento.getTime() > hojeUTC) {
+            erro.textContent = 'Informe uma data de nascimento válida, entre 1900 e hoje.';
+            erro.style.display = 'block';
+            return;
+        }
+
+        const algarismos = data.replace(/-/g, '').split('').map(Number);
+
+        const somaInicial = algarismos.reduce(
+            (total, numero) => total + numero,
+            0
+        );
+
+        const numeroDestino = reduzirNumero(somaInicial);
+        const info = significados[numeroDestino];
+
+        document.getElementById('dest_numero').textContent = numeroDestino;
+        document.getElementById('dest_nome').textContent = info.nome;
+
+        document.getElementById('dest_composicao').textContent =
+            'Data de nascimento: ' +
+            String(dia).padStart(2, '0') + '/' +
+            String(mes).padStart(2, '0') + '/' + ano +
+            '. Soma dos algarismos: ' +
+            algarismos.join(' + ') +
+            ' = ' + somaInicial +
+            '. Número final: ' + numeroDestino + '.';
+
+        document.getElementById('dest_interpretacao').textContent =
+            info.texto;
+
+        resultado.style.display = 'block';
+
+        resultado.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }
+
+    botao.addEventListener('click', calcularDestino);
+
+    campoData.addEventListener('keydown', function (evento) {
+        if (evento.key === 'Enter') {
+            calcularDestino();
+        }
+    });
+})();
+</script>
