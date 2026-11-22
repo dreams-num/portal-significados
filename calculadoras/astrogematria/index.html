@@ -261,10 +261,10 @@ function calcularAstro() {
         return;
     }
 
-    let somaData = 0;
-    partesData.join('').split('').forEach(d => {
-        if (!isNaN(parseInt(d))) somaData += parseInt(d);
-    });
+    // Soma os oito algarismos da data validada (DD/MM/AAAA).
+    const somaData = dataInput.replace(/\D/g, '').split('').reduce((total, digito) => {
+        return total + Number(digito);
+    }, 0);
 
     const sefiraId = reduzirParaSefira(somaGematria + somaData);
     const sefira = SEFIROTH_DADOS[sefiraId];
