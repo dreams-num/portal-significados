@@ -81,10 +81,14 @@ last_modified_at: 2026-11-22
                         </label>
 
                         <input
-                            type="date"
+                            type="text"
                             id="oc_nascimento"
+                            placeholder="DD/MM/AAAA"
+                            inputmode="numeric"
+                            maxlength="10"
                             autocomplete="bday"
-                            style="background:#0d0b14;border:1px solid #444;color:#fff;padding:10px;border-radius:6px;width:100%;box-sizing:border-box;outline:none;color-scheme:dark;"
+                            oninput="formatarDataBR(this)"
+                            style="background:#0d0b14;border:1px solid #444;color:#fff;padding:10px;border-radius:6px;width:100%;box-sizing:border-box;outline:none;"
                         />
                     </div>
 
@@ -437,6 +441,18 @@ last_modified_at: 2026-11-22
         return card;
     }
 
+    function formatarDataBR(campo) {
+    let valor = campo.value.replace(/\D/g, "").slice(0, 8);
+
+    if (valor.length > 4) {
+        valor = valor.replace(/^(\d{2})(\d{2})(\d{1,4})$/, "$1/$2/$3");
+    } else if (valor.length > 2) {
+        valor = valor.replace(/^(\d{2})(\d{1,2})$/, "$1/$2");
+    }
+
+    campo.value = valor;
+}
+
     function calcularOcidental() {
 
         const nomeInput = document.getElementById("oc_nome").value.trim();
@@ -488,16 +504,21 @@ last_modified_at: 2026-11-22
 
         const partesData = dataInput.split("-").map(Number);
 
-        if (partesData.length !== 3) {
-            erro.textContent = "A data de nascimento informada não é válida.";
+        const formatoData = /^(\d{2})\/(\d{2})\/(\d{4})$/;
+        const correspondencia = dataInput.match(formatoData);
+        
+        if (!correspondencia) {
+            erro.textContent = "Informe a data no formato DD/MM/AAAA.";
             erro.style.display = "block";
             return;
         }
-
-        const [ano, mes, dia] = partesData;
-
+        
+        const dia = Number(correspondencia[1]);
+        const mes = Number(correspondencia[2]);
+        const ano = Number(correspondencia[3]);
+        
         const dataValidada = new Date(Date.UTC(ano, mes - 1, dia));
-
+        
         if (
             dataValidada.getUTCFullYear() !== ano ||
             dataValidada.getUTCMonth() !== mes - 1 ||
