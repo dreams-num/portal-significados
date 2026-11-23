@@ -1,409 +1,164 @@
 ---
 layout: default
-title: "Calculadora do Número de Destino pela Data de Nascimento"
-description: "Descubra seu Número de Destino gratuitamente pela data de nascimento. Calcule seu Caminho de Vida e conheça o significado numerológico do resultado."
+title: "Numerologia do Nome: Calculadora Gratuita"
+description: "Descubra a numerologia do seu nome com uma calculadora gratuita. Compare os métodos Pitagórico e Cabalístico NCT e veja como cada letra influencia o resultado."
 ---
 
 <main class="container post-container">
-    <div class="breadcrumbs">
-        <a href="{{ '/' | relative_url }}">Início</a> &gt;
-        <a href="{{ '/calculadoras/' | relative_url }}">Calculadoras</a> &gt;
-        <span>Calculadora de Destino</span>
-    </div>
-
-    <article class="post-content">
-
-        <h1 style="text-align:center;">✦ Calculadora do Número de Destino ✦</h1>
-
-        <p style="text-align:center; color:#d4af37; font-style:italic;">
-            Descubra seu Caminho de Vida pela Numerologia
-        </p>
-
-        <p>
-            A Calculadora do Número de Destino utiliza sua data de nascimento
-            para encontrar um número associado ao Caminho de Vida na numerologia.
-            Informe sua data e descubra o resultado, sua composição e uma
-            interpretação simbólica.
-        </p>
-
-        <!-- CALCULADORA -->
-        <div style="background:#12101a; border:1px solid rgba(212,175,55,0.35); border-radius:8px; padding:25px; margin:25px 0;">
-
-            <label for="dest_data" style="display:block; color:#f3e5ab; font-size:0.9rem; font-weight:bold; margin-bottom:10px;">
-                Sua data de nascimento
-            </label>
-
-            <input
-                type="text"
-                id="dest_data"
-                placeholder="DD/MM/AAAA"
-                maxlength="10"
-                inputmode="numeric"
-                autocomplete="bday"
-                style="width:100%; box-sizing:border-box; padding:12px; background:#0d0b14; border:1px solid #444; color:#fff; border-radius:6px;"
-            >
-
-            <p style="font-size:0.82rem; color:#aaa; margin-top:10px;">
-                Informe o dia, mês e ano do seu nascimento.
-            </p>
-
-            <button
-                type="button"
-                id="dest_calcular"
-                style="width:100%; background:#d4af37; color:#12101a; border:0; font-weight:bold; cursor:pointer; padding:13px; border-radius:6px; margin-top:15px;"
-            >
-                ✦ Calcular meu Número de Destino
-            </button>
-
-            <div
-                id="dest_erro"
-                role="alert"
-                aria-live="polite"
-                style="display:none; color:#ff7777; margin-top:15px; font-size:0.9rem;"
-            ></div>
-
-        </div>
-
-        <!-- RESULTADO -->
-        <div id="dest_resultado" style="display:none; margin-top:30px;">
-
-            <div style="text-align:center; padding:25px 10px; border-bottom:2px solid rgba(212,175,55,0.35);">
-
-                <div style="color:#d4af37; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.1em;">
-                    Seu Número de Destino
-                </div>
-
-                <div id="dest_numero" style="font-size:4rem; color:#f3e5ab; font-weight:bold; line-height:1.3;">
-                </div>
-
-                <div id="dest_nome" style="font-size:1.15rem; color:#d4af37; font-weight:bold;">
-                </div>
-
-            </div>
-
-            <div style="background:#12101a; border:1px solid rgba(212,175,55,0.35); border-radius:8px; padding:20px; margin-top:20px;">
-
-                <h2 style="color:#d4af37; font-size:1.1rem;">
-                    Como seu número foi calculado?
-                </h2>
-
-                <div id="dest_composicao" style="color:#e0e0e0; line-height:1.8;">
-                </div>
-
-            </div>
-
-            <div style="background:#12101a; border-left:4px solid #d4af37; border-radius:8px; padding:20px; margin-top:20px;">
-
-                <h2 style="color:#d4af37; font-size:1.1rem;">
-                    Significado do seu Número de Destino
-                </h2>
-
-                <div id="dest_interpretacao" style="color:#e0e0e0; line-height:1.8;">
-                </div>
-
-            </div>
-
-            <p style="font-size:0.82rem; color:#aaa; margin-top:15px;">
-                Este resultado representa uma interpretação simbólica
-                baseada em tradições numerológicas. Não constitui uma
-                previsão científica sobre personalidade ou acontecimentos futuros.
-            </p>
-
-        </div>
-
-        <!-- CONTEÚDO SEO -->
-        <section style="margin-top:40px;">
-
-            <h2>O que é o Número de Destino na Numerologia?</h2>
-
-            <p>
-                O Número de Destino, também conhecido em algumas tradições
-                como Caminho de Vida, é obtido a partir da data completa
-                de nascimento. Na numerologia, esse número recebe
-                interpretações relacionadas a tendências simbólicas,
-                características e temas associados à trajetória pessoal.
-            </p>
-
-            <p>
-                O cálculo utiliza os algarismos do dia, mês e ano de
-                nascimento. A soma é reduzida até chegar a um número
-                de 1 a 9, preservando os números mestres 11, 22 e 33
-                quando aparecem como resultado da redução.
-            </p>
-
-            <h2>Como calcular o Número de Destino?</h2>
-
-            <p>
-                Para encontrar seu número, some todos os algarismos
-                da sua data de nascimento. Se o resultado tiver
-                mais de um algarismo, some seus dígitos novamente,
-                respeitando os números mestres.
-            </p>
-
-            <p>
-                Por exemplo, para uma pessoa nascida em 15/08/1990:
-            </p>
-
-            <ul>
-                <li>1 + 5 + 0 + 8 + 1 + 9 + 9 + 0 = 33.</li>
-                <li>O resultado é 33, um número mestre.</li>
-            </ul>
-
-            <p>
-                Nesse método, o número 33 é mantido sem redução adicional.
-            </p>
-
-            <h2>Significado dos números de destino</h2>
-
-            <h3>Número 1</h3>
-            <p>Representa simbolicamente iniciativa, independência, liderança e originalidade.</p>
-
-            <h3>Número 2</h3>
-            <p>Está associado à cooperação, diplomacia, sensibilidade e equilíbrio nas relações.</p>
-
-            <h3>Número 3</h3>
-            <p>Simboliza comunicação, criatividade, expressão e sociabilidade.</p>
-
-            <h3>Número 4</h3>
-            <p>Está relacionado à organização, disciplina, estabilidade e construção.</p>
-
-            <h3>Número 5</h3>
-            <p>Representa liberdade, movimento, versatilidade e experiências novas.</p>
-
-            <h3>Número 6</h3>
-            <p>Está associado à responsabilidade, harmonia, cuidado e relações familiares.</p>
-
-            <h3>Número 7</h3>
-            <p>Simboliza investigação, reflexão, conhecimento e busca interior.</p>
-
-            <h3>Número 8</h3>
-            <p>Representa realização, administração, ambição e organização material.</p>
-
-            <h3>Número 9</h3>
-            <p>Está associado à compaixão, generosidade, humanitarismo e conclusão de ciclos.</p>
-
-            <h3>Número Mestre 11</h3>
-            <p>Simboliza inspiração, intuição e sensibilidade espiritual.</p>
-
-            <h3>Número Mestre 22</h3>
-            <p>Está relacionado à capacidade de planejamento, construção e realização de projetos coletivos.</p>
-
-            <h3>Número Mestre 33</h3>
-            <p>Representa simbolicamente compaixão, serviço, cuidado e dedicação ao coletivo.</p>
-
-            <h2>Perguntas frequentes sobre o Número de Destino</h2>
-
-            <h3>O Número de Destino muda ao longo da vida?</h3>
-            <p>
-                Não. No método apresentado, o resultado é calculado
-                a partir da data de nascimento, que permanece a mesma.
-            </p>
-
-            <h3>Preciso informar meu nome para fazer o cálculo?</h3>
-            <p>
-                Não. Esta calculadora utiliza somente a data de nascimento.
-                O nome é utilizado em outros métodos de numerologia.
-            </p>
-
-            <h3>O que são números mestres?</h3>
-            <p>
-                São números que algumas tradições numerológicas
-                preservam sem redução adicional, principalmente 11, 22 e 33.
-            </p>
-
-            <h3>O Número de Destino prevê o futuro?</h3>
-            <p>
-                Não. A numerologia oferece interpretações simbólicas.
-                O resultado não é um método científico de previsão
-                de acontecimentos.
-            </p>
-
-        </section>
-
-        <!-- LINKS INTERNOS -->
-        <section style="margin-top:35px;">
-
-            <h2>Continue explorando Numerologia</h2>
-
-            <ul>
-                <li>
-                    <a href="{{ '/calculadoras/cabalistica/' | relative_url }}">
-                        Calculadora de Numerologia Cabalística
-                    </a>
-                </li>
-
-                <li>
-                    <a href="{{ '/calculadoras/mapa-numerologico/' | relative_url }}">
-                        Calculadora de Mapa Numerológico
-                    </a>
-                </li>
-
-                <li>
-                    <a href="{{ '/calculadoras/numerologia-nome/' | relative_url }}">
-                        Calculadora de Numerologia do Nome
-                    </a>
-                </li>
-
-                <li>
-                    <a href="{{ '/calculadoras/astrogematria/' | relative_url }}">
-                        Calculadora de Astrogematria Hebraica
-                    </a>
-                </li>
-            </ul>
-
-            <p>
-                <a href="{{ '/calculadoras/' | relative_url }}">
-                    Voltar para todas as calculadoras
-                </a>
-            </p>
-
-        </section>
-
-    </article>
+  <div class="breadcrumbs">
+    <a href="{{ '/' | relative_url }}">Início</a> &gt;
+    <a href="{{ '/calculadoras/' | relative_url }}">Calculadoras</a> &gt;
+    <span>Numerologia do Nome</span>
+  </div>
+
+  <article class="post-content">
+    <h1>Calculadora de Numerologia do Nome: Compare Dois Métodos</h1>
+    <p>Informe seu nome e compare os resultados de dois sistemas modernos de numerologia: o Pitagórico e uma variante brasileira da Numerologia Cabalística conhecida como NCT. Veja a correspondência das letras, as somas e as reduções utilizadas em cada método.</p>
+
+    <section aria-labelledby="calc-title" style="background:#12101a;border:1px solid rgba(212,175,55,.4);border-radius:12px;padding:22px;margin:24px 0;">
+      <h2 id="calc-title" style="color:#d4af37;margin-top:0;">Calcule a numerologia do seu nome</h2>
+      <label for="nomeNumerologia" style="display:block;color:#f3e5ab;font-weight:bold;margin-bottom:8px;">Nome completo</label>
+      <input id="nomeNumerologia" type="text" autocomplete="name" placeholder="Ex.: Maria da Silva" style="width:100%;box-sizing:border-box;padding:13px;border-radius:7px;border:1px solid #655b43;background:#0d0b14;color:#fff;font-size:16px;">
+      <p style="font-size:.88rem;color:#c9c2b2;margin:8px 0 14px;">Use a grafia que deseja consultar. Partículas como “da”, “de” e “dos” também entram no cálculo.</p>
+      <button type="button" id="btnCalcularNome" class="btn-accept" style="cursor:pointer;padding:12px 20px;">Calcular os dois métodos</button>
+      <p id="erroNumerologia" role="alert" style="color:#ffb4a9;margin:12px 0 0;" aria-live="polite"></p>
+      <div id="resultadoNumerologia" aria-live="polite" style="display:none;margin-top:22px;"></div>
+    </section>
+
+    <section style="line-height:1.7;">
+      <h2>O que é Numerologia do Nome?</h2>
+      <p>A numerologia do nome é uma prática simbólica que associa letras a valores numéricos e utiliza somas e reduções para produzir números interpretados dentro de diferentes tradições. As tabelas e regras variam conforme o sistema adotado. Por isso, um mesmo nome pode apresentar resultados diferentes em métodos distintos.</p>
+
+      <h2>Como calcular a Numerologia do Nome pelo método Pitagórico?</h2>
+      <p>Na versão moderna da numerologia Pitagórica utilizada nesta calculadora, as 26 letras do alfabeto latino são distribuídas em ciclos de 1 a 9. A soma de todas as letras é apresentada como Expressão; as vogais formam o cálculo da Alma; e as consoantes, o da Personalidade. Para esta ferramenta, A, E, I, O e U são vogais, enquanto Y é tratado como consoante.</p>
+      <p>Esta tabela é uma convenção moderna de numerologia de nomes. Não afirmamos que a tabela alfabética atual tenha sido criada diretamente por Pitágoras na Grécia Antiga.</p>
+
+      <h2>Como calcular a Numerologia do Nome pelo método Cabalístico NCT?</h2>
+      <p>A variante brasileira NCT apresentada aqui utiliza uma tabela latina própria de 1 a 8. Nesta convenção, as vogais são usadas para calcular a Motivação, as consoantes para a Impressão e o nome completo para a Expressão. Não há letras atribuídas ao número 9, embora 9 possa surgir como resultado de uma soma.</p>
+      <p><strong>Transparência metodológica:</strong> existem variantes publicadas da tabela NCT. Esta calculadora adota a versão em que os acentos são normalizados para a letra-base, Ç é tratado como C e X não participa da soma porque não consta na tabela selecionada. Y vale 1 e é tratado como consoante. Outras escolas podem adotar regras diferentes.</p>
+
+      <h2>Por que os resultados são diferentes?</h2>
+      <p>Os dois sistemas utilizam tabelas de correspondência diferentes. Por isso, uma mesma letra pode receber valores distintos. A calculadora mostra a soma original e a redução de cada resultado para que você possa acompanhar o processo, em vez de receber apenas um número final.</p>
+
+      <h2>Cheiro e a tradição caldeia: qual é a relação?</h2>
+      <p>Cheiro era o nome profissional de William John Warner (1866–1936), autor irlandês conhecido por seus trabalhos de quiromancia e numerologia. Em <em>Cheiro's Book of Numbers</em>, ele publicou um sistema que chamou de Caldeu, com uma tabela própria de letras e atenção especial aos números compostos, como 14, 17, 23 e 26.</p>
+      <p>Na tabela publicada por Cheiro, X recebe o valor 5. Isso é diferente da variante NCT adotada nesta página, na qual X é excluído. Portanto, não misturamos a tabela de Cheiro com a NCT brasileira. A tabela de Cheiro é apresentada aqui como referência histórica, não como um terceiro cálculo desta versão.</p>
+      <p>Na abordagem de Cheiro, o número composto do nome é importante e também é relacionado ao número de nascimento. Para conhecer a fonte histórica, consulte <a href="https://www.lightforcenetwork.com/wp-content/uploads/2016/12/Book-of-Numbers-Cheiro.pdf" target="_blank" rel="noopener noreferrer">Cheiro's Book of Numbers</a>.</p>
+
+      <h2>As interpretações são científicas?</h2>
+      <p>Não há comprovação científica de que esses sistemas determinem personalidade ou prevejam acontecimentos. Os resultados devem ser entendidos como interpretações simbólicas dentro de tradições numerológicas, para informação cultural e reflexão pessoal.</p>
+
+      <h2>Perguntas frequentes sobre Numerologia do Nome</h2>
+      <details><summary>Preciso informar meu nome completo?</summary><p>Recomendamos informar o nome completo que deseja analisar. A ferramenta inclui partículas como “da”, “de” e “dos”. Você também pode consultar outra grafia separadamente.</p></details>
+      <details><summary>Por que Pitagórica e NCT apresentam números diferentes?</summary><p>Porque utilizam tabelas de correspondência diferentes. As letras não possuem necessariamente o mesmo valor nos dois sistemas.</p></details>
+      <details><summary>O que acontece com os acentos?</summary><p>Nesta versão, os acentos são normalizados para a letra-base: Á vira A, Õ vira O e Ç vira C. Essa regra é explicitada para tornar o cálculo reproduzível.</p></details>
+      <details><summary>Como a letra X é calculada?</summary><p>No Pitagórico, X vale 6. Na variante NCT selecionada, X não está incluído na tabela e não participa da soma. A tabela de Cheiro, por sua vez, atribui X=5.</p></details>
+      <details><summary>Esta calculadora utiliza o método de Cheiro?</summary><p>Não realiza o cálculo de Cheiro nesta versão. A página apresenta uma explicação histórica e sua tabela para comparação, mantendo esse sistema separado da NCT.</p></details>
+
+      <h2>Continue explorando</h2>
+      <ul>
+        <li><a href="{{ '/calculadoras/' | relative_url }}">Todas as calculadoras</a></li>
+        <li><a href="{{ '/calculadoras/numerologia-pitagorica/' | relative_url }}">Calculadora de Numerologia Pitagórica</a></li>
+        <li><a href="{{ '/calculadoras/mapa-numerologico/' | relative_url }}">Mapa Numerológico Caldeu</a></li>
+        <li><a href="{{ '/calculadoras/astrogematria/' | relative_url }}">Astrogematria Hebraica</a></li>
+      </ul>
+    </section>
+  </article>
 </main>
 
+<style>
+#resultadoNumerologia h3{color:#d4af37;margin:0 0 12px}
+#resultadoNumerologia .metodo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+#resultadoNumerologia .metodo-card{background:#171421;border:1px solid rgba(212,175,55,.35);border-radius:9px;padding:15px}
+#resultadoNumerologia table{width:100%;border-collapse:collapse;margin:10px 0;font-size:.9rem}
+#resultadoNumerologia th,#resultadoNumerologia td{border:1px solid #514a3d;padding:7px;text-align:left}
+#resultadoNumerologia th{color:#f3e5ab}
+#resultadoNumerologia .numero-final{font-size:1.7rem;color:#f3e5ab;font-weight:bold}
+#resultadoNumerologia .nota{font-size:.84rem;color:#c9c2b2}
+#resultadoNumerologia details{background:#171421;border:1px solid #514a3d;border-radius:7px;padding:10px;margin:8px 0}
+#resultadoNumerologia summary{cursor:pointer;color:#f3e5ab;font-weight:bold}
+</style>
+
 <script>
-(function () {
-    const botao = document.getElementById('dest_calcular');
-    const campoData = document.getElementById('dest_data');
-    const erro = document.getElementById('dest_erro');
-    const resultado = document.getElementById('dest_resultado');
+(function(){
+  const pit = {
+    A:1,J:1,S:1, B:2,K:2,T:2, C:3,L:3,U:3,
+    D:4,M:4,V:4, E:5,N:5,W:5, F:6,O:6,X:6,
+    G:7,P:7,Y:7, H:8,Q:8,Z:8, I:9,R:9
+  };
+  const nct = {
+    A:1,I:1,Q:1,J:1,Y:1, B:2,K:2,R:2, C:3,G:3,L:3,S:3,
+    D:4,M:4,T:4, E:5,H:5,N:5, U:6,V:6,W:6, O:7,Z:7, F:8,P:8
+  };
+  const vowels = new Set(["A","E","I","O","U"]);
+  const mastersPit = new Set([11,22,33]);
+  const mastersNct = new Set([11,22]);
 
-    const significados = {
-        1: {
-            nome: 'Iniciativa e Independência',
-            texto: 'O número 1 está simbolicamente associado à liderança, autonomia, iniciativa e capacidade de começar novos projetos.'
-        },
-        2: {
-            nome: 'Cooperação e Equilíbrio',
-            texto: 'O número 2 representa simbolicamente diplomacia, sensibilidade, colaboração e busca por harmonia nas relações.'
-        },
-        3: {
-            nome: 'Criatividade e Expressão',
-            texto: 'O número 3 está associado à comunicação, criatividade, expressão pessoal e sociabilidade.'
-        },
-        4: {
-            nome: 'Organização e Estabilidade',
-            texto: 'O número 4 simboliza disciplina, planejamento, estrutura e construção de bases sólidas.'
-        },
-        5: {
-            nome: 'Liberdade e Movimento',
-            texto: 'O número 5 está relacionado à versatilidade, liberdade, adaptação e busca por novas experiências.'
-        },
-        6: {
-            nome: 'Responsabilidade e Harmonia',
-            texto: 'O número 6 representa simbolicamente cuidado, compromisso, equilíbrio e responsabilidade nas relações.'
-        },
-        7: {
-            nome: 'Conhecimento e Reflexão',
-            texto: 'O número 7 está associado à investigação, introspecção, conhecimento e busca por compreensão.'
-        },
-        8: {
-            nome: 'Realização e Administração',
-            texto: 'O número 8 simboliza organização, capacidade administrativa, realização e objetivos materiais.'
-        },
-        9: {
-            nome: 'Compaixão e Humanitarismo',
-            texto: 'O número 9 representa simbolicamente generosidade, empatia, consciência coletiva e conclusão de ciclos.'
-        },
-        11: {
-            nome: 'Inspiração e Intuição',
-            texto: 'O número mestre 11 está associado à inspiração, sensibilidade, intuição e percepção simbólica.'
-        },
-        22: {
-            nome: 'Construção e Realização',
-            texto: 'O número mestre 22 simboliza planejamento, capacidade de construção e realização de projetos de grande alcance.'
-        },
-        33: {
-            nome: 'Compaixão e Serviço',
-            texto: 'O número mestre 33 está relacionado à compaixão, dedicação, cuidado e contribuição para o coletivo.'
-        }
+  function normalizeName(value){
+    return value.normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/ç/gi,"c").toUpperCase();
+  }
+  function reduceNumber(total, preserve){
+    let n=total;
+    while(n>9 && !(preserve.has(n))) n=String(n).split("").reduce((s,d)=>s+Number(d),0);
+    return n;
+  }
+  function compute(name, table, preserve, nctMode){
+    const letters=[...normalizeName(name)].filter(ch=>/[A-Z]/.test(ch));
+    const used=[], ignored=[];
+    let all=0, vowelTotal=0, consonantTotal=0;
+    letters.forEach(ch=>{
+      if(!(ch in table)){ignored.push(ch);return;}
+      const val=table[ch]; all+=val; used.push({ch,val});
+      if(vowels.has(ch)){vowelTotal+=val;} else {consonantTotal+=val;}
+    });
+    const expr=reduceNumber(all,preserve);
+    const soul=reduceNumber(vowelTotal,preserve);
+    const personality=reduceNumber(consonantTotal,nctMode?new Set():preserve);
+    return {used,ignored,all,vowelTotal,consonantTotal,expr,soul,personality};
+  }
+  function description(n){
+    const map={
+      1:"Iniciativa, autonomia e começo de ciclos.",
+      2:"Cooperação, sensibilidade e busca de equilíbrio.",
+      3:"Comunicação, criatividade e expressão.",
+      4:"Organização, constância e construção.",
+      5:"Movimento, versatilidade e adaptação.",
+      6:"Cuidado, responsabilidade e harmonia.",
+      7:"Estudo, introspecção e investigação.",
+      8:"Gestão, realização e relação com recursos.",
+      9:"Visão ampla, generosidade e conclusão de ciclos.",
+      11:"Inspiração, percepção e idealismo.",
+      22:"Planejamento amplo e capacidade de construção.",
+      33:"Serviço, cuidado e responsabilidade coletiva."
     };
-
-    function reduzirNumero(numero) {
-        while (numero > 9 && numero !== 11 && numero !== 22 && numero !== 33) {
-            numero = String(numero)
-                .split('')
-                .reduce((soma, digito) => soma + Number(digito), 0);
-        }
-
-        return numero;
-    }
-
-   function calcularDestino() {
-    const data = campoData.value.trim();
-
-    erro.style.display = 'none';
-    resultado.style.display = 'none';
-
-    const correspondencia = data.match(/^(\d{2})\/(\d{2})\/(\d{4})$/);
-
-    if (!correspondencia) {
-        erro.textContent = 'Informe a data no formato DD/MM/AAAA.';
-        erro.style.display = 'block';
-        return;
-    }
-
-    const dia = Number(correspondencia[1]);
-    const mes = Number(correspondencia[2]);
-    const ano = Number(correspondencia[3]);
-
-    const dataNascimento = new Date(Date.UTC(ano, mes - 1, dia));
-
-    const dataValida =
-        dataNascimento.getUTCFullYear() === ano &&
-        dataNascimento.getUTCMonth() === mes - 1 &&
-        dataNascimento.getUTCDate() === dia;
-
-    const hoje = new Date();
-    const hojeUTC = Date.UTC(
-        hoje.getFullYear(),
-        hoje.getMonth(),
-        hoje.getDate()
-    );
-
-    if (!dataValida || ano < 1900 || dataNascimento.getTime() > hojeUTC) {
-        erro.textContent = 'Informe uma data válida, entre 1900 e hoje.';
-        erro.style.display = 'block';
-        return;
-    }
-
-    const algarismos = data.replace(/\//g, '').split('').map(Number);
-
-    const somaInicial = algarismos.reduce(
-        (total, numero) => total + numero, 0
-    );
-
-    const numeroDestino = reduzirNumero(somaInicial);
-    const info = significados[numeroDestino];
-
-    document.getElementById('dest_numero').textContent = numeroDestino;
-    document.getElementById('dest_nome').textContent = info.nome;
-
-    document.getElementById('dest_composicao').textContent =
-        'Data de nascimento: ' + data +
-        '. Soma dos algarismos: ' +
-        algarismos.join(' + ') +
-        ' = ' + somaInicial +
-        '. Número final: ' + numeroDestino + '.';
-
-    document.getElementById('dest_interpretacao').textContent =
-        info.texto;
-
-    resultado.style.display = 'block';
-
-    resultado.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-    });
-}
-
-    botao.addEventListener('click', calcularDestino);
-
-    campoData.addEventListener('keydown', function (evento) {
-        if (evento.key === 'Enter') {
-            calcularDestino();
-        }
-    });
+    return map[n]||"Interpretação simbólica associada ao número.";
+  }
+  function card(title, labels, r, method){
+    const rows=[
+      ["Expressão",r.all,r.expr],
+      [labels[0],r.vowelTotal,r.soul],
+      [labels[1],r.consonantTotal,r.personality]
+    ];
+    const tableRows=rows.map(x=>`<tr><td>${x[0]}</td><td>${x[1]}</td><td><strong>${x[2]}</strong></td></tr>`).join("");
+    const letters=r.used.map(x=>`${x.ch}=${x.val}`).join(" · ");
+    const ignored=r.ignored.length?`<p class="nota">Letras não contabilizadas: ${r.ignored.join(", ")}</p>`:"";
+    return `<div class="metodo-card"><h3>${title}</h3><table><thead><tr><th>Cálculo</th><th>Soma</th><th>Resultado</th></tr></thead><tbody>${tableRows}</tbody></table><p><strong>Expressão:</strong> ${description(r.expr)}</p><p><strong>${labels[0]}:</strong> ${description(r.soul)}</p><p><strong>${labels[1]}:</strong> ${description(r.personality)}</p><details><summary>Ver conversão das letras</summary><p class="nota">${letters}</p>${ignored}</details></div>`;
+  }
+  function run(){
+    const input=document.getElementById("nomeNumerologia");
+    const error=document.getElementById("erroNumerologia");
+    const output=document.getElementById("resultadoNumerologia");
+    const raw=input.value.trim();
+    if(!raw){error.textContent="Digite seu nome para realizar o cálculo.";output.style.display="none";return;}
+    const normalized=normalizeName(raw);
+    if(!/[A-Z]/.test(normalized)){error.textContent="Informe um nome com letras do alfabeto latino.";output.style.display="none";return;}
+    const p=compute(raw,pit,mastersPit,false);
+    const c=compute(raw,nct,mastersNct,true);
+    error.textContent="";
+    output.innerHTML=`<h2>Resultados para: ${raw.replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]))}</h2><div class="metodo-grid">${card("Numerologia Pitagórica",["Alma","Personalidade"],p,false)}${card("Numerologia Cabalística NCT",["Motivação","Impressão"],c,true)}</div><p class="nota" style="margin-top:14px;">Convenções desta ferramenta: Pitagórico preserva 11, 22 e 33; NCT preserva 11 e 22 em Expressão e Motivação e reduz Impressão a 1–9. Na NCT adotada, X não participa da soma. As interpretações são simbólicas, não científicas.</p>`;
+    output.style.display="block";
+  }
+  document.getElementById("btnCalcularNome").addEventListener("click",run);
+  document.getElementById("nomeNumerologia").addEventListener("keydown",e=>{if(e.key==="Enter")run();});
 })();
 </script>
