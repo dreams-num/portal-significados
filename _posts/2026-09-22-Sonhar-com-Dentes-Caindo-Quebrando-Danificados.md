@@ -41,6 +41,8 @@ Assim como o estômago não consegue digerir o alimento se ele não for previame
 ### 2. Avisos de Tribulação e Desgaste Emocional
 Uma dor de dente ou o acúmulo de cáries no mundo dos sonhos funciona como um indicador de tribulação, desgastes internos e tensões acumuladas que foram ignoradas na vida desperta. A mente subjetiva utiliza a imagem da deterioração dentária para avisar que certas preocupações ou pensamentos destrutivos estão corroendo a paz interior e a estabilidade emocional do indivíduo.
 
+{% include banner.html id="mandala_flor_lotus" %}
+
 ## Cenários Frequentes com Dentes e Seus Significados
 
 Para decifrar com clareza o seu sonho, é fundamental examinar o cenário específico em que os dentes apareceram.
@@ -70,6 +72,8 @@ Escovar, passar fio dental ou limpar os dentes no sonho é um excelente presság
 
 ### 7. Sonhar com Dentes Brancos, Fortes e Bonitos
 Admirar a beleza e o alinhamento dos próprios dentes é um símbolo clássico de prosperidade, harmonia familiar e satisfação pessoal. Anuncia que os desejos do sonhador estão em vias de se realizar e que ele possui a estabilidade e a autoconfiança necessárias para desfrutar das conquistas da vida desperta.
+
+{% include banner.html id="curso_tarot_nei" %}
 
 ## Como Interpretar o Seu Sonho com Dentes: Passo a Passo Reflexivo
 
