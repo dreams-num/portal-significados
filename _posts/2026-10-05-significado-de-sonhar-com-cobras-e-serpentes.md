@@ -103,7 +103,10 @@ Quando serpentes aparecem deslizando no meio da relva ou escondidas ao longo de 
 - **A Naja (Cobra de Capuço):** Por erguer a cabeça e expandir o capuço na região do pescoço, a naja está diretamente associada à área da comunicação e ao chakra laríngeo. Sinaliza a necessidade de dominar a própria fala, evitando fofocas impulsivas, ou de se defender contra declarações venenosas que se espalham rapidamente.
 - **Cobra Pregada em uma Haste ou Bastão:** Resgatando a emblemática imagem médica do caduceu e a referência espiritual histórica, a cobra suspensa em um bastão deixa de ser um presságio de medo para se tornar o emblema máximo da restauração, da superação de enfermidades e da cura física e espiritual.
 
+{% include banner.html id="limpeza_reiki" %}
+
 ---
+{% include banner.html id="velas_decorativas" %}
 
 ## Como Interpretar o Seu Sonho com Cobra: Um Guia Prático
 
